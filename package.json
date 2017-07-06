@@ -1,0 +1,23 @@
+{
+    "name": "clear-css",
+    "version": "0.0.1",
+    "description": "Clear CSS",
+    "author": "Pim Brouwers",
+    "license": "MIT",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "less": "latest",
+        "less-plugin-clean-css": "latest",
+        "ncp": "latest",
+        "rimraf": "latest"
+    },
+    "scripts": {        
+        "clean": "rimraf ./*.css",
+
+        "less": "lessc --clean-css ./src/clr.less ./clr.min.css",
+        "less-gridunits": "lessc --clean-css ./src/clr-grid-units.less ./clr-grid-units.min.css",
+        
+        "build": "npm run clean && npm run less | npm run less-gridunits"
+    }
+}

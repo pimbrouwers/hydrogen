@@ -1,0 +1,59 @@
+.clr-form {
+	fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	legend {
+		border-bottom: 1px solid @form-legend-border;
+		display:block;		
+		margin: @form-legend-spacing 0;
+		padding: @form-legend-spacing 0;		
+		width: 100%;
+	}
+
+	input,
+	select, 
+	textarea {
+		border: 1px solid @input-border;
+		font: inherit;
+		margin: 0;
+		padding: @input-padding;
+
+		&:focus {
+			border-color: darken(@input-border, 10%);
+		}
+
+		&[required] {
+			&:focus {
+				border-color: red;
+			}
+		}
+
+		&[disabled] {
+			background: lighten(@input-border, 7%);
+			cursor: not-allowed;
+		}
+	}
+
+	input[type=checkbox]
+	{
+		margin: 3px 3px 3px 4px;
+	}
+
+	&.clr-form-stack {
+		input,
+		select, 
+		textarea,
+		label {
+			display: block;
+			margin-bottom: @form-stack-spacing;
+		}
+
+		input[type=checkbox]
+		{
+			display: inline-block;
+		}
+	}
+}

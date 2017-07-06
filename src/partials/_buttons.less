@@ -1,0 +1,17 @@
+.clr-btn {
+	background: @btn-color;
+	padding: @btn-padding @btn-padding * 2;
+
+	&:hover {
+		background: darken(@btn-color, 10%);
+	}
+
+	&[disabled] {
+		opacity: .4;
+		cursor: not-allowed;
+
+		&:hover {
+			background: @btn-color;
+		}
+	}
+}

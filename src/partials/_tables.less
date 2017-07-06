@@ -1,0 +1,18 @@
+.clr-tbl {
+	border-collapse: collapse;
+	width: 100%;
+    max-width: 100%;
+    
+	th, td {			
+		padding: @tbl-gutter;
+	}
+
+	th {
+		border-bottom: 2px solid @tbl-border-color;
+		text-align: left;
+	}
+
+	td {
+		border-top: 1px solid lighten(@tbl-border-color, 5%);
+	}
+}

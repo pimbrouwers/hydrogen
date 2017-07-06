@@ -1,0 +1,35 @@
+.clr-menu {
+
+	li {
+		& > span, & > a {
+			display: inline-block;
+			margin: 0;
+			padding: @btn-padding @btn-padding * 2;
+		}
+
+		& > span {
+			font-weight: bold;
+		}
+
+		& > a {
+			&:hover {
+				background: @btn-color;
+			}
+		}
+
+		&:first-child {
+			> span {
+				padding-left: 0;
+			}
+		}
+		
+	}
+
+	&.clr-menu-inline {
+		li {
+			display: inline-block;
+
+			
+		}
+	}
+}
