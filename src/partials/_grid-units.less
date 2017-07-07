@@ -2,7 +2,7 @@
 base
 */
 .generate-columns(@n, @i: 1) when (@i =< @n) {
-  .clr-u-@{i}-@{n} {
+  .h-u-@{i}-@{n} {
     width: (@i * 100% / @n);
   }
   .generate-columns(@n, (@i + 1));
@@ -16,7 +16,7 @@ base
 sm
 */
 .generate-sm-columns(@n, @i: 1) when (@i =< @n) {
-  .clr-u-sm-@{i}-@{n} {
+  .h-u-sm-@{i}-@{n} {
     width: (@i * 100% / @n);
   }
   .generate-sm-columns(@n, (@i + 1));
@@ -31,7 +31,7 @@ sm
 md
 */
 .generate-md-columns(@n, @i: 1) when (@i =< @n) {
-  .clr-u-md-@{i}-@{n} {
+  .h-u-md-@{i}-@{n} {
     width: (@i * 100% / @n);
   }
   .generate-md-columns(@n, (@i + 1));
@@ -46,7 +46,7 @@ md
 lg
 */
 .generate-lg-columns(@n, @i: 1) when (@i =< @n) {
-  .clr-u-lg-@{i}-@{n} {
+  .h-u-lg-@{i}-@{n} {
     width: (@i * 100% / @n);
   }
   .generate-lg-columns(@n, (@i + 1));
@@ -61,7 +61,7 @@ lg
 xl
 */
 .generate-xl-columns(@n, @i: 1) when (@i =< @n) {
-  .clr-u-xl-@{i}-@{n} {
+  .h-u-xl-@{i}-@{n} {
     width: (@i * 100% / @n);
   }
   .generate-xl-columns(@n, (@i + 1));
