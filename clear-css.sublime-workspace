@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"respon",
+				"responsive"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"cl",
+				"clr-g"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
 				"e",
 				"$eventPlayersSql〔variable〕"
 			],
@@ -46,10 +70,6 @@
 			[
 				"FET",
 				"FETCH_CLASS"
-			],
-			[
-				"cl",
-				"className"
 			],
 			[
 				"Ex",
@@ -144,10 +164,6 @@
 				"jsPDF"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"post",
 				"post-icon"
 			],
@@ -192,10 +208,6 @@
 				"photosAry"
 			],
 			[
-				"tex",
-				"text-decoration"
-			],
-			[
 				"ma",
 				"margin"
 			],
@@ -212,20 +224,12 @@
 				"pure-u-md-1-3"
 			],
 			[
-				"padding",
-				"padding-left"
-			],
-			[
 				"max",
 				"max-width"
 			],
 			[
 				"pure",
 				"pure-menu-link"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"www",
@@ -510,10 +514,6 @@
 			[
 				"amoun",
 				"amountRefundedMiniorUnits"
-			],
-			[
-				"variant",
-				"variantOfTicketID"
 			]
 		]
 	},
@@ -565,10 +565,19 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/pimbrouwers/git/ClearCSS"
+		"/Users/pimbrouwers/git/ClearCSS",
+		"/Users/pimbrouwers/git/ClearCSS/examples",
+		"/Users/pimbrouwers/git/ClearCSS/src",
+		"/Users/pimbrouwers/git/ClearCSS/src/partials"
 	],
 	"file_history":
 	[
+		"/Users/pimbrouwers/git/ClearCSS/src/partials/_grid.less",
+		"/Users/pimbrouwers/git/ClearCSS/package.json",
+		"/Users/pimbrouwers/git/ClearCSS/src/partials/_buttons.less",
+		"/Users/pimbrouwers/git/ClearCSS/src/partials/_variables.less",
+		"/Users/pimbrouwers/git/ClearCSS/index.html",
+		"/Users/pimbrouwers/git/ClearCSS/examples/index.html",
 		"/Users/pimbrouwers/www/inkwell/.gitignore",
 		"/Users/pimbrouwers/git/nhldotcom/lib/sql/bulk-load.sql",
 		"/Volumes/TANK/Downloads/20162017/events.csv",
@@ -690,13 +699,7 @@
 		"/Users/pimbrouwers/www_js/jodierosen.com/www_dist/css/app.css",
 		"/Users/pimbrouwers/www_js/jodierosen.com/tools/build-pages.js",
 		"/Users/pimbrouwers/www_js/jodierosen.com/www_src/require.build.js",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_dist/scripts.js",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_src/pages/index.json",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_dist/index.html",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_dist/portfolio.html",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_dist/press.html",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_src/pages/press.hbs",
-		"/Users/pimbrouwers/www_js/jodierosen.com/www_src/pages/partials/press.hbs"
+		"/Users/pimbrouwers/www_js/jodierosen.com/www_dist/scripts.js"
 	],
 	"find":
 	{
@@ -732,6 +735,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"header",
+			"strong",
+			"header",
+			"<ul class=\"clr-list\">\n  <li>dsdsad</li>\n</ul>",
 			"__DIR__",
 			"LIB",
 			"truncate",
@@ -855,11 +862,7 @@
 			" _existingTransactions",
 			"self",
 			"this",
-			"floating",
-			".shake",
-			"order()",
-			"order().",
-			"order().SubTotalValueMinorUnits"
+			"floating"
 		],
 		"highlight": true,
 		"in_selection": false,
