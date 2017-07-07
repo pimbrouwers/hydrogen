@@ -18,7 +18,7 @@
 	textarea {
 		border: 1px solid @input-border;
 		font: inherit;
-		margin: 0;
+		margin: 0 0 @form-stack-spacing;
 		padding: @input-padding;
 
 		&:focus {
@@ -47,8 +47,7 @@
 		select, 
 		textarea,
 		label {
-			display: block;
-			margin-bottom: @form-stack-spacing;
+			display: block;			
 		}
 
 		input[type=checkbox]
