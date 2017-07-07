@@ -4,7 +4,6 @@ Hydrogen is a modern CSS foundation. I avoid the use of the word "framework", be
 
 To get started simply download the [base CSS file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/clr.min.css) (~2.3KB / 937 bytes gzipped) and the optional [grid units file](https://github.com/pimbrouwers/HydrogenCSS/blob/master/h-grid-units.min.css).
 
-* * *
 
 ## Typography
 
@@ -18,7 +17,6 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
 <!-- Paragraph -->
 <p>...</p>
 ```
-* * *
 
 ## Lists
 ```html
@@ -36,7 +34,6 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
     <li>Item 3</li>
 </ol> 
 ```
-* * *
 
 ## Menus
 ```html
@@ -68,7 +65,6 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
     </li>
 </ul>
 ```
-* * *
 
 ## Tables
 ```html
@@ -82,7 +78,6 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
 </table>
 ```
 
-* * *
 
 ## Buttons
 ```html
@@ -90,7 +85,6 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
 <button class="h-btn" disabled>A Disabled Button</button> 
 ```
 
-* * *
 
 ## Forms
 ```html
@@ -105,7 +99,6 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
 </form>
 ```
 
-* * *
 
 ## Grid
 
@@ -125,7 +118,6 @@ By default, Hydrogen's grid provides you with the foundation to build fully cust
 </div>
 ```
 
-* * *
 
 ## Grid Units
 
@@ -137,7 +129,6 @@ To make development faster, Hydrogen ships with a separate grid-units file. That
     <div class="h-u h-u-sm-4-12"> ... </div> 
 </div> 
 ```
-***
 
 ## Customize
 
