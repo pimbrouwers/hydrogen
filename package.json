@@ -16,7 +16,7 @@
         "clean": "rimraf ./*.css",
 
         "less": "lessc --clean-css ./src/clr.less ./clr.min.css",
-        "less-gridunits": "lessc --clean-css ./src/clr-grid-units.less ./clr-grid-units.min.css",
+        "less-gridunits": "lessc --clean-css ./src/clr.grid-units.less ./clr.grid-units.min.css",
         
         "build": "npm run clean && npm run less | npm run less-gridunits"
     }

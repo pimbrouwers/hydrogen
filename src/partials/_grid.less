@@ -2,10 +2,16 @@
 	margin: 0 auto;
 	max-width: @xl-break;
 	padding: 0 @grid-gutter;
+
+	& > .clr-g {
+		margin:  0 -@grid-gutter; 
+	}
 }
 
-.clr-g .clr-g { 
-	margin:  0 -@grid-gutter; 
+.clr-g {
+	.clr-g { 
+		margin:  0 -@grid-gutter; 
+	}
 }
 
 .clr-u      { 
