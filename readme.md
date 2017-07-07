@@ -42,30 +42,30 @@ To get started simply download the [base CSS file](https://raw.githubusercontent
 ```html
 <!-- Vertical -->
 <ul class="h-menu">
-	<li><span>Heading</span></li>
-	<li>
-		<a href="#">Item 1</a>
-	</li>
-	<li>
-		<a href="#">Item 2</a>
-	</li>
-	<li>
-		<a href="#">Item 3</a>
-	</li>
+    <li><span>Heading</span></li>
+    <li>
+        <a href="#">Item 1</a>
+    </li>
+    <li>
+        <a href="#">Item 2</a>
+    </li>
+    <li>
+        <a href="#">Item 3</a>
+    </li>
 </ul>
 
 <!-- Horizontal -->
 <ul class="h-menu h-menu-inline">
-	<li><span>Heading</span></li>
-	<li>
-		<a href="#">Item 1</a>
-	</li>
-	<li>
-		<a href="#">Item 2</a>
-	</li>
-	<li>
-		<a href="#">Item 3</a>
-	</li>
+    <li><span>Heading</span></li>
+    <li>
+        <a href="#">Item 1</a>
+    </li>
+    <li>
+        <a href="#">Item 2</a>
+    </li>
+    <li>
+        <a href="#">Item 3</a>
+    </li>
 </ul>
 ```
 * * *
@@ -141,7 +141,9 @@ To make development faster, Hydrogen ships with a separate grid-units file. That
 
 ## Customize
 
-Hydrogen is very easy to customize. Simply clone the source from https://github.com/pimbrouwers/HydrogenCSS and modify the contents of the `_variables.less` file. Below are the options available:
+Hydrogen is very easy to customize. Simply clone the source from https://github.com/pimbrouwers/HydrogenCSS, navigate to the project route & run `npm install` and modify the contents of the `_variables.less` file. Once finished, run the build process by navigating to the project root and running `npm run build`. 
+
+Below are the options available:
 
 ```less
 @sm-break: 30em;
