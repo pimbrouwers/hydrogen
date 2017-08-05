@@ -2,7 +2,7 @@
 
 Hydrogen is a modern CSS foundation. I avoid the use of the word "framework", because it implies bias. Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.
 
-To get started simply download the [base CSS file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/clr.min.css) (~2.3KB / 937 bytes gzipped) and the optional [grid units file](https://github.com/pimbrouwers/HydrogenCSS/blob/master/h-grid-units.min.css).
+To get started simply download the [base CSS file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/hydrogen.min.css) (~2.3KB / 937 bytes gzipped) and the optional [grid units file](https://github.com/pimbrouwers/HydrogenCSS/blob/master/h-grid-units.min.css).
 
 
 ## Typography
