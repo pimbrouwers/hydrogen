@@ -13,11 +13,11 @@
         "rimraf": "latest"
     },
     "scripts": {        
-        "clean": "rimraf ./*.css",
+        "clean": "rimraf ./dist/*.css",
 
-        "less": "lessc --clean-css ./src/hydrogen.less ./hydrogen.min.css",
-        "less-gridunits": "lessc --clean-css ./src/hydrogen.grid-units.less ./hydrogen.grid-units.min.css",
+        "less": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
+        "less-gridunits": "lessc --clean-css ./src/hydrogen.grid-units.less ./dist/hydrogen.grid-units.min.css",
         
-        "build": "npm run clean && npm run less | npm run less-gridunits"
+        "start": "npm run clean && npm run less | npm run less-gridunits"
     }
 }
