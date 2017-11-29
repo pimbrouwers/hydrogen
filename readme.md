@@ -2,12 +2,15 @@
 
 Hydrogen is a modern CSS foundation inspired by my ♥ for [PureCSS](https://purecss.io/). I avoid the use of the word "framework", because it implies bias. Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.
 
-To get started simply download the [base CSS file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/dist/hydrogen.min.css) (~2.3KB / 937 bytes gzipped) and the optional [grid units file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/dist/hydrogen.grid-units.min.css).
+To get started:
+
+- `npm install --save hydrogen-css`
+- Or, simply download the [base CSS file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/dist/hydrogen.min.css) (~2.3KB / 937 bytes gzipped) and the optional [grid units file](https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/dist/hydrogen.grid-units.min.css).
 
 
 ## Typography
 
-``` html
+```html
 <!-- Headings -->
 <h1>...</h1>
 <h2>...</h2>
