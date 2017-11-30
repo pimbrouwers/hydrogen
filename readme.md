@@ -135,7 +135,7 @@ To make development faster, Hydrogen ships with a separate grid-units file. That
 
 ## Customize
 
-Hydrogen is very easy to customize. Simply clone the source from https://github.com/pimbrouwers/HydrogenCSS, navigate to the project route & run `npm install` and modify the contents of the `_variables.less` file. Once finished, run the build process by navigating to the project root and running `npm run build`. 
+Hydrogen is very easy to customize. Simply clone the source from https://github.com/pimbrouwers/HydrogenCSS, navigate to the project route & run `npm install` and modify the contents of the `_variables.less` file. Once finished, run the build process by navigating to the project root and running `npm start`. 
 
 Below are the options available:
 
