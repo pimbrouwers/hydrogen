@@ -1,5 +1,7 @@
 # Hydrogen CSS
 
+[Live Demo & Docs](http://hydrogen.pimbrouwers.com)
+
 Hydrogen is a modern CSS foundation inspired by my ♥ for [PureCSS](https://purecss.io/). I avoid the use of the word "framework", because it implies bias. Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.
 
 To get started:
