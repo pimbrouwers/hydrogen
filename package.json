@@ -8,21 +8,21 @@
         "url": "https://github.com/pimbrouwers/HydrogenCSS/issues"
     },
     "homepage": "https://github.com/pimbrouwers/HydrogenCSS#readme",
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "less": "latest",
         "less-plugin-clean-css": "latest",
         "ncp": "latest",
         "rimraf": "latest"
     },
-    "scripts": {        
+    "scripts": {
         "clean": "rimraf ./dist/*.css",
-
-        "less": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
-        "less-gridunits": "lessc --clean-css ./src/hydrogen.grid-units.less ./dist/hydrogen.grid-units.min.css",
-        
-        "start": "npm run clean && npm run less | npm run less-gridunits"
+        "less-base": "lessc ./src/hydrogen.less ./dist/hydrogen.css",
+        "less-gridunits": "lessc ./src/hydrogen.grid-units.less ./dist/hydrogen.grid-units.css",
+        "less-base:min": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
+        "less-gridunits:min": "lessc --clean-css ./src/hydrogen.grid-units.less ./dist/hydrogen.grid-units.min.css",
+        "less": "npm run less-base & npm run less-gridunits & npm run less-base:min & npm run less-gridunits:min",
+        "start": "npm run less"
     },
     "keywords": [
         "css",

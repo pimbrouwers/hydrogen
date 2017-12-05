@@ -1,0 +1,40 @@
+.generate-column(@prefix, @n, @i) {	
+  .@{prefix}-@{i}-@{n} {
+    width: round(@i * 100% / @n, 3);
+  }	
+}
+
+.generate-column(@prefix, @n, @i) when (@i / @n = .25){
+	.h-u-1-4 {
+      width: round(@i * 100% / @n, 3);
+    }	
+}
+
+.generate-column(@prefix, @n, @i) when (round(@i / @n, 3) = .333){
+	.h-u-1-3 {
+      width: round(@i * 100% / @n, 3);
+    }	
+}
+
+.generate-column(@prefix, @n, @i) when (@i / @n = .5){
+	.h-u-1-2 {
+      width: round(@i * 100% / @n, 3);
+    }	
+}
+
+.generate-column(@prefix, @n, @i) when (round(@i / @n, 3) = .667){
+	.h-u-2-3 {
+      width: round(@i * 100% / @n, 3);
+    }	
+}
+
+.generate-column(@prefix, @n, @i) when (@i / @n = .75){
+	.h-u-3-4 {
+      width: round(@i * 100% / @n, 3);
+    }	
+}
+
+.generate-columns(@prefix, @n, @i: 1) when (@i =< @n) {  
+	.generate-column(@prefix, @n, @i);
+  .generate-columns(@prefix, @n, (@i + 1));
+}
