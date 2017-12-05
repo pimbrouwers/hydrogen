@@ -124,12 +124,21 @@ By default, Hydrogen's grid provides you with the foundation to build fully cust
 
 ## Grid Units
 
-To make development faster, Hydrogen ships with a separate grid-units file. That offers preset grid units on the 12th scale, with triggers at the follow breakpoints:
+To make development faster, Hydrogen ships with a separate grid-units file. That offers preset grid units on the **5th & 24th scale**. Scales are customizable via `@grid-units` and `@grid-units-secondary` variables (see below). 
+
+Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are applied to all screen sizes. Breakpoint definitions are outlined below.
 
 ``` html
+<!-- All screens -->
 <div class="h-g"> 
-    <div class="h-u h-u-sm-8-12"> ... </div> 
-    <div class="h-u h-u-sm-4-12"> ... </div> 
+    <div class="h-u h-u-3-4"> ... </div> 
+    <div class="h-u h-u-1-4"> ... </div> 
+</div> 
+
+<!-- Screen > 48em -->
+<div class="h-g"> 
+    <div class="h-u h-u-md-3-4"> ... </div> 
+    <div class="h-u h-u-md-1-4"> ... </div> 
 </div> 
 ```
 
@@ -148,7 +157,13 @@ Below are the options available:
 @base: .75em;
 @base-color: #ddd;
 
-@grid-units: 12;
+@grid-prefix: ~"h-u";
+@grid-prefix-sm: ~"h-u-sm";
+@grid-prefix-md: ~"h-u-md";
+@grid-prefix-lg: ~"h-u-lg";
+@grid-prefix-xl: ~"h-u-xl";
+@grid-units: 24;
+@grid-units-secondary: 5;
 @grid-gutter: @base * 2;
 
 @tbl-border-color: @base-color;

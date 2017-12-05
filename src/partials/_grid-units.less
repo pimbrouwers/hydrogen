@@ -1,38 +1,52 @@
 /*
-base
+primary grid (default: 24th scale)
 */
 .generate-columns(@grid-prefix, @grid-units);
 
-/*
-sm
-*/
 @media only screen and (min-width: @sm-break)
 {
 	.generate-columns(@grid-prefix-sm, @grid-units);
 }
 
-/*
-md
-*/
 @media only screen and (min-width: @md-break)
 {
 	.generate-columns(@grid-prefix-md, @grid-units);
 }
 
-/*
-lg
-*/
 @media only screen and (min-width: @lg-break)
 {
 	.generate-columns(@grid-prefix-lg, @grid-units);
 }
 
-/*
-xl
-*/
 @media only screen and (min-width: @xl-break)
 {
 	.generate-columns(@grid-prefix-xl, @grid-units);
 }
+
+/*
+secondary grid (default: 5th scale)
+*/
+.generate-columns(@grid-prefix, @grid-units-secondary);
+
+@media only screen and (min-width: @sm-break)
+{
+	.generate-columns(@grid-prefix-sm, @grid-units-secondary);
+}
+
+@media only screen and (min-width: @md-break)
+{
+	.generate-columns(@grid-prefix-md, @grid-units-secondary);
+}
+
+@media only screen and (min-width: @lg-break)
+{
+	.generate-columns(@grid-prefix-lg, @grid-units-secondary);
+}
+
+@media only screen and (min-width: @xl-break)
+{
+	.generate-columns(@grid-prefix-xl, @grid-units-secondary);
+}
+
 
 
