@@ -7,6 +7,7 @@
         "ditt0": "latest",
         "ditt0-json": "latest",
         "ditt0-hbs": "latest",
+        "highlightjs": "latest",
         "http-server": "latest",
         "less": "latest",
         "less-plugin-clean-css": "latest",
@@ -14,7 +15,10 @@
     },
     "devDependencies": {},
     "scripts": {
-        "less": "lessc --clean-css ./src/assets/css/app.less ./build/app.css",
+        "less": "lessc ./src/assets/css/app.less ./build/app.css",
+        "less:min": "lessc --clean-css ./src/assets/css/app.less ./build/app.css",
+
+        "pages": "node index.js",
 
         "server": "http-server ./build",
 
@@ -23,6 +27,7 @@
         "watch:templates": "watch \"npm run pages\" ./src/templates --wait=1 --ignoreDotFiles --ignoreUnreadable",
         "watch": "npm run watch:less & npm run watch:pages & npm run watch:templates",
 
-        "develop": "npm run server & npm run watch"
+        "develop": "npm run server & npm run watch",
+        "build": "npm run pages && npm run less:min"
     }
 }
