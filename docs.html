@@ -1,469 +1,496 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Hydrogen - Light as air.</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="Hydrogen is a modern CSS foundation, that's ridiculously tiny, responsive and unopinionated.">
-  <link href="hydrogen.min.css" rel="stylesheet" type="text/css">
-  <link href="hydrogen.grid-units.min.css" rel="stylesheet" type="text/css">
-  <style>
-    body {
-      color: #262626;
-    }
-
-    hr {
-        background: #ddd;
-        border: 0;
-        height: 1px;
-    }
-    #splash, #benefits {
-      background: #f7f7f7;
-    }
-
-    #splash {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding-top: 9em;
-      text-align: center;
-    }
-
-    #splash h2 {
-      font-weight: 200;
-      margin: .5em 0 1em;
-    }
-
-    #splash a {
-      background: #0080ff;      
-      color: #fff;
-    }
-
-    #hydrogen {
-      border: 2px solid #262626;
-      padding: 3em;
-      position: relative;
-      
-    }
-
-    #hydrogen span {
-      display: block;
-    }
-
-    #hydrogen .atomic, #hydrogen .weight {
-      position: absolute;
-      top: .5em;
-    }
-
-    #hydrogen .atomic {
-      left: .5em;
-    }
-
-    #hydrogen .weight {
-      right: .5em;
-    }
-
-    #hydrogen .symbol {
-      font-size: 5em;
-      font-weight: 700;
-    }
-
-    #benefits {
-      margin: 0 0 2.5em;
-      padding: 5em 0 2.5em;
-      text-align: center;
-    }
-
-    #benefits h4 {
-      color :#0080ff;      
-    }
-
-    nav.links {
-      text-align: center;
-    }
-
-    nav.links ul li a:hover {
-      background: #fff;
-      color: #0080ff;
-    }
-
-    .heading {    
-      color :#0080ff;
-      margin: .25em 0;
-    }
-
-    .table-wrap {
-      overflow-x: scroll;
-    }
-
-    footer {
-      color: #808080;
-      padding: 2em 0;
-    }
-
-    p a {
-      text-decoration: underline;;
-    }
-    p a:hover {
-      color: #0080ff
-    }
-
-    footer > .h-c {
-      border-top: 1px solid #ddd;
-    }
-
-    xmp {
-      background: #ededed;
-      border: 1px solid #ddd;
-      padding: 1em;
-    }
-
-    @media screen and (min-width: 30em){
-      nav.links {
-        text-align: left;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Splash -->
-  <section id="splash">    
-    <div id="hydrogen">
-      <span class="atomic">1</span>
-      <span class="weight">1.0079</span>
-      <span class="symbol">H</span>
-      <span class="name">Hydrogen</span>
-    </div>
-    <h2>Light as air.</h2>
-    <a href="https://github.com/pimbrouwers/HydrogenCSS" target="_blank" class="h-btn">GitHub</a>
-  </section>
-  
-  <!-- Benefits -->
-  <section id="benefits">
-    <div class="h-g">
-      <div class="h-u h-u-md-4-12">
-        <h4>Ultra-lightweight</h4>
-        <p>Weighs in at just ~2.3KB (937 bytes gzipped).</p><br>
-      </div>
-      <div class="h-u h-u-md-4-12">
-        <h4>Unopinionated</h4>
-        <p>Serves as the perfect base, leaving the decisions up to you.</p><br>
-      </div>
-      <div class="h-u h-u-md-4-12">
-        <h4>Responsive</h4>
-        <p>Infinitely flexible grid, and optional preset responsive grid units.</p><br>
-      </div>
-    </div>
-  </section>
-
-  <!-- Docs -->
-  <div class="docs h-c">
-    <div class="h-g">
-      <!-- Nav -->
-      <div class="h-u h-u-sm-3-12 h-u-md-2-12">
-        <nav class="links">
-          <ul class="h-menu">
-            <li>
-              <a href="#install">Install</a>
-            </li>
-            <li>
-              <a href="#typography">Typography</a>
-            </li>
-            <li>
-              <a href="#lists">Lists</a>
-            </li>
-            <li>
-              <a href="#menus">Menus</a>
-            </li>
-            <li>
-              <a href="#tables">Tables</a>
-            </li>
-            <li>
-              <a href="#buttons">Buttons</a>
-            </li>
-            <li>
-              <a href="#forms">Forms</a>
-            </li>
-            <li>
-              <a href="#grid">Grid</a>
-            </li>
-            <li>
-              <a href="#grid-units">Grid Units</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Content -->
-      <div class="h-u h-u-sm-9-12 h-u-md-10-12">
-        <!-- Installation -->
-        <h2 class="heading" id="install">Install</h2>
-        <p>Hydrogen is a modern CSS foundation. I avoid the use of the word "framework", because it implies bias. Hydrogen is entriely <em>unbiased</em> and offering up only a starting point with the <strong>intention</strong> of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.</p><br>
-        <p>To get started simply download the <a href="https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/hydrogen.min.css" target="_blank">base CSS file</a> (~2.3KB / 937 bytes gzipped) and the optional <a href="https://github.com/pimbrouwers/HydrogenCSS/blob/master/h-grid-units.min.css" target="_blank">grid units file</a>.</p>
-
-        <!-- TYPE -->
-        <br><hr><br>
-        <h2 class="heading" id="typography">Typograph</h2>
-        <h1>h1 Heading</h1>
-        <h2>h2 Heading</h2>
-        <h3>h3 Heading</h3>
-        <h4>h4 Heading</h4><br>
-        <h2>Paragraph</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum. Quisque dictum consectetur pharetra. Morbi rhoncus mi nisl, in fringilla nunc dictum id. Nunc condimentum aliquam semper. Aliquam sit amet scelerisque urna. Integer vitae laoreet leo. Proin auctor, tellus at dignissim vehicula, mauris arcu luctus velit, eu ullamcorper erat nisi pulvinar lectus. Morbi et rhoncus nisl. Curabitur sagittis orci nec felis pharetra porta. Aenean interdum id mi eget fringilla. Quisque volutpat in sem at cursus.</p>
-
-        <!-- LISTS -->
-        <br><hr><br>
-        <h2 class="heading" id="lists">Lists</h2>
-        <h3>Unordered</h3>
-        <ul class="h-list">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
-        </ul><br>
-        <h3>Ordered</h3>
-        <ol class="h-list">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
-        </ol>
-<xmp><!-- Unordered -->
-<ul class="h-list">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-
-<!-- Ordered -->
-<ol class="h-list"> 
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ol>
-</xmp>
-
-        <!-- MENUS-->
-        <br><hr><br>
-        <h2 class="heading" id="menus">Menus</h2>
-        <ul class="h-menu">
-          <li>
-            <span>Vertical Menu</span>
-          </li>
-          <li>
-            <a href="#">some link</a>
-          </li>
-          <li>
-              <a href="#">some link</a>
-            </li>
-            <li>
-              <a href="#">some link</a>
-            </li>
-          </ul><br>
+    <title>Hydrogen - Light as air.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Hydrogen is a modern CSS foundation, that's ridiculously tiny, responsive and unopinionated.">
+    <link href="hydrogen.min.css" rel="stylesheet" type="text/css">
+    <link href="hydrogen.grid-units.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            color: #262626;
+        }
         
-        <ul class="h-menu h-menu-inline">
-          <li>
-            <span>Horizontal Menu</span>
-          </li>
-          <li>
-            <a href="#">some link</a>
-          </li>
-          <li>
-            <a href="#">some link</a>
-          </li>
-          <li>
-            <a href="#">some link</a>
-          </li>
-        </ul>
-<xmp><!-- Vertical -->
-<ul class="h-menu">
-  <li>
-    <span>Heading</span>
-  </li>
-  <li>
-    <a href="#">Item 1</a>
-  </li>
-  <li>
-    <a href="#">Item 2</a>
-  </li>
-  <li>
-    <a href="#">Item 3</a>
-  </li>
-</ul>
+        hr {
+            background: #ddd;
+            border: 0;
+            height: 1px;
+        }
+        
+        #splash,
+        #benefits {
+            background: #f7f7f7;
+        }
+        
+        #splash {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 9em;
+            text-align: center;
+        }
+        
+        #splash h2 {
+            font-weight: 200;
+            margin: .5em 0 1em;
+        }
+        
+        #splash a {
+            background: #0080ff;
+            color: #fff;
+        }
+        
+        #hydrogen {
+            border: 2px solid #262626;
+            padding: 3em;
+            position: relative;
+        }
+        
+        #hydrogen span {
+            display: block;
+        }
+        
+        #hydrogen .atomic,
+        #hydrogen .weight {
+            position: absolute;
+            top: .5em;
+        }
+        
+        #hydrogen .atomic {
+            left: .5em;
+        }
+        
+        #hydrogen .weight {
+            right: .5em;
+        }
+        
+        #hydrogen .symbol {
+            font-size: 5em;
+            font-weight: 700;
+        }
+        
+        #benefits {
+            margin: 0 0 2.5em;
+            padding: 5em 0 2.5em;
+            text-align: center;
+        }
+        
+        #benefits h4 {
+            color: #0080ff;
+        }
+        
+        nav.links {
+            text-align: center;
+        }
+        
+        nav.links ul li a:hover {
+            background: #fff;
+            color: #0080ff;
+        }
+        
+        .heading {
+            color: #0080ff;
+            margin: .25em 0;
+        }
+        
+        .table-wrap {
+            overflow-x: scroll;
+        }
+        
+        footer {
+            color: #808080;
+            padding: 2em 0;
+        }
+        
+        p a {
+            text-decoration: underline;
+            ;
+        }
+        
+        p a:hover {
+            color: #0080ff
+        }
+        
+        footer>.h-c {
+            border-top: 1px solid #ddd;
+        }
+        
+        xmp {
+            background: #ededed;
+            border: 1px solid #ddd;
+            padding: 1em;
+        }
+        
+        @media screen and (min-width: 30em) {
+            nav.links {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
 
-<!-- Horizontal -->
-<ul class="h-menu 
-           h-menu-inline">
-  <li>
-    <span>Heading</span>
-  </li>
-  <li>
-    <a href="#">Item 1</a>
-  </li>
-  <li>
-    <a href="#">Item 2</a>
-  </li>
-  <li>
-    <a href="#">Item 3</a>
-  </li>
-</ul>
-</xmp>
-
-        <!-- TABLES -->
-        <br><hr><br>
-        <h2 class="heading" id="tables">Tables</h2>
-        <div class="table-wrap">
-          <table class="h-tbl">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
-                <td>sit</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>amet</td>
-                <td>consectetur</td>
-                <td>adipiscing</td>
-                <td>elit</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>Integer</td>
-                <td>nec</td>
-                <td>odio</td>
-                <td>Praesent</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>libero</td>
-                <td>Sed</td>
-                <td>cursus</td>
-                <td>ante</td>
-              </tr>
-              <tr>
-                <td>1,004</td>
-                <td>dapibus</td>
-                <td>diam</td>
-                <td>Sed</td>
-                <td>nisi</td>
-              </tr>
-              <tr>
-                <td>1,005</td>
-                <td>Nulla</td>
-                <td>quis</td>
-                <td>sem</td>
-                <td>at</td>
-              </tr>
-              <tr>
-                <td>1,006</td>
-                <td>nibh</td>
-                <td>elementum</td>
-                <td>imperdiet</td>
-                <td>Duis</td>
-              </tr>
-              <tr>
-                <td>1,007</td>
-                <td>sagittis</td>
-                <td>ipsum</td>
-                <td>Praesent</td>
-                <td>mauris</td>
-              </tr>
-              <tr>
-                <td>1,008</td>
-                <td>Fusce</td>
-                <td>nec</td>
-                <td>tellus</td>
-                <td>sed</td>
-              </tr>
-              <tr>
-                <td>1,009</td>
-                <td>augue</td>
-                <td>semper</td>
-                <td>porta</td>
-                <td>Mauris</td>
-              </tr>
-              <tr>
-                <td>1,010</td>
-                <td>massa</td>
-                <td>Vestibulum</td>
-                <td>lacinia</td>
-                <td>arcu</td>
-              </tr>
-              <tr>
-                <td>1,011</td>
-                <td>eget</td>
-                <td>nulla</td>
-                <td>Class</td>
-                <td>aptent</td>
-              </tr>
-              <tr>
-                <td>1,012</td>
-                <td>taciti</td>
-                <td>sociosqu</td>
-                <td>ad</td>
-                <td>litora</td>
-              </tr>
-              <tr>
-                <td>1,013</td>
-                <td>torquent</td>
-                <td>per</td>
-                <td>conubia</td>
-                <td>nostra</td>
-              </tr>
-              <tr>
-                <td>1,014</td>
-                <td>per</td>
-                <td>inceptos</td>
-                <td>himenaeos</td>
-                <td>Curabitur</td>
-              </tr>
-              <tr>
-                <td>1,015</td>
-                <td>sodales</td>
-                <td>ligula</td>
-                <td>in</td>
-                <td>libero</td>
-              </tr>
-            </tbody>
-          </table>
+<body>
+    <!-- Splash -->
+    <section id="splash">
+        <div id="hydrogen">
+            <span class="atomic">1</span>
+            <span class="weight">1.0079</span>
+            <span class="symbol">H</span>
+            <span class="name">Hydrogen</span>
         </div>
-<xmp><table class="h-tbl">
-  <thead>
-    ...
-  </thead>
-  <tbody>
-    ...
-  </tbody> 
-</table>
-</xmp>
+        <h2>Light as air.</h2>
+        <a href="https://github.com/pimbrouwers/HydrogenCSS" target="_blank" class="h-btn">GitHub</a>
+    </section>
 
-        <!-- BUTTONS-->
-        <br><hr><br>
-        <h2 class="heading" id="buttons">Buttons</h2>
-        <button class="h-btn">A Button</button> <button class="h-btn" disabled>A Disabled Button</button>
-<xmp><button class="h-btn">
+    <!-- Benefits -->
+    <section id="benefits">
+        <div class="h-g">
+            <div class="h-u h-u-md-4-12">
+                <h4>Ultra-lightweight</h4>
+                <p>Weighs in at just ~2.3KB (937 bytes gzipped).</p><br>
+            </div>
+            <div class="h-u h-u-md-4-12">
+                <h4>Unopinionated</h4>
+                <p>Serves as the perfect base, leaving the decisions up to you.</p><br>
+            </div>
+            <div class="h-u h-u-md-4-12">
+                <h4>Responsive</h4>
+                <p>Infinitely flexible grid, and optional preset responsive grid units.</p><br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Docs -->
+    <div class="docs h-c">
+        <div class="h-g">
+            <!-- Nav -->
+            <div class="h-u h-u-sm-3-12 h-u-md-2-12">
+                <nav class="links">
+                    <ul class="h-menu">
+                        <li>
+                            <a href="#install">Install</a>
+                        </li>
+                        <li>
+                            <a href="#typography">Typography</a>
+                        </li>
+                        <li>
+                            <a href="#lists">Lists</a>
+                        </li>
+                        <li>
+                            <a href="#menus">Menus</a>
+                        </li>
+                        <li>
+                            <a href="#tables">Tables</a>
+                        </li>
+                        <li>
+                            <a href="#buttons">Buttons</a>
+                        </li>
+                        <li>
+                            <a href="#forms">Forms</a>
+                        </li>
+                        <li>
+                            <a href="#grid">Grid</a>
+                        </li>
+                        <li>
+                            <a href="#grid-units">Grid Units</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Content -->
+            <div class="h-u h-u-sm-9-12 h-u-md-10-12">
+                <!-- Installation -->
+                <h2 class="heading" id="install">Install</h2>
+                <p>Hydrogen is a modern CSS foundation. I avoid the use of the word "framework", because it implies bias. Hydrogen is entriely <em>unbiased</em> and offering up only a starting point with the <strong>intention</strong> of being overriden.
+                    It is small enough to be justifiable on small projects, and customizable enough to use on large applications.</p><br>
+                <p>To get started simply download the <a href="https://raw.githubusercontent.com/pimbrouwers/HydrogenCSS/master/hydrogen.min.css" target="_blank">base CSS file</a> (~2.3KB / 937 bytes gzipped) and the optional <a href="https://github.com/pimbrouwers/HydrogenCSS/blob/master/h-grid-units.min.css"
+                        target="_blank">grid units file</a>.</p>
+
+                <!-- TYPE -->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="typography">Typograph</h2>
+                <h1>h1 Heading</h1>
+                <h2>h2 Heading</h2>
+                <h3>h3 Heading</h3>
+                <h4>h4 Heading</h4><br>
+                <h2>Paragraph</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                    nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum. Quisque dictum consectetur pharetra. Morbi rhoncus mi nisl, in fringilla nunc dictum id. Nunc condimentum aliquam semper. Aliquam sit amet scelerisque urna.
+                    Integer vitae laoreet leo. Proin auctor, tellus at dignissim vehicula, mauris arcu luctus velit, eu ullamcorper erat nisi pulvinar lectus. Morbi et rhoncus nisl. Curabitur sagittis orci nec felis pharetra porta. Aenean interdum id
+                    mi eget fringilla. Quisque volutpat in sem at cursus.</p>
+
+                <!-- LISTS -->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="lists">Lists</h2>
+                <h3>Unordered</h3>
+                <ul class="h-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                        nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                        nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                        nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
+                </ul><br>
+                <h3>Ordered</h3>
+                <ol class="h-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                        nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                        nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nisl nec urna faucibus posuere quis a est. Vestibulum eu dui augue. Sed interdum erat neque, a finibus risus condimentum scelerisque. Aliquam ac dui leo. Praesent pellentesque
+                        nunc ut orci egestas venenatis. Nunc nec mi vitae nibh ullamcorper fermentum.</li>
+                </ol>
+                <xmp>
+                    <!-- Unordered -->
+                    <ul class="h-list">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+
+                    <!-- Ordered -->
+                    <ol class="h-list">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </xmp>
+
+                <!-- MENUS-->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="menus">Menus</h2>
+                <ul class="h-menu">
+                    <li>
+                        <span>Vertical Menu</span>
+                    </li>
+                    <li>
+                        <a href="#">some link</a>
+                    </li>
+                    <li>
+                        <a href="#">some link</a>
+                    </li>
+                    <li>
+                        <a href="#">some link</a>
+                    </li>
+                </ul><br>
+
+                <ul class="h-menu h-menu-inline">
+                    <li>
+                        <span>Horizontal Menu</span>
+                    </li>
+                    <li>
+                        <a href="#">some link</a>
+                    </li>
+                    <li>
+                        <a href="#">some link</a>
+                    </li>
+                    <li>
+                        <a href="#">some link</a>
+                    </li>
+                </ul>
+                <xmp>
+                    <!-- Vertical -->
+                    <ul class="h-menu">
+                        <li>
+                            <span>Heading</span>
+                        </li>
+                        <li>
+                            <a href="#">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 3</a>
+                        </li>
+                    </ul>
+
+                    <!-- Horizontal -->
+                    <ul class="h-menu 
+           h-menu-inline">
+                        <li>
+                            <span>Heading</span>
+                        </li>
+                        <li>
+                            <a href="#">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 3</a>
+                        </li>
+                    </ul>
+                </xmp>
+
+                <!-- TABLES -->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="tables">Tables</h2>
+                <div class="table-wrap">
+                    <table class="h-tbl">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                                <th>Header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1,001</td>
+                                <td>Lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                                <td>sit</td>
+                            </tr>
+                            <tr>
+                                <td>1,002</td>
+                                <td>amet</td>
+                                <td>consectetur</td>
+                                <td>adipiscing</td>
+                                <td>elit</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>Integer</td>
+                                <td>nec</td>
+                                <td>odio</td>
+                                <td>Praesent</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>libero</td>
+                                <td>Sed</td>
+                                <td>cursus</td>
+                                <td>ante</td>
+                            </tr>
+                            <tr>
+                                <td>1,004</td>
+                                <td>dapibus</td>
+                                <td>diam</td>
+                                <td>Sed</td>
+                                <td>nisi</td>
+                            </tr>
+                            <tr>
+                                <td>1,005</td>
+                                <td>Nulla</td>
+                                <td>quis</td>
+                                <td>sem</td>
+                                <td>at</td>
+                            </tr>
+                            <tr>
+                                <td>1,006</td>
+                                <td>nibh</td>
+                                <td>elementum</td>
+                                <td>imperdiet</td>
+                                <td>Duis</td>
+                            </tr>
+                            <tr>
+                                <td>1,007</td>
+                                <td>sagittis</td>
+                                <td>ipsum</td>
+                                <td>Praesent</td>
+                                <td>mauris</td>
+                            </tr>
+                            <tr>
+                                <td>1,008</td>
+                                <td>Fusce</td>
+                                <td>nec</td>
+                                <td>tellus</td>
+                                <td>sed</td>
+                            </tr>
+                            <tr>
+                                <td>1,009</td>
+                                <td>augue</td>
+                                <td>semper</td>
+                                <td>porta</td>
+                                <td>Mauris</td>
+                            </tr>
+                            <tr>
+                                <td>1,010</td>
+                                <td>massa</td>
+                                <td>Vestibulum</td>
+                                <td>lacinia</td>
+                                <td>arcu</td>
+                            </tr>
+                            <tr>
+                                <td>1,011</td>
+                                <td>eget</td>
+                                <td>nulla</td>
+                                <td>Class</td>
+                                <td>aptent</td>
+                            </tr>
+                            <tr>
+                                <td>1,012</td>
+                                <td>taciti</td>
+                                <td>sociosqu</td>
+                                <td>ad</td>
+                                <td>litora</td>
+                            </tr>
+                            <tr>
+                                <td>1,013</td>
+                                <td>torquent</td>
+                                <td>per</td>
+                                <td>conubia</td>
+                                <td>nostra</td>
+                            </tr>
+                            <tr>
+                                <td>1,014</td>
+                                <td>per</td>
+                                <td>inceptos</td>
+                                <td>himenaeos</td>
+                                <td>Curabitur</td>
+                            </tr>
+                            <tr>
+                                <td>1,015</td>
+                                <td>sodales</td>
+                                <td>ligula</td>
+                                <td>in</td>
+                                <td>libero</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <xmp>
+                    <table class="h-tbl">
+                        <thead>
+                            ...
+                        </thead>
+                        <tbody>
+                            ...
+                        </tbody>
+                    </table>
+                </xmp>
+
+                <!-- BUTTONS-->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="buttons">Buttons</h2>
+                <button class="h-btn">A Button</button> <button class="h-btn" disabled>A Disabled Button</button>
+                <xmp><button class="h-btn">
   A Button
-</button> 
-<button class="h-btn" disabled>
+</button>
+                    <button class="h-btn" disabled>
   A Disabled Button
 </button>
-</xmp>
-        <!-- FORMS-->
-        <br><hr><br>
-        <h2 class="heading" id="forms">Forms</h2>
-        <form class="h-form">
-          <fieldset>
-            <legend>A compact inline form</legend> <input placeholder="Email" type="email"> <input placeholder="Password" required="" type="password"> <input disabled placeholder="Disabled" type="text"> <label for="state">State</label> <select class="pure-input-1-2" id="state">
+                </xmp>
+                <!-- FORMS-->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="forms">Forms</h2>
+                <form class="h-form">
+                    <fieldset>
+                        <legend>A compact inline form</legend> <input placeholder="Email" type="email"> <input placeholder="Password" required="" type="password"> <input disabled placeholder="Disabled" type="text"> <label for="state">State</label> <select class="pure-input-1-2"
+                            id="state">
               <option>
                 AL
               </option>
@@ -474,11 +501,12 @@
                 IL
               </option>
             </select> <label for="remember"><input id="remember" type="checkbox"> Remember me</label> <button class="h-btn h-btn-primary" type="submit">Sign in</button>
-          </fieldset>
-        </form><br>
-        <form class="h-form h-form-stack">
-          <fieldset>
-            <legend>A stacked form</legend> <input placeholder="Email" type="email"> <input placeholder="Password" required="" type="password"> <input disabled placeholder="Disabled" type="text"> <label for="state">State</label> <select class="pure-input-1-2" id="state">
+                    </fieldset>
+                </form><br>
+                <form class="h-form h-form-stack">
+                    <fieldset>
+                        <legend>A stacked form</legend> <input placeholder="Email" type="email"> <input placeholder="Password" required="" type="password"> <input disabled placeholder="Disabled" type="text"> <label for="state">State</label> <select class="pure-input-1-2"
+                            id="state">
               <option>
                 AL
               </option>
@@ -489,105 +517,109 @@
                 IL
               </option>
             </select> <label for="remember"><input id="remember" type="checkbox"> Remember me</label> <button class="h-btn h-btn-primary" type="submit">Sign in</button>
-          </fieldset>
-        </form>
-<xmp><!-- Inline -->
-<form class="h-form">
-  ...
-</form>
+                    </fieldset>
+                </form>
+                <xmp>
+                    <!-- Inline -->
+                    <form class="h-form">
+                        ...
+                    </form>
 
-<!-- Stacked -->
-<form class="h-form h-form-stack">
-  ...
-</form>
-</xmp>
-        
-        <!-- GRID -->
-        <br><hr><br>
-        <h2 class="heading" id="grid">Grid</h2>
-        <P>By default, Hydrogen's grid provides you with the foundation to build fully custom, responsive grids. Enabling you to truly program for the responsive medium that is the web.</p>
-<xmp><style>
-  @media screen and (min-width: 50em){
-    .content {
-      width: 75%;    
-    }
+                    <!-- Stacked -->
+                    <form class="h-form h-form-stack">
+                        ...
+                    </form>
+                </xmp>
 
-    .sidebar {
-      width: 25%;
-    }
-  }
+                <!-- GRID -->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="grid">Grid</h2>
+                <P>By default, Hydrogen's grid provides you with the foundation to build fully custom, responsive grids. Enabling you to truly program for the responsive medium that is the web.</p>
+                <xmp>
+                    <style>
+                        @media screen and (min-width: 50em) {
+                            .content {
+                                width: 75%;
+                            }
+                            .sidebar {
+                                width: 25%;
+                            }
+                        }
+                    </style>
 
-</style>
+                    <div class="h-g">
+                        <div class="h-u content">
+                            ...
+                        </div>
+                        <div class="h-u sidebar">
+                            ...
+                        </div>
+                    </div>
+                </xmp>
+                <!-- GRID UNITS -->
+                <br>
+                <hr><br>
+                <h2 class="heading" id="grid-units">Grid Units</h2>
+                <p>To make development faster, Hydrogen ships with a separate grid-units file. That offers preset grid units on the 5<sup>th</sup> & 24<sup>th</sup> scale, with triggers at the follow breakpoints:</p>
+                <br>
+                <div class="table-wrap">
+                    <table class="h-tbl">
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Media Query</th>
+                                <th>Applies</th>
+                            </tr>
+                        </thead>
 
-<div class="h-g">
-  <div class="h-u content">
-    ...
-  </div>
-  <div class="h-u sidebar">
-    ...
-  </div>
-</div>
-</xmp>  
-      <!-- GRID UNITS -->
-      <br><hr><br>
-      <h2 class="heading" id="grid-units">Grid Units</h2>
-      <p>To make development faster, Hydrogen ships with a separate grid-units file. That offers preset grid units on the 12<sup>th</sup> scale, with triggers at the follow breakpoints:</p>
-      <br>
-      <div class="table-wrap">
-        <table class="h-tbl">
-          <thead>
-            <tr>
-              <th>Key</th>
-              <th>Media Query</th>
-              <th>Applies</th>
-            </tr>
-          </thead>
+                        <tbody>
+                            <tr>
+                                <td>sm</td>
+                                <td><pre>@media screen and min-width(30em) { ... }</pre></td>
+                                <td>&ge;480px</td>
+                            </tr>
 
-          <tbody>
-            <tr>
-              <td>sm</td>
-              <td><pre>@media screen and min-width(30em) { ... }</pre></td>
-              <td>&ge;480px</td>
-            </tr>
+                            <tr>
+                                <td>md</td>
+                                <td><pre>@media screen and min-width(48em) { ... }</pre></td>
+                                <td>&ge;768px</td>
+                            </tr>
 
-            <tr>
-              <td>md</td>
-              <td><pre>@media screen and min-width(48em) { ... }</pre></td>
-              <td>&ge;768px</td>
-            </tr>
+                            <tr>
+                                <td>lg</td>
+                                <td><pre>@media screen and min-width(64em) { ... }</pre></td>
+                                <td>&ge;1024px</td>
+                            </tr>
 
-            <tr>
-              <td>lg</td>
-              <td><pre>@media screen and min-width(64em) { ... }</pre></td>
-              <td>&ge;1024px</td>
-            </tr>
+                            <tr>
+                                <td>sm</td>
+                                <td><pre>@media screen and min-width(76.5em) { ... }</pre></td>
+                                <td>&ge;1224px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <xmp>
+                    <div class="h-g">
+                        <div class="h-u h-u-sm-3-4">
+                            ...
+                        </div>
+                        <div class="h-u h-u-sm-1-4">
+                            ...
+                        </div>
+                    </div>
+                </xmp>
+                <br />
+                <br />
 
-            <tr>
-              <td>sm</td>
-              <td><pre>@media screen and min-width(76.5em) { ... }</pre></td>
-              <td>&ge;1224px</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-<xmp><div class="h-g">
-  <div class="h-u h-u-sm-8-12">
-    ...
-  </div>
-  <div class="h-u h-u-sm-4-12">
-    ...
-  </div>
-</div>
-</xmp>
-        <br />
-        <br />
-
-        <footer>
-          <p>Built with &hearts; by <a href="https://github.com/pimbrouwers">Pim Brouwers</a> in Toronto, ON. Licensed under <a href="https://github.com/pimbrouwers/HydrogenCSS/blob/master/LICENSE">MIT</a>.</p>
-        </footer>
-      </div>
+                <footer>
+                    <p>Built with &hearts; by <a href="https://github.com/pimbrouwers">Pim Brouwers</a> in Toronto, ON. Licensed under <a href="https://github.com/pimbrouwers/HydrogenCSS/blob/master/LICENSE">MIT</a>.</p>
+                </footer>
+            </div>
+        </div>
     </div>
-  </div>
 
 </body>
+
 </html>

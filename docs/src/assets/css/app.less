@@ -1,0 +1,133 @@
+@import "../../../../src/hydrogen.less";
+@import "../../../../src/hydrogen.grid-units.less";
+
+@blue: #0080ff;
+@raw: #fff;
+@medium-rare: #f7f7f7;
+@rare: #ddd;
+@medium: #808080;
+@well-done: #262626;
+
+body {
+  color: @well-done;
+}
+
+hr {
+  background: @rare;
+  border: 0;
+  height: 1px;
+}
+
+#splash,
+#benefits {
+  background: @medium-rare;
+}
+
+#splash {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 9em;
+  text-align: center;
+
+  h2 {
+    font-weight: 200;
+    margin: .5em 0 1em;
+  }
+
+  a {
+    background: @blue;
+    color: @raw;
+  }
+}
+
+#hydrogen {
+  border: 2px solid @well-done;
+  padding: 3em;
+  position: relative;
+
+  span {
+    display: block;
+  }
+
+  .atomic,
+  .weight {
+    position: absolute;
+    top: .5em;
+  }
+
+  .atomic {
+    left: .5em;
+  }
+
+  .weight {
+    right: .5em;
+  }
+
+  .symbol {
+    font-size: 5em;
+    font-weight: 700;
+  }
+}
+
+#benefits {
+  margin: 0 0 2.5em;
+  padding: 5em 0 2.5em;
+  text-align: center;
+
+  h4 {
+    color: @blue;
+  }
+}
+
+nav.links {
+  text-align: center;
+
+  ul {
+    li {
+      a:hover {
+        background: @raw;
+        color: @blue;
+      }
+    }
+  }
+}
+
+.heading {
+  color: @blue;
+  margin: .25em 0;
+}
+
+.table-wrap {
+  overflow-x: scroll;
+}
+
+footer {
+  color: @medium;
+  padding: 2em 0;
+}
+
+p a {
+  text-decoration: underline;
+  
+  &:hover {
+    color: @blue
+  }
+}
+
+footer>.h-c {
+  border-top: 1px solid @rare;
+}
+
+xmp {
+  background: #ededed;
+  border: 1px solid @rare;
+  padding: 1em;
+}
+
+@media screen and (min-width: 30em) {
+  nav.links {
+      text-align: left;
+  }
+}

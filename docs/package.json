@@ -1,0 +1,28 @@
+{
+    "name": "hydrogen-docs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "ditt0": "latest",
+        "ditt0-json": "latest",
+        "ditt0-hbs": "latest",
+        "http-server": "latest",
+        "less": "latest",
+        "less-plugin-clean-css": "latest",
+        "watch": "latest"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "less": "lessc --clean-css ./src/assets/css/app.less ./build/app.css",
+
+        "server": "http-server ./build",
+
+        "watch:less": "watch \"npm run less\" ./src/assets/css --wait=1 --ignoreDotFiles --ignoreUnreadable",
+        "watch:pages": "watch \"npm run pages\" ./src/pages --wait=1 --ignoreDotFiles --ignoreUnreadable",
+        "watch:templates": "watch \"npm run pages\" ./src/templates --wait=1 --ignoreDotFiles --ignoreUnreadable",
+        "watch": "npm run watch:less & npm run watch:pages & npm run watch:templates",
+
+        "develop": "npm run server & npm run watch"
+    }
+}
