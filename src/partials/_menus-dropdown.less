@@ -1,0 +1,44 @@
+.h-menu-children {
+  position: relative;
+
+  & > .h-menu-link {
+    &:after {
+      padding-left: @base;
+      content: "\25B8"; //right arrow
+    }
+  }
+}
+
+.h-menu-child {
+  display: none;
+  position: absolute;
+  left: 100%; //vertical support by default
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 3;  
+
+  .h-menu-item {
+    display: block;
+  }
+}
+
+.h-menu-inline {
+  .h-menu-child {
+    left: 0;
+    top: auto;
+    width: inherit;
+  }
+
+  .h-menu-has-children  > .h-menu-link {
+    &:after {
+      content: "\25BE"; //down arrow
+    }
+  }
+}
+
+.h-menu-hover:hover, .h-menu-active {
+  > .h-menu-child {
+    display: block;
+  }
+}

@@ -1,29 +1,30 @@
-.h-menu {
+.h-menu, .h-menu .h-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
-	li {
-		& > span, & > a {
-			display: inline-block;
-			margin: 0;
-			padding: @btn-padding @btn-padding * 2;
-		}
-
-		& > span {
-			font-weight: bold;
-		}
-
-		&:first-child {
-			> span {
-				padding-left: 0;
-			}
-		}
-		
+.h-menu-item {
+	& > .h-menu-heading, & > .h-menu-link {
+		display: inline-block;
+		margin: 0;
+		padding: @btn-padding @btn-padding * 2;
 	}
 
-	&.h-menu-inline {
-		li {
-			display: inline-block;
+	& > .h-menu-heading {
+		font-weight: bold;
+	}
 
-			
+	&:first-child {
+		> .h-menu-heading {
+			padding-left: 0;
 		}
+	}
+	
+}
+
+&.h-menu-inline {
+	.h-menu-item {
+		display: inline-block;		
 	}
 }
