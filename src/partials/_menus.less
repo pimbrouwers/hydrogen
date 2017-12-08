@@ -5,25 +5,26 @@
 }
 
 .h-menu-item {
-	& > .h-menu-heading, & > .h-menu-link {
+	.h-menu-heading, .h-menu-link {
 		display: inline-block;
 		margin: 0;
 		padding: @btn-padding @btn-padding * 2;
 	}
 
-	& > .h-menu-heading {
+	.h-menu-heading {
 		font-weight: bold;
 	}
 
-	&:first-child {
-		> .h-menu-heading {
-			padding-left: 0;
-		}
+	.h-menu-link {
+		&:hover {
+			background-color: @base-color;
+		}	
 	}
-	
 }
 
 &.h-menu-inline {
+	white-space: nowrap;
+	
 	.h-menu-item {
 		display: inline-block;		
 	}

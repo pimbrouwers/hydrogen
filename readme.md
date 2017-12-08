@@ -44,29 +44,32 @@ To get started:
 ```html
 <!-- Vertical -->
 <ul class="h-menu">
-    <li><span>Heading</span></li>
-    <li>
-        <a href="#">Item 1</a>
+    <li class="h-menu-item">
+        <span class="h-menu-heading">Heading</span>
     </li>
-    <li>
-        <a href="#">Item 2</a>
+    <li class="h-menu-item">
+        <a class="h-menu-link" href="#">Item 1</a>
     </li>
-    <li>
-        <a href="#">Item 3</a>
+    <li class="h-menu-item">
+        <a class="h-menu-link" href="#">Item 2</a>
+    </li>
+    <li class="h-menu-item">
+        <a class="h-menu-link" href="#">Item 3</a>
     </li>
 </ul>
 
 <!-- Horizontal -->
 <ul class="h-menu h-menu-inline">
-    <li><span>Heading</span></li>
-    <li>
-        <a href="#">Item 1</a>
+    <li class="h-menu-item">
+        <span class="h-menu-heading">Heading</span></li>
+    <li class="h-menu-item">
+        <a class="h-menu-link" href="#">Item 1</a>
     </li>
-    <li>
-        <a href="#">Item 2</a>
+    <li class="h-menu-item">
+        <a class="h-menu-link" href="#">Item 2</a>
     </li>
-    <li>
-        <a href="#">Item 3</a>
+    <li class="h-menu-item">
+        <a class="h-menu-link" href="#">Item 3</a>
     </li>
 </ul>
 ```
