@@ -1,29 +1,33 @@
-.h-menu, .h-menu .h-menu {
+/*=============================
+  Menus
+=============================*/
+.h-menu-heading, .h-menu-link {
+	color: @menu-color;
+	display: block;
+	margin: 0;
+	padding: @menu-item-padding;
+}
+
+.h-menu-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.h-menu-item {
-	.h-menu-heading, .h-menu-link {
-		display: inline-block;
-		margin: 0;
-		padding: @btn-padding @btn-padding * 2;
-	}
+.h-menu-link {
+	text-decoration: none;
 
-	.h-menu-heading {
-		font-weight: bold;
-	}
-
-	.h-menu-link {
-		&:hover {
-			background-color: @base-color;
-		}	
-	}
+	&:hover {
+		background-color: @menu-link-hover;
+	}	
 }
 
-&.h-menu-inline {
+.h-menu-inline {
 	white-space: nowrap;
+
+	.h-menu-heading, .h-menu-list, .h-menu-link{
+		display: inline-block;
+	}
 	
 	.h-menu-item {
 		display: inline-block;		

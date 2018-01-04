@@ -1,0 +1,38 @@
+@import "partials/_variables.less";
+@import "mixins/_grid-utils.less";
+
+/*=============================
+  Grid Utils
+=============================*/
+
+/*
+push & pull
+*/
+div[class*="-push-"], div[class*="-pull-"]{
+	position: relative;
+}
+
+/*
+primary grid (default: 24th scale)
+*/
+.grid-utils(@grid-prefix, @grid-units);
+
+@media only screen and (min-width: @sm-break)
+{
+	.grid-utils(@grid-prefix-sm, @grid-units);
+}
+
+@media only screen and (min-width: @md-break)
+{
+	.grid-utils(@grid-prefix-md, @grid-units);
+}
+
+@media only screen and (min-width: @lg-break)
+{
+	.grid-utils(@grid-prefix-lg, @grid-units);
+}
+
+@media only screen and (min-width: @xl-break)
+{
+	.grid-utils(@grid-prefix-xl, @grid-units);
+}

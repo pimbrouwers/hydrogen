@@ -1,3 +1,6 @@
+/*=============================
+  Forms
+=============================*/
 .h-form {
 	fieldset {
 		border: 0;
@@ -11,6 +14,10 @@
 		margin: @form-legend-spacing 0;
 		padding: @form-legend-spacing 0;		
 		width: 100%;
+	}
+
+	label {
+		margin: @form-label-margin 0;
 	}
 
 	input,
@@ -41,18 +48,19 @@
 	{
 		margin: 3px 3px 3px 4px;
 	}
+}
 
-	&.h-form-stack {
-		input,
-		select, 
-		textarea,
-		label {
-			display: block;			
-		}
+.h-form-stack {
+	input,
+	select, 
+	textarea,
+	label {
+		display: block;			
+	}
 
-		input[type=checkbox]
-		{
-			display: inline-block;
-		}
+	input[type=checkbox]
+	{
+		display: inline-block;
 	}
 }
+

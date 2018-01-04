@@ -1,29 +1,48 @@
+//base
+@base: .75em;
+
+//  Breakpoints
 @sm-break: 30em;
 @md-break: 48em;
 @lg-break: 64em;
-@xl-break: 76.5em;
+@xl-break: 80em;
 
-@base: .75em;
-@base-color: #ddd;
+//  Tints
+@raw: rgb(255, 255, 255);
+@rare: rgb(204, 204, 204);
+@medium-rare: rgb(153, 153, 153);
+@medium: rgb(102, 102, 102);
+@medium-well: rgb(51, 51, 51);
+@well-done: rgb(0,0,0);
 
-@grid-prefix: ~"h-u";
-@grid-prefix-sm: ~"h-u-sm";
-@grid-prefix-md: ~"h-u-md";
-@grid-prefix-lg: ~"h-u-lg";
-@grid-prefix-xl: ~"h-u-xl";
-@grid-units: 24;
-@grid-units-secondary: 5;
-@grid-gutter: @base * 2;
-
-@tbl-border-color: @base-color;
-@tbl-gutter: @base;
-
-@btn-color: @base-color;
+//  Buttons
+@btn-color: @rare;
 @btn-padding: @base;
 
-@form-legend-border: @base-color;
+//  Forms
+@form-legend-border: @rare;
 @form-legend-spacing: @base;
+@form-label-margin: @base;
 @form-stack-spacing: @base;
-
 @input-padding: @base;
-@input-border: @base-color;
+@input-border: @rare;
+
+//  Grid
+@grid-prefix: ~"";
+@grid-prefix-sm: ~"-sm";
+@grid-prefix-md: ~"-md";
+@grid-prefix-lg: ~"-lg";
+@grid-prefix-xl: ~"-xl";
+@grid-units: 12;
+
+//  Lists
+@list-margin-left: @base * 2;
+
+//  Menus
+@menu-color: @medium-well;
+@menu-item-padding: @btn-padding;
+@menu-link-hover: @rare;
+
+//  Tables
+@tbl-border-color: @rare;
+@tbl-gutter: @base;

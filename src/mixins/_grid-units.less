@@ -1,0 +1,10 @@
+.grid-unit(@prefix, @n, @i) {	
+  .h-u@{prefix}-@{i}-@{n} {
+    width: round(@i * 100% / @n, 3);
+  }	
+}
+
+.grid-units(@prefix, @n, @i: 1) when (@i =< @n) {  
+	.grid-unit(@prefix, @n, @i);
+  .grid-units(@prefix, @n, (@i + 1));
+}

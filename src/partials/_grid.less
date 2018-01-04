@@ -1,37 +1,12 @@
-/*grid container*/
-.h-c {
-	margin: 0 auto;
-	max-width: @xl-break;
-	padding: 0 @grid-gutter;
-
-	& > .h-g {
-		margin:  0 -@grid-gutter; 
-	}
-
-	.h-g {
-		.h-g { 
-			margin:  0 -@grid-gutter; 
-		}
-	}
-
-	.h-u      { 
-		padding: 0 @grid-gutter; 
-	}
-}
-
-/*grid wrapper*/
+/*=============================
+  Grid
+=============================*/
 .h-g {
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    
+	.h-flex;
+	.h-flex-row;
+	.h-flex-wrap;
+	.h-flex-align-start;
+            
 	&:after {
 	    content: "";
 	    clear: both;
@@ -43,6 +18,27 @@
 	.h-u {
 	    float: left;
 	    width: 100%;
-	    box-sizing: border-box;
 	}
+}
+
+.grid-units(@grid-prefix, @grid-units);
+
+@media only screen and (min-width: @sm-break)
+{
+	.grid-units(@grid-prefix-sm, @grid-units);
+}
+
+@media only screen and (min-width: @md-break)
+{
+	.grid-units(@grid-prefix-md, @grid-units);
+}
+
+@media only screen and (min-width: @lg-break)
+{
+	.grid-units(@grid-prefix-lg, @grid-units);
+}
+
+@media only screen and (min-width: @xl-break)
+{
+	.grid-units(@grid-prefix-xl, @grid-units);
 }

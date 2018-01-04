@@ -1,61 +1,91 @@
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+/*=============================
+  Base
+=============================*/
+html {    
     font-family: sans-serif;
 }
 body {
+    background: @raw;
+    color: @medium-well;
     margin: 0;
     font: 16px/1 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+blockquote,
+figure,
+ol,
+ul,
+table {
+    margin: 0 0 @base 0;
+}
+
 p,
 blockquote,
 figure,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
     line-height: 1.5;
 }
+
+blockquote,
+figure,
+ol,
+ul {
+    padding: 0;    
+}
+
 main {
     display: block;
 }
-strong {
-    font-weight: bold;
-}
-a,
-button {
-    color: inherit;
-    transition: background .3s;
-}
-a {
-    text-decoration: none;
-}
-button {
-    overflow: visible;
-    border: 0;
-    font: inherit;
-    -webkit-font-smoothing: inherit;
-    letter-spacing: inherit;
-    background: none;
-    cursor: pointer;
-}
+
 ::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
+
 :focus {
     outline: 0;
 }
+
 img {
-    max-width: 100%;
-    height: auto;
     border: 0;
 }

@@ -1,6 +1,6 @@
 {
     "name": "hydrogen-css",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "description": "Hydrogen is a modern, ultra-lightweight & responsive CSS foundation. ",
     "author": "Pim Brouwers",
     "license": "MIT",
@@ -15,14 +15,23 @@
         "ncp": "latest",
         "rimraf": "latest"
     },
+    "files": [
+        "hydrogen.min.css",
+        "hydrogen.css",
+        "hydrogen.grid-utils.min.css",
+        "hydrogen.grid-utils.css"
+    ],
     "scripts": {
         "clean": "rimraf ./dist/*.css",
+        
         "less-base": "lessc ./src/hydrogen.less ./dist/hydrogen.css",
-        "less-gridunits": "lessc ./src/hydrogen.grid-units.less ./dist/hydrogen.grid-units.css",
+        "less-gridutils": "lessc ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.css",
+
         "less-base:min": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
-        "less-gridunits:min": "lessc --clean-css ./src/hydrogen.grid-units.less ./dist/hydrogen.grid-units.min.css",
-        "less": "npm run less-base & npm run less-gridunits & npm run less-base:min & npm run less-gridunits:min",
-        "start": "npm run less"
+        "less-gridutils:min": "lessc --clean-css ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.min.css",
+
+        "less": "npm run less-base & npm run less-gridutils & npm run less-base:min & npm run less-gridutils:min",
+        "start": "npm run clean && npm run less"
     },
     "keywords": [
         "css",

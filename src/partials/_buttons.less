@@ -1,18 +1,29 @@
+/*=============================
+  Buttons
+=============================*/
 .h-btn {
-	background: @btn-color;
+	background: none;
+	border: 1px solid @btn-color;
+	color: @medium-well;
+	font: inherit;
 	display: inline-block;
 	padding: @btn-padding @btn-padding * 2;
+	text-decoration: none;
 
 	&:hover {
-		background: darken(@btn-color, 10%);
+		border-color: darken(@btn-color, 10%);
 	}
 
 	&[disabled] {
 		opacity: .4;
 		cursor: not-allowed;
+	}
+}
 
-		&:hover {
-			background: @btn-color;
-		}
+.h-btn-fill {
+	background: @btn-color;
+
+	&:hover {
+		background: darken(@btn-color, 10%);
 	}
 }

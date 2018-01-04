@@ -1,13 +1,98 @@
+/*=============================
+  Utils
+=============================*/
+.h-flex {
+  display: flex;
+}
+.h-flex-column {
+  flex-direction: column;
+}
+.h-flex-row {
+  flex-direction: row;
+}
+.h-flex-nowrap {
+  flex-wrap: nowrap;
+}
+.h-flex-wrap {
+  flex-wrap: wrap;
+}
+.h-flex-align-center {
+  align-items: center;
+}
+.h-flex-align-end {
+  align-items: flex-end;
+}
+.h-flex-align-start {
+  align-items: flex-start;
+}
+.h-flex-justify-center {
+  justify-content: center;
+}
+.h-flex-justify-end {
+  justify-content: flex-end;
+}
+.h-flex-justify-start {
+  justify-content: flex-start;
+}
+.h-text-center {
+  text-align: center;
+}
+.h-text-left {
+  text-align: left;
+}
+.h-text-right {
+  text-align: right;
+}
+.h-full-height {
+  min-height: 100vh;
+}
+.h-full-width {
+  width: 100%;
+}
+.h-full {
+  min-height: 100vh;
+  width: 100%;
+}
+/*=============================
+  Base
+=============================*/
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   font-family: sans-serif;
 }
 body {
+  background: #ffffff;
+  color: #333333;
   margin: 0;
   font: 16px/1 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2.25em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1em;
 }
 h1,
 h2,
@@ -19,33 +104,25 @@ p,
 blockquote,
 figure,
 ol,
+ul,
+table {
+  margin: 0 0 0.75em 0;
+}
+p,
+blockquote,
+figure,
+ol,
 ul {
-  margin: 0;
-  padding: 0;
   line-height: 1.5;
+}
+blockquote,
+figure,
+ol,
+ul {
+  padding: 0;
 }
 main {
   display: block;
-}
-strong {
-  font-weight: bold;
-}
-a,
-button {
-  color: inherit;
-  transition: background .3s;
-}
-a {
-  text-decoration: none;
-}
-button {
-  overflow: visible;
-  border: 0;
-  font: inherit;
-  -webkit-font-smoothing: inherit;
-  letter-spacing: inherit;
-  background: none;
-  cursor: pointer;
 }
 ::-moz-focus-inner {
   padding: 0;
@@ -55,37 +132,95 @@ button {
   outline: 0;
 }
 img {
-  max-width: 100%;
-  height: auto;
   border: 0;
 }
-/*grid container*/
-.h-c {
-  margin: 0 auto;
-  max-width: 76.5em;
-  padding: 0 1.5em;
+/*=============================
+  Buttons
+=============================*/
+.h-btn {
+  background: none;
+  border: 1px solid #cccccc;
+  color: #333333;
+  font: inherit;
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
 }
-.h-c > .h-g {
-  margin: 0 -1.5em;
+.h-btn:hover {
+  border-color: #b3b3b3;
 }
-.h-c .h-g .h-g {
-  margin: 0 -1.5em;
+.h-btn[disabled] {
+  opacity: .4;
+  cursor: not-allowed;
 }
-.h-c .h-u {
-  padding: 0 1.5em;
+.h-btn-fill {
+  background: #cccccc;
 }
-/*grid wrapper*/
+.h-btn-fill:hover {
+  background: #b3b3b3;
+}
+/*=============================
+  Forms
+=============================*/
+.h-form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.h-form legend {
+  border-bottom: 1px solid #cccccc;
+  display: block;
+  margin: 0.75em 0;
+  padding: 0.75em 0;
+  width: 100%;
+}
+.h-form label {
+  margin: 0.75em 0;
+}
+.h-form input,
+.h-form select,
+.h-form textarea {
+  border: 1px solid #cccccc;
+  font: inherit;
+  margin: 0 0 0.75em;
+  padding: 0.75em;
+}
+.h-form input:focus,
+.h-form select:focus,
+.h-form textarea:focus {
+  border-color: #b3b3b3;
+}
+.h-form input[required]:focus,
+.h-form select[required]:focus,
+.h-form textarea[required]:focus {
+  border-color: red;
+}
+.h-form input[disabled],
+.h-form select[disabled],
+.h-form textarea[disabled] {
+  background: #dedede;
+  cursor: not-allowed;
+}
+.h-form input[type=checkbox] {
+  margin: 3px 3px 3px 4px;
+}
+.h-form-stack input,
+.h-form-stack select,
+.h-form-stack textarea,
+.h-form-stack label {
+  display: block;
+}
+.h-form-stack input[type=checkbox] {
+  display: inline-block;
+}
+/*=============================
+  Grid
+=============================*/
 .h-g {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 .h-g:after {
   content: "";
@@ -96,128 +231,244 @@ img {
   .h-u {
     float: left;
     width: 100%;
-    box-sizing: border-box;
   }
 }
-.h-btn {
-  background: #ddd;
-  display: inline-block;
-  padding: 0.75em 1.5em;
+.h-u-1-12 {
+  width: 8.333%;
 }
-.h-btn:hover {
-  background: #c4c4c4;
+.h-u-2-12 {
+  width: 16.667%;
 }
-.h-btn[disabled] {
-  opacity: .4;
-  cursor: not-allowed;
+.h-u-3-12 {
+  width: 25%;
 }
-.h-btn[disabled]:hover {
-  background: #ddd;
+.h-u-4-12 {
+  width: 33.333%;
 }
-.h-form fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+.h-u-5-12 {
+  width: 41.667%;
 }
-.h-form legend {
-  border-bottom: 1px solid #ddd;
-  display: block;
-  margin: 0.75em 0;
-  padding: 0.75em 0;
+.h-u-6-12 {
+  width: 50%;
+}
+.h-u-7-12 {
+  width: 58.333%;
+}
+.h-u-8-12 {
+  width: 66.667%;
+}
+.h-u-9-12 {
+  width: 75%;
+}
+.h-u-10-12 {
+  width: 83.333%;
+}
+.h-u-11-12 {
+  width: 91.667%;
+}
+.h-u-12-12 {
   width: 100%;
 }
-.h-form input,
-.h-form select,
-.h-form textarea {
-  border: 1px solid #ddd;
-  font: inherit;
-  margin: 0 0 0.75em;
-  padding: 0.75em;
+@media only screen and (min-width: 30em) {
+  .h-u-sm-1-12 {
+    width: 8.333%;
+  }
+  .h-u-sm-2-12 {
+    width: 16.667%;
+  }
+  .h-u-sm-3-12 {
+    width: 25%;
+  }
+  .h-u-sm-4-12 {
+    width: 33.333%;
+  }
+  .h-u-sm-5-12 {
+    width: 41.667%;
+  }
+  .h-u-sm-6-12 {
+    width: 50%;
+  }
+  .h-u-sm-7-12 {
+    width: 58.333%;
+  }
+  .h-u-sm-8-12 {
+    width: 66.667%;
+  }
+  .h-u-sm-9-12 {
+    width: 75%;
+  }
+  .h-u-sm-10-12 {
+    width: 83.333%;
+  }
+  .h-u-sm-11-12 {
+    width: 91.667%;
+  }
+  .h-u-sm-12-12 {
+    width: 100%;
+  }
 }
-.h-form input:focus,
-.h-form select:focus,
-.h-form textarea:focus {
-  border-color: #c4c4c4;
+@media only screen and (min-width: 48em) {
+  .h-u-md-1-12 {
+    width: 8.333%;
+  }
+  .h-u-md-2-12 {
+    width: 16.667%;
+  }
+  .h-u-md-3-12 {
+    width: 25%;
+  }
+  .h-u-md-4-12 {
+    width: 33.333%;
+  }
+  .h-u-md-5-12 {
+    width: 41.667%;
+  }
+  .h-u-md-6-12 {
+    width: 50%;
+  }
+  .h-u-md-7-12 {
+    width: 58.333%;
+  }
+  .h-u-md-8-12 {
+    width: 66.667%;
+  }
+  .h-u-md-9-12 {
+    width: 75%;
+  }
+  .h-u-md-10-12 {
+    width: 83.333%;
+  }
+  .h-u-md-11-12 {
+    width: 91.667%;
+  }
+  .h-u-md-12-12 {
+    width: 100%;
+  }
 }
-.h-form input[required]:focus,
-.h-form select[required]:focus,
-.h-form textarea[required]:focus {
-  border-color: red;
+@media only screen and (min-width: 64em) {
+  .h-u-lg-1-12 {
+    width: 8.333%;
+  }
+  .h-u-lg-2-12 {
+    width: 16.667%;
+  }
+  .h-u-lg-3-12 {
+    width: 25%;
+  }
+  .h-u-lg-4-12 {
+    width: 33.333%;
+  }
+  .h-u-lg-5-12 {
+    width: 41.667%;
+  }
+  .h-u-lg-6-12 {
+    width: 50%;
+  }
+  .h-u-lg-7-12 {
+    width: 58.333%;
+  }
+  .h-u-lg-8-12 {
+    width: 66.667%;
+  }
+  .h-u-lg-9-12 {
+    width: 75%;
+  }
+  .h-u-lg-10-12 {
+    width: 83.333%;
+  }
+  .h-u-lg-11-12 {
+    width: 91.667%;
+  }
+  .h-u-lg-12-12 {
+    width: 100%;
+  }
 }
-.h-form input[disabled],
-.h-form select[disabled],
-.h-form textarea[disabled] {
-  background: #efefef;
-  cursor: not-allowed;
+@media only screen and (min-width: 80em) {
+  .h-u-xl-1-12 {
+    width: 8.333%;
+  }
+  .h-u-xl-2-12 {
+    width: 16.667%;
+  }
+  .h-u-xl-3-12 {
+    width: 25%;
+  }
+  .h-u-xl-4-12 {
+    width: 33.333%;
+  }
+  .h-u-xl-5-12 {
+    width: 41.667%;
+  }
+  .h-u-xl-6-12 {
+    width: 50%;
+  }
+  .h-u-xl-7-12 {
+    width: 58.333%;
+  }
+  .h-u-xl-8-12 {
+    width: 66.667%;
+  }
+  .h-u-xl-9-12 {
+    width: 75%;
+  }
+  .h-u-xl-10-12 {
+    width: 83.333%;
+  }
+  .h-u-xl-11-12 {
+    width: 91.667%;
+  }
+  .h-u-xl-12-12 {
+    width: 100%;
+  }
 }
-.h-form input[type=checkbox] {
-  margin: 3px 3px 3px 4px;
+/*=============================
+  Base
+=============================*/
+.h-img {
+  height: 0;
+  max-width: 100%;
 }
-.h-form.h-form-stack input,
-.h-form.h-form-stack select,
-.h-form.h-form-stack textarea,
-.h-form.h-form-stack label {
-  display: block;
-}
-.h-form.h-form-stack input[type=checkbox] {
-  display: inline-block;
-}
-.h-list li {
-  display: list-item;
+/*=============================
+  Lists
+=============================*/
+.h-list .h-list-item {
   margin-left: 1.5em;
 }
-.h-menu,
-.h-menu .h-menu {
+/*=============================
+  Menus
+=============================*/
+.h-menu-heading,
+.h-menu-link {
+  color: #333333;
+  display: block;
+  margin: 0;
+  padding: 0.75em;
+}
+.h-menu-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.h-menu-item > .h-menu-heading,
-.h-menu-item > .h-menu-link {
+.h-menu-link {
+  text-decoration: none;
+}
+.h-menu-link:hover {
+  background-color: #cccccc;
+}
+.h-menu-inline {
+  white-space: nowrap;
+}
+.h-menu-inline .h-menu-heading,
+.h-menu-inline .h-menu-list,
+.h-menu-inline .h-menu-link {
   display: inline-block;
-  margin: 0;
-  padding: 0.75em 1.5em;
-}
-.h-menu-item > .h-menu-heading {
-  font-weight: bold;
-}
-.h-menu-item:first-child > .h-menu-heading {
-  padding-left: 0;
 }
 .h-menu-inline .h-menu-item {
   display: inline-block;
 }
-.h-menu-children {
-  position: relative;
-}
-.h-menu-children > .h-menu-link:after {
-  padding-left: 0.75em;
-  content: "\25B8";
-}
-.h-menu-child {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 3;
-}
-.h-menu-child .h-menu-item {
-  display: block;
-}
-.h-menu-inline .h-menu-child {
-  left: 0;
-  top: auto;
-  width: inherit;
-}
-.h-menu-inline .h-menu-has-children > .h-menu-link:after {
-  content: "\25BE";
-}
-.h-menu-hover:hover > .h-menu-child,
-.h-menu-active > .h-menu-child {
-  display: block;
-}
+/*=============================
+  Tables
+=============================*/
 .h-tbl {
   border-collapse: collapse;
   width: 100%;
@@ -228,9 +479,9 @@ img {
   padding: 0.75em;
 }
 .h-tbl th {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #cccccc;
   text-align: left;
 }
 .h-tbl td {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #d9d9d9;
 }
