@@ -7,7 +7,7 @@ Hydrogen is entriely _unbiased_ and offering up only a starting point with the *
 To get started:
 
 - `npm install --save hydrogen-css`
-- Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css"/>`
+- Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.min.css"/>` and `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>` for the grid-utils dependency.
 
 
 ## Typography
