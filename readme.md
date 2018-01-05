@@ -341,7 +341,7 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 
 ## Customize
 
-Hydrogen is very easy to customize. Simply clone the source from https://github.com/pimbrouwers/HydrogenCSS, navigate to the project route & run `npm install` and modify the contents of the `_variables.less` file. Once finished, run the build process by navigating to the project root and running `npm start`. 
+Hydrogen is very easy to customize. Simply clone the source from https://github.com/pimbrouwers/hydrogen, navigate to the project route & run `npm install` and modify the contents of the `_variables.less` file. Once finished, run the build process by navigating to the project root and running `npm start`. 
 
 Below are the options available:
 
@@ -396,4 +396,4 @@ Below are the options available:
 @tbl-gutter: @base;
 ```
 
-Built with ♥ by [Pim Brouwers](https://github.com/pimbrouwers) in Toronto, ON. Licensed under [MIT](https://github.com/pimbrouwers/HydrogenCSS/blob/master/LICENSE).
+Built with ♥ by [Pim Brouwers](https://github.com/pimbrouwers) in Toronto, ON. Licensed under [MIT](https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE).
