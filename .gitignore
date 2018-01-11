@@ -2,11 +2,4 @@
 *.log
 node_modules
 *.node
-components
-coverage
-*.orig
-.idea
-sandbox
-test/out-fixtures/*
-test/watch-*.txt
-gulp.1
+*.code-workspace
