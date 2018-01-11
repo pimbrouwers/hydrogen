@@ -355,13 +355,13 @@ General set of useful utility classes for common css tasks.
 - `.h-text-left`
 - `.h-text-right`
 
-## Size
+### Size
 
 - `.h-full-height` (sets height: 100vh)
 - `.h-full-width` (sets width: 100%)
 - `.h-full` (apply both `.h-full-height` and `.h-full-width`)
 
-## Flexbox
+### Flexbox
 
 - `.h-flex` (sets display: flex)
 - `.h-flex-column` (sets flex-direction: column)
