@@ -10,6 +10,12 @@ To get started:
 - Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.min.css"/>` and `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>` for the grid-utils dependency.
 
 
+## Reset
+
+Hydrogen includes a minimal css reset (inspired by Eric Meyer's reset.css) to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings etc. 
+
+Explicit font sizes for headings to ensure consistent rendering. For example, without explicit font sizes, the user agent stylesheet will apply differing sizes to headings within a `<section>...</section>`.
+
 ## Typography
 
 ```html
@@ -338,6 +344,36 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 	<div class="h-u h-u-xl-12-12">h-u-xl-12-12</div>
 </div>
 ```
+
+## Utils
+
+General set of useful utility classes for common css tasks.
+
+### Text Alignment
+
+- `.h-text-center`
+- `.h-text-left`
+- `.h-text-right`
+
+## Size
+
+- `.h-full-height` (sets height: 100vh)
+- `.h-full-width` (sets width: 100%)
+- `.h-full` (apply both `.h-full-height` and `.h-full-width`)
+
+## Flexbox
+
+- `.h-flex` (sets display: flex)
+- `.h-flex-column` (sets flex-direction: column)
+- `.h-flex-row` (sets flex-direction: row)
+- `.h-flex-nowrap` (sets flex-wrap: nowrap)
+- `.h-flex-wrap` (sets flex-wrap: wrap)
+- `.h-flex-align-center` (sets align-items: center)
+- `.h-flex-align-end` (sets align-items: flex-end)
+- `.h-flex-align-start` (sets align-items: flex-start)
+- `.h-flex-justify-center` (sets justify-content: center)
+- `.h-flex-justify-end` (sets justify-content: flex-end)
+- `.h-flex-justify-start` (sets justify-content: flex-start)
 
 ## Customize
 
