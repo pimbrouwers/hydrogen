@@ -1,41 +1,42 @@
 {
-    "name": "hydrogen-css",
-    "version": "1.1.2",
-    "description": "Hydrogen is a modern, ultra-lightweight & responsive CSS foundation. ",
-    "author": "Pim Brouwers",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/pimbrouwers/HydrogenCSS/issues"
-    },
-    "homepage": "https://github.com/pimbrouwers/HydrogenCSS#readme",
-    "dependencies": {},
-    "devDependencies": {
-        "less": "latest",
-        "less-plugin-clean-css": "latest",
-        "ncp": "latest",
-        "rimraf": "latest"
-    },
-    "files": [
-        "dist/"
-    ],
-    "scripts": {
-        "clean": "rimraf ./dist/*.css",
-        
-        "less-base": "lessc ./src/hydrogen.less ./dist/hydrogen.css",
-        "less-gridutils": "lessc ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.css",
+  "name": "hydrogen-css",
+  "version": "1.1.3",
+  "description": "Hydrogen is a modern, ultra-lightweight & responsive CSS foundation. ",
+  "author": "Pim Brouwers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pimbrouwers/HydrogenCSS/issues"
+  },
+  "homepage": "https://github.com/pimbrouwers/HydrogenCSS#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "less": "latest",
+    "less-plugin-clean-css": "latest",
+    "ncp": "latest",
+    "rimraf": "latest"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist/*.css",
 
-        "less-base:min": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
-        "less-gridutils:min": "lessc --clean-css ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.min.css",
+    "less-base": "lessc ./src/hydrogen.less ./dist/hydrogen.css",
+    "less-gridutils": "lessc ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.css",
 
-        "less": "npm run less-base & npm run less-gridutils & npm run less-base:min & npm run less-gridutils:min",
-        "start": "npm run clean && npm run less"
-    },
-    "keywords": [
-        "css",
-        "lightweight css",
-        "ultra-lightweight css",
-        "pure css",
-        "yui pure css",
-        "responsive framework"
-    ]
+    "less-base:min": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
+    "less-gridutils:min": "lessc --clean-css ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.min.css",
+
+    "less": "npm run less-base & npm run less-gridutils & npm run less-base:min & npm run less-gridutils:min",
+    "start": "npm run clean && npm run less"
+  },
+  "keywords": [
+    "css",
+    "lightweight css",
+    "ultra-lightweight css",
+    "pure css",
+    "yui pure css",
+    "responsive framework"
+  ]
 }
