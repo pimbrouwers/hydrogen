@@ -77,22 +77,22 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 h5 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 h6 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 h1,
 h2,
@@ -269,7 +269,7 @@ img {
 .h-u-12-12 {
   width: 100%;
 }
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 30rem) {
   .h-u-sm-1-12 {
     width: 8.333%;
   }
@@ -307,7 +307,7 @@ img {
     width: 100%;
   }
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48rem) {
   .h-u-md-1-12 {
     width: 8.333%;
   }
@@ -345,7 +345,7 @@ img {
     width: 100%;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64rem) {
   .h-u-lg-1-12 {
     width: 8.333%;
   }
@@ -383,7 +383,7 @@ img {
     width: 100%;
   }
 }
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 80rem) {
   .h-u-xl-1-12 {
     width: 8.333%;
   }
@@ -454,9 +454,6 @@ img {
 }
 .h-menu-link:hover {
   background-color: #cccccc;
-}
-.h-menu-inline {
-  white-space: nowrap;
 }
 .h-menu-inline .h-menu-heading,
 .h-menu-inline .h-menu-list,

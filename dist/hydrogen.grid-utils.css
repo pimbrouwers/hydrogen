@@ -4,13 +4,10 @@
 /*
 push & pull
 */
-div[class*="-push-"],
-div[class*="-pull-"] {
+div[class*="-l-"],
+div[class*="-r-"] {
   position: relative;
 }
-/*
-primary grid (default: 24th scale)
-*/
 .h-u-l-1-12 {
   left: 8.333%;
 }
@@ -113,7 +110,7 @@ primary grid (default: 24th scale)
 .h-u-r-12-12 {
   right: 100%;
 }
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 30rem) {
   .h-u-sm-l-1-12 {
     left: 8.333%;
   }
@@ -217,7 +214,7 @@ primary grid (default: 24th scale)
     right: 100%;
   }
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48rem) {
   .h-u-md-l-1-12 {
     left: 8.333%;
   }
@@ -321,7 +318,7 @@ primary grid (default: 24th scale)
     right: 100%;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64rem) {
   .h-u-lg-l-1-12 {
     left: 8.333%;
   }
@@ -425,7 +422,7 @@ primary grid (default: 24th scale)
     right: 100%;
   }
 }
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 80rem) {
   .h-u-xl-l-1-12 {
     left: 8.333%;
   }
