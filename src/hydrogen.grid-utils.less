@@ -8,13 +8,10 @@
 /*
 push & pull
 */
-div[class*="-push-"], div[class*="-pull-"]{
+div[class*="-l-"], div[class*="-r-"]{
 	position: relative;
 }
 
-/*
-primary grid (default: 24th scale)
-*/
 .grid-utils(@grid-prefix, @grid-units);
 
 @media only screen and (min-width: @sm-break)
