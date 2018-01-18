@@ -1,3 +1,11 @@
+/*!*
+ * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
+ * Copyright 22018 Pim Brouwers
+ * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
+ */
+/*=============================
+  Alerts
+=============================*/
 .h-alert {
   background: #dedede;
   border: 1px solid #cccccc;
@@ -12,6 +20,9 @@
   top: 0.75rem;
   right: 0.75rem;
 }
+/*=============================
+  Button Groups
+=============================*/
 .h-btn-group {
   overflow: hidden;
 }
@@ -23,6 +34,9 @@
 .h-btn-group .h-btn:first-child {
   border-left: 1px solid #cccccc;
 }
+/*=============================
+  Cards
+=============================*/
 .h-card {
   border: 1px solid #cccccc;
   margin: 0 0 1rem 0;
