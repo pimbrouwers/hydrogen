@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Components - Hydrogen Test</title>
+  <link rel="stylesheet" href="../dist/hydrogen.css">
+  <link rel="stylesheet" href="../dist/hydrogen.components.css">
+  <style>
+    .stage {
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 3rem 0;
+    }
+
+    .section-title {
+      border-bottom: 1px solid #a1a1a1;
+      margin: 0 0 .5em;
+      padding: 0 0 .25em;
+    }
+
+    .grid .h-u,
+    .grid-units .h-u {
+      padding: .5em;
+      margin: 0 0 .5em;
+    }
+
+    .grid .h-u:nth-child(even),
+    .grid-units .h-u:nth-child(even) {
+      background: #ccc;
+    }
+
+    .grid .h-u:nth-child(odd),
+    .grid-units .h-u:nth-child(odd) {
+      background: #a1a1a1;
+    }
+  </style>
+</head>
+
+<body class="stage">
+
+  <!-- alerts -->
+  <div class="section alerts">
+    <h1 class="section-title">
+      Alerts
+    </h1>
+
+    <div class="h-alert">
+      I'm a test alert!
+    </div>
+
+    <div class="h-alert">
+      I'm a test alert with a close!
+
+      <span class="h-alert-close">&times;</span>
+    </div>
+  </div>
+
+  <!-- cards -->
+  <div class="section cards">
+    <h1 class="section-title">
+      Cards
+    </h1>
+  
+    <div class="h-card h-text-center">
+      <div class="h-card-header">
+        Header
+      </div>
+      <div class="h-card-body">
+         I'm a test card!
+      </div>
+      <div class="h-card-footer">
+        Footer
+      </div>
+    </div>  
+  </div>
+
+  <!-- button groups -->
+  <div class="section button-groups">
+    <h1 class="section-title">
+      Button Groups
+    </h1>
+  
+    <div class="h-btn-group">
+      <button class="h-btn">Button 1</button>
+      <button class="h-btn">Button 2</button>
+      <button class="h-btn">Button 3</button>
+      <button class="h-btn">Button 4</button>
+    </div>
+    
+    <br />
+    
+    <div class="h-btn-group">
+      <button class="h-btn h-btn-fill">Button 1</button>
+      <button class="h-btn h-btn-fill">Button 2</button>
+      <button class="h-btn h-btn-fill">Button 3</button>
+      <button class="h-btn h-btn-fill">Button 4</button>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+</body>
+
+</html>

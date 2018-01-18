@@ -1,5 +1,5 @@
 //base
-@base: .75em;
+@base: .75rem;
 
 //  Breakpoints
 @sm-break: 30rem;
@@ -15,8 +15,13 @@
 @medium-well: rgb(51, 51, 51);
 @well-done: rgb(0,0,0);
 
+// reset
+@body-color: @medium-well;
+@font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 //  Buttons
-@btn-color: @rare;
+@btn-border: @rare;
+@btn-color: @body-color;
 @btn-padding: @base;
 
 //  Forms
@@ -24,7 +29,7 @@
 @form-legend-spacing: @base;
 @form-label-margin: @base;
 @form-stack-spacing: @base;
-@input-padding: @base;
+@input-padding: @base * .85;
 @input-border: @rare;
 
 //  Grid

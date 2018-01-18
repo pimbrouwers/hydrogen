@@ -17,7 +17,16 @@
 	}
 
 	label {
-		margin: @form-label-margin 0;
+		margin: 0 0 @form-label-margin;
+	}
+
+	input,
+	textarea {
+		padding: @input-padding;
+	}
+
+	select {
+		padding: @input-padding * .95 @input-padding;
 	}
 
 	input,
@@ -25,8 +34,7 @@
 	textarea {
 		border: 1px solid @input-border;
 		font: inherit;
-		margin: 0 0 @form-stack-spacing;
-		padding: @input-padding;
+		margin: 0 0 @form-stack-spacing;		
 
 		&:focus {
 			border-color: darken(@input-border, 10%);

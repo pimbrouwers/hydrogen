@@ -6,9 +6,9 @@ html {
 }
 body {
     background: @raw;
-    color: @medium-well;
+    color: @body-color;
     margin: 0;
-    font: 16px/1 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font: 16px/1 @font-family;
 }
 
 * {
@@ -55,7 +55,7 @@ figure,
 ol,
 ul,
 table {
-    margin: 0 0 @base 0;
+    margin: 0 0 @base / @base 0;
 }
 
 p,

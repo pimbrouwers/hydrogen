@@ -1,0 +1,43 @@
+.h-alert {
+  background: #dedede;
+  border: 1px solid #cccccc;
+  color: #333333;
+  margin: 0 0 1rem 0;
+  padding: 0.75rem;
+  position: relative;
+}
+.h-alert .h-alert-close {
+  font-weight: 600;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+.h-btn-group {
+  overflow: hidden;
+}
+.h-btn-group .h-btn {
+  display: block;
+  border-left: 0;
+  float: left;
+}
+.h-btn-group .h-btn:first-child {
+  border-left: 1px solid #cccccc;
+}
+.h-card {
+  border: 1px solid #cccccc;
+  margin: 0 0 1rem 0;
+}
+.h-card .h-card-body {
+  padding: 0.75rem;
+}
+.h-card .h-card-header,
+.h-card .h-card-footer {
+  background: #dedede;
+  padding: 0.5rem 0.75rem;
+}
+.h-card .h-card-header {
+  border-bottom: 1px solid #cccccc;
+}
+.h-card .h-card-footer {
+  border-top: 1px solid #cccccc;
+}

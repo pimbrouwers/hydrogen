@@ -3,15 +3,15 @@
 =============================*/
 .h-btn {
 	background: none;
-	border: 1px solid @btn-color;
-	color: @medium-well;
+	border: 1px solid @btn-border;
+	color: @btn-color;
 	font: inherit;
 	display: inline-block;
-	padding: @btn-padding @btn-padding * 2;
+	padding: @btn-padding;
 	text-decoration: none;
 
 	&:hover {
-		border-color: darken(@btn-color, 10%);
+		background: lighten(@btn-border, 7%);
 	}
 
 	&[disabled] {
@@ -21,9 +21,9 @@
 }
 
 .h-btn-fill {
-	background: @btn-color;
+	background: @btn-border;
 
 	&:hover {
-		background: darken(@btn-color, 10%);
+		background: darken(@btn-border, 7%);
 	}
 }

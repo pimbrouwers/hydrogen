@@ -13,7 +13,9 @@
     "less": "latest",
     "less-plugin-clean-css": "latest",
     "ncp": "latest",
-    "rimraf": "latest"
+    "npm-run-all": "latest",
+    "rimraf": "latest",
+    "watch": "latest"
   },
   "files": [
     "dist/",
@@ -22,14 +24,17 @@
   "scripts": {
     "clean": "rimraf ./dist/*.css",
 
-    "less-base": "lessc ./src/hydrogen.less ./dist/hydrogen.css",
-    "less-gridutils": "lessc ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.css",
+    "css:base": "lessc ./src/hydrogen.less ./dist/hydrogen.css",
+    "css:gridutils": "lessc ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.css",
+    "css:components": "lessc ./src/hydrogen.components.less ./dist/hydrogen.components.css",
 
-    "less-base:min": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
-    "less-gridutils:min": "lessc --clean-css ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.min.css",
+    "min:base": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css",
+    "min:gridutils": "lessc --clean-css ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.min.css",
+    "min:components": "lessc --clean-css ./src/hydrogen.components.less ./dist/hydrogen.components.min.css",
 
-    "less": "npm run less-base & npm run less-gridutils & npm run less-base:min & npm run less-gridutils:min",
-    "start": "npm run clean && npm run less"
+    "less": "npm-run-all --parallel css:* min:*",
+    "watch": "watch \"npm run less\" ./src/ --ignoreDotFiles --ignoreUnreadable",
+    "start": "npm-run-all clean less"
   },
   "keywords": [
     "css",

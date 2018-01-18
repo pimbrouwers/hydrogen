@@ -1,0 +1,21 @@
+.h-card {
+  border: 1px solid @card-border;
+  margin: 0 0 @base / @base 0;
+
+  .h-card-body {
+    padding: @card-padding;
+  }
+
+  .h-card-header, .h-card-footer {
+    background: @card-background;    
+    padding: round(@card-padding * .667, 1) @card-padding;
+  }  
+
+  .h-card-header {
+    border-bottom: 1px solid @card-border;
+  }
+
+  .h-card-footer {
+    border-top: 1px solid @card-border;
+  }
+}
