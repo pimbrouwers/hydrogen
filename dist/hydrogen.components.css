@@ -20,6 +20,16 @@
   top: 0.75rem;
   right: 0.75rem;
 }
+.h-badge {
+  border: 1px solid #cccccc;
+  color: #333333;
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+.h-badge-fill {
+  background: #cccccc;
+}
 /*=============================
   Button Groups
 =============================*/

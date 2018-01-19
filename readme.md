@@ -27,22 +27,18 @@ Explicit font sizes for headings to ensure consistent rendering. For example, wi
 
 <!-- Paragraph -->
 <p>...</p>
-```
 
-## Lists
-```html
-<!-- Unordered -->
-<ul class="h-list">
-	<li class="h-list-item">item</li>
-	<li class="h-list-item">item</li>
-	<li class="h-list-item">item</li>
+<!-- Lists -->
+<ul>
+	<li>item</li>
+	<li>item</li>
+	<li>item</li>
 </ul>
 
-<!-- Ordered --> 
-<ol class="h-list">
-	<li class="h-list-item">item</li>
-	<li class="h-list-item">item</li>
-	<li class="h-list-item">item</li>
+<ol>
+	<li>item</li>
+	<li>item</li>
+	<li>item</li>
 </ol>
 ```
 
