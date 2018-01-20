@@ -76,4 +76,17 @@
   background: #ffffff;
   color: #333333;
 }
+.h-title {
+  border-bottom: 1px solid #999999;
+  color: #333333;
+  display: block;
+  font-size: 3.75rem;
+  line-height: 1;
+  margin: 0 0 0.75rem;
+  padding: 0 0 0.75rem;
+}
+.h-subtitle {
+  color: #999999;
+  font-size: 1.875rem;
+}
 /*# sourceMappingURL=hydrogen.components.css.map */
