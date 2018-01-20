@@ -48,14 +48,35 @@
 .h-flex-justify-start {
   justify-content: flex-start;
 }
-.h-text-center {
-  text-align: center;
+.h-left {
+  float: left;
 }
-.h-text-left {
-  text-align: left;
+.h-right {
+  float: right;
 }
-.h-text-right {
-  text-align: right;
+.h-margin-top {
+  margin-top: 0.75rem;
+}
+.h-margin-right {
+  margin-right: 0.75rem;
+}
+.h-margin-bottom {
+  margin-bottom: 0.75rem;
+}
+.h-margin-left {
+  margin-left: 0.75rem;
+}
+.h-padding-top {
+  padding-top: 0.75rem;
+}
+.h-padding-right {
+  padding-right: 0.75rem;
+}
+.h-padding-bottom {
+  padding-bottom: 0.75rem;
+}
+.h-padding-left {
+  margin-left: 0.75rem;
 }
 .h-full-height {
   min-height: 100vh;
@@ -66,6 +87,15 @@
 .h-full {
   min-height: 100vh;
   width: 100%;
+}
+.h-text-center {
+  text-align: center;
+}
+.h-text-left {
+  text-align: left;
+}
+.h-text-right {
+  text-align: right;
 }
 /*=============================
   Base

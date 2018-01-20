@@ -24,7 +24,7 @@
   border: 1px solid #cccccc;
   color: #333333;
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.825rem;
   padding: 0.5rem;
 }
 .h-badge-fill {
@@ -64,5 +64,16 @@
 }
 .h-card .h-card-footer {
   border-top: 1px solid #cccccc;
+}
+.h-pill {
+  background: #666666;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 0.5em;
+  padding: 0.5em;
+}
+.h-pill-inverted {
+  background: #ffffff;
+  color: #333333;
 }
 /*# sourceMappingURL=hydrogen.components.css.map */
