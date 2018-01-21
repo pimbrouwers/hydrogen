@@ -344,38 +344,51 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 </div>
 ```
 
-## Utils
+## Utilities
 
 General set of useful utility classes for common css tasks.
 
-### Text Alignment
+### Flex
+- `.h-flex` (sets `  display: flex;`)
+- `.h-flex-column` (sets `flex-direction: column;`)
+- `.h-flex-row` (sets `flex-direction: row;`)
+- `.h-flex-nowrap` (sets `flex-wrap: nowrap;`)
+- `.h-flex-wrap` (sets `flex-wrap: wrap;`)
+- `.h-flex-align-center` (sets `align-items: center;`)
+- `.h-flex-align-end` (sets `align-items: flex-end;`)
+- `.h-flex-align-start` (sets `align-items: flex-start;`)
+- `.h-flex-align-self-center` (sets `align-self: center;`)
+- `.h-flex-align-self-end` (sets `align-self: flex-end;`)
+- `.h-flex-align-self-start` (sets `align-self: flex-start;`)
+- `.h-flex-justify-center` (sets `justify-content: center;`)
+- `.h-flex-justify-end` (sets `justify-content: flex-end;`)
+- `.h-flex-justify-start` (sets `justify-content: flex-start;`)
 
-- `.h-text-center`
-- `.h-text-left`
-- `.h-text-right`
+### Float
+- `.h-left` (sets `float: left;`)
+- `.h-right` (sets `float: right;`)
+
+### Margin
+- `.h-margin-top` (sets `margin-top: @base;`)
+- `.h-margin-right` (sets `margin-right: @base;`)
+- `.h-margin-bottom` (sets `margin-bottom: @base;`)
+- `.h-margin-left` (sets `margin-left: @base;`)
+
+### Padding
+- `.h-padding-top` (sets `padding-top: @base;`)
+- `.h-padding-right` (sets `padding-right: @base;`)
+- `.h-padding-bottom` (sets `padding-bottom: @base;`)
+- `.h-padding-left` (sets `margin-left: @base;`)
 
 ### Size
+- `.h-full-height` (sets `min-height: 100vh;`)
+- `.h-full-width` (sets `width: 100%;`)
+- `.h-full` (sets `min-height: 100vh; width: 100%;`)
 
-- `.h-full-height` (sets height: 100vh)
-- `.h-full-width` (sets width: 100%)
-- `.h-full` (apply both `.h-full-height` and `.h-full-width`)
-
-### Flexbox
-
-- `.h-flex` (sets display: flex)
-- `.h-flex-column` (sets flex-direction: column)
-- `.h-flex-row` (sets flex-direction: row)
-- `.h-flex-nowrap` (sets flex-wrap: nowrap)
-- `.h-flex-wrap` (sets flex-wrap: wrap)
-- `.h-flex-align-center` (sets align-items: center)
-- `.h-flex-align-end` (sets align-items: flex-end)
-- `.h-flex-align-start` (sets align-items: flex-start)
-- `.h-flex-align-self-center` (sets align-self: center)
-- `.h-flex-align-self-end` (sets align-self: flex-end)
-- `.h-flex-align-self-start` (sets align-self: flex-start)
-- `.h-flex-justify-center` (sets justify-content: center)
-- `.h-flex-justify-end` (sets justify-content: flex-end)
-- `.h-flex-justify-start` (sets justify-content: flex-start)
+### Text
+- `.h-text-center` (sets `text-align: center;`)
+- `.h-text-left` (sets `text-align: left;`)
+- `.h-text-right` (sets `text-align: right;`)
 
 ## Customize
 
@@ -385,7 +398,7 @@ Below are the options available:
 
 ```less
 //base
-@base: .75em;
+@base: .75rem;
 
 //  Breakpoints
 @sm-break: 30rem;
@@ -401,16 +414,22 @@ Below are the options available:
 @medium-well: rgb(51, 51, 51);
 @well-done: rgb(0,0,0);
 
+// reset
+@body-color: @medium-well;
+@font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 //  Buttons
-@btn-color: @rare;
+@btn-border: @rare;
+@btn-color: @body-color;
 @btn-padding: @base;
+@btn-fill-background: @rare;
 
 //  Forms
 @form-legend-border: @rare;
 @form-legend-spacing: @base;
-@form-label-margin: @base;
-@form-stack-spacing: @base;
-@input-padding: @base;
+@form-label-margin: round(@base * .6125, 1);
+@form-stack-spacing: round(@base * 1.3125, 1);
+@input-padding: @base * .85;
 @input-border: @rare;
 
 //  Grid
@@ -422,7 +441,7 @@ Below are the options available:
 @grid-units: 12;
 
 //  Lists
-@list-margin-left: @base * 2;
+@list-margin-left: @base * 1.5;
 
 //  Menus
 @menu-color: @medium-well;
@@ -430,7 +449,7 @@ Below are the options available:
 @menu-link-hover: @rare;
 
 //  Tables
-@tbl-border-color: @rare;
+@tbl-border-color: lighten(@rare, 7%);
 @tbl-gutter: @base;
 ```
 
