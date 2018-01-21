@@ -209,6 +209,32 @@
   background: #ffffff;
   color: #333333;
 }
+.h-switch {
+  display: inline-block;
+}
+.h-switch input {
+  display: none;
+}
+.h-switch input:checked + .h-switch-rail {
+  background: #999999;
+}
+.h-switch input:checked + .h-switch-rail > .h-switch-toggle {
+  transform: translateX(1.5rem);
+}
+.h-switch .h-switch-rail {
+  background: #cccccc;
+  display: block;
+  padding: 0.25rem;
+  transition: background 0.3125s ease-in;
+  width: 3.5rem;
+}
+.h-switch .h-switch-toggle {
+  background: #ffffff;
+  display: block;
+  height: 1.5rem;
+  transition: transform 0.3125s ease-in;
+  width: 1.5rem;
+}
 .h-title {
   border-bottom: 1px solid #999999;
   color: #333333;
