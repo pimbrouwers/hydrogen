@@ -26,11 +26,13 @@
 
     "css:base": "lessc ./src/hydrogen.less ./dist/hydrogen.css --source-map",
     "css:gridutils": "lessc ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.css --source-map",
-    "css:components": "lessc ./src/hydrogen.components.less ./dist/hydrogen.components.css --source-map",
+		"css:components": "lessc ./src/hydrogen.components.less ./dist/hydrogen.components.css --source-map",
+		"css:bundle": "lessc ./src/hydrogen.bundle.less ./dist/hydrogen.bundle.css --source-map",
 
     "min:base": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css --source-map",
     "min:gridutils": "lessc --clean-css ./src/hydrogen.grid-utils.less ./dist/hydrogen.grid-utils.min.css --source-map",
-    "min:components": "lessc --clean-css ./src/hydrogen.components.less ./dist/hydrogen.components.min.css --source-map",
+		"min:components": "lessc --clean-css ./src/hydrogen.components.less ./dist/hydrogen.components.min.css --source-map",
+		"min:bundle": "lessc --clean-css ./src/hydrogen.bundle.less ./dist/hydrogen.bundle.min.css --source-map",
 
     "less": "npm-run-all --parallel css:* min:*",
     "watch": "watch \"npm run less\" ./src/ --ignoreDotFiles --ignoreUnreadable",
