@@ -946,6 +946,18 @@ div[class*="-r-"] {
 .h-badge-fill {
   background: #cccccc;
 }
+.h-breadcrumbs {
+  font-size: 0.825rem;
+  margin: 0 0 0.75rem;
+}
+.h-breadcrumbs .h-breadcrumbs-item {
+  display: inline-block;
+  font-size: inherit;
+  margin: 0;
+}
+.h-breadcrumbs .h-breadcrumbs-spacer {
+  margin: 0 0.25rem;
+}
 /*=============================
   Button Groups
 =============================*/
