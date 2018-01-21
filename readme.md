@@ -4,11 +4,14 @@ Hydrogen is a modern CSS foundation designed for minimalists with deadlines and 
 
 Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.
 
-To get started:
+> Documentation site coming soon!
+
+## Getting Started
 
 - `npm install --save hydrogen-css`
-- Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.min.css"/>` and `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>` for the grid-utils dependency.
-
+- Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.min.css"/>` 
+	- For the grid-utils dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>`
+	- For the components dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.components.min.css"/>`
 
 ## Reset
 
