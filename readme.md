@@ -10,8 +10,8 @@ Hydrogen is entriely _unbiased_ and offering up only a starting point with the *
 
 - `npm install --save hydrogen-css`
 - Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.min.css"/>` 
-	- For the grid-utils dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>`
-	- For the components dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.components.min.css"/>`
+  - For the grid-utils dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>`
+  - For the components dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.components.min.css"/>`
 
 ## Reset
 
@@ -33,15 +33,15 @@ Explicit font sizes for headings to ensure consistent rendering. For example, wi
 
 <!-- Lists -->
 <ul>
-	<li>item</li>
-	<li>item</li>
-	<li>item</li>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
 </ul>
 
 <ol>
-	<li>item</li>
-	<li>item</li>
-	<li>item</li>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
 </ol>
 ```
 
@@ -49,74 +49,74 @@ Explicit font sizes for headings to ensure consistent rendering. For example, wi
 ```html
 <!-- Vertical -->
 <div class="h-menu">
-	<span class="h-menu-heading">DEFAULT MENU</span>
+  <span class="h-menu-heading">DEFAULT MENU</span>
 
-	<ul class="h-menu-list">
-		<li class="h-menu-item">
-			<a href="#" class="h-menu-link">Link</a>
-		</li>
-		<li class="h-menu-item">
-			<a href="#" class="h-menu-link">Link</a>
-		</li>
-		<li class="h-menu-item">
-			<a href="#" class="h-menu-link">Link</a>
-		</li>
-	</ul>
+  <ul class="h-menu-list">
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+  </ul>
 </div>
 
 <!-- Inline -->
 <div class="h-menu h-menu-inline">
-	<span class="h-menu-heading">INLINE MENU</span>
+  <span class="h-menu-heading">INLINE MENU</span>
 
-	<ul class="h-menu-list">
-		<li class="h-menu-item">
-			<a href="#" class="h-menu-link">Link</a>
-		</li>
-		<li class="h-menu-item">
-			<a href="#" class="h-menu-link">Link</a>
-		</li>
-		<li class="h-menu-item">
-			<a href="#" class="h-menu-link">Link</a>
-		</li>
-	</ul>
+  <ul class="h-menu-list">
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+  </ul>
 </div>
 ```
 
 ## Tables
 ```html
 <table class="h-tbl">
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Header</th>
-			<th>Header</th>
-			<th>Header</th>
-			<th>Header</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1,001</td>
-			<td>Lorem</td>
-			<td>ipsum</td>
-			<td>dolor</td>
-			<td>sit</td>
-		</tr>
-		<tr>
-			<td>1,002</td>
-			<td>amet</td>
-			<td>consectetur</td>
-			<td>adipiscing</td>
-			<td>elit</td>
-		</tr>
-		<tr>
-			<td>1,003</td>
-			<td>Integer</td>
-			<td>nec</td>
-			<td>odio</td>
-			<td>Praesent</td>
-		</tr>					
-	</tbody>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Header</th>
+      <th>Header</th>
+      <th>Header</th>
+      <th>Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1,001</td>
+      <td>Lorem</td>
+      <td>ipsum</td>
+      <td>dolor</td>
+      <td>sit</td>
+    </tr>
+    <tr>
+      <td>1,002</td>
+      <td>amet</td>
+      <td>consectetur</td>
+      <td>adipiscing</td>
+      <td>elit</td>
+    </tr>
+    <tr>
+      <td>1,003</td>
+      <td>Integer</td>
+      <td>nec</td>
+      <td>odio</td>
+      <td>Praesent</td>
+    </tr>         
+  </tbody>
 </table>
 ```
 
@@ -138,66 +138,66 @@ Explicit font sizes for headings to ensure consistent rendering. For example, wi
 ```html
 <!-- Inline --> 
 <form class="h-form">
-	<fieldset>
-		<legend>A compact inline form</legend> 
+  <fieldset>
+    <legend>A compact inline form</legend> 
 
-		<input type="email" placeholder="Email"> 
+    <input type="email" placeholder="Email"> 
 
-		<input type="password" placeholder="Password" required=""> 
+    <input type="password" placeholder="Password" required=""> 
 
-		<input type="text" placeholder="Disabled" disabled> 
+    <input type="text" placeholder="Disabled" disabled> 
 
-		<label for="state">State</label>
-		<select name="state">
-			<option>
-				AL
-			</option>
-			<option>
-				CA
-			</option>
-			<option>
-				IL
-			</option>
-		</select> 
+    <label for="state">State</label>
+    <select name="state">
+      <option>
+        AL
+      </option>
+      <option>
+        CA
+      </option>
+      <option>
+        IL
+      </option>
+    </select> 
 
-		<label for="remember">
-			<input id="remember" type="checkbox"> Remember me
-		</label> 
+    <label for="remember">
+      <input id="remember" type="checkbox"> Remember me
+    </label> 
 
-		<button class="h-btn h-btn-primary" type="submit">Sign in</button>
-	</fieldset>
+    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+  </fieldset>
 </form>
 
 <!-- Stacked --> 
 <form class="h-form h-form-stack">
-	<fieldset>
-		<legend>A stacked form</legend>
+  <fieldset>
+    <legend>A stacked form</legend>
 
-		<input type="email" placeholder="Email">
+    <input type="email" placeholder="Email">
 
-		<input type="password" placeholder="Password" required="">
+    <input type="password" placeholder="Password" required="">
 
-		<input type="text" placeholder="Disabled" disabled>
+    <input type="text" placeholder="Disabled" disabled>
 
-		<label for="state">State</label>
-		<select name="state">
-			<option>
-				AL
-			</option>
-			<option>
-				CA
-			</option>
-			<option>
-				IL
-			</option>
-		</select>
+    <label for="state">State</label>
+    <select name="state">
+      <option>
+        AL
+      </option>
+      <option>
+        CA
+      </option>
+      <option>
+        IL
+      </option>
+    </select>
 
-		<label for="remember">
-			<input id="remember" type="checkbox"> Remember me
-		</label>
+    <label for="remember">
+      <input id="remember" type="checkbox"> Remember me
+    </label>
 
-		<button class="h-btn h-btn-primary" type="submit">Sign in</button>
-	</fieldset>
+    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+  </fieldset>
 </form>
 ```
 
@@ -208,10 +208,10 @@ By default, Hydrogen's grid provides you with the foundation to build fully cust
 
 ```html
 <style> 
-    @media screen and (min-width: 50em){ 
-        .content { width: 75%; } 
-        .sidebar { width: 25%; } 
-    } 
+  @media screen and (min-width: 50em){ 
+    .content { width: 75%; } 
+    .sidebar { width: 25%; } 
+  } 
 </style> 
 
 <div class="h-g"> 
@@ -229,118 +229,118 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 
 ``` html
 <!-- All screens -->
-<div class="h-g">			
-	<div class="h-u h-u-1-12">h-u-1-12</div>
-	<div class="h-u h-u-11-12">h-u-11-12</div>
+<div class="h-g">     
+  <div class="h-u h-u-1-12">h-u-1-12</div>
+  <div class="h-u h-u-11-12">h-u-11-12</div>
 
-	<div class="h-u h-u-2-12">h-u-2-12</div>
-	<div class="h-u h-u-10-12">h-u-10-12</div>
+  <div class="h-u h-u-2-12">h-u-2-12</div>
+  <div class="h-u h-u-10-12">h-u-10-12</div>
 
-	<div class="h-u h-u-3-12">h-u-3-12</div>
-	<div class="h-u h-u-9-12">h-u-9-12</div>
+  <div class="h-u h-u-3-12">h-u-3-12</div>
+  <div class="h-u h-u-9-12">h-u-9-12</div>
 
-	<div class="h-u h-u-4-12">h-u-4-12</div>
-	<div class="h-u h-u-8-12">h-u-8-12</div>
+  <div class="h-u h-u-4-12">h-u-4-12</div>
+  <div class="h-u h-u-8-12">h-u-8-12</div>
 
-	<div class="h-u h-u-5-12">h-u-5-12</div>
-	<div class="h-u h-u-7-12">h-u-7-12</div>
+  <div class="h-u h-u-5-12">h-u-5-12</div>
+  <div class="h-u h-u-7-12">h-u-7-12</div>
 
-	<div class="h-u h-u-6-12">h-u-6-12</div>
-	<div class="h-u h-u-6-12">h-u-6-12</div>
+  <div class="h-u h-u-6-12">h-u-6-12</div>
+  <div class="h-u h-u-6-12">h-u-6-12</div>
 
-	<div class="h-u h-u-12-12">h-u-12-12</div>
+  <div class="h-u h-u-12-12">h-u-12-12</div>
 </div>
 
 <!-- Screen > 30em -->
 <div class="h-g">
-	<div class="h-u h-u-sm-1-12">h-u-sm-1-12</div>
-	<div class="h-u h-u-sm-11-12">h-u-sm-11-12</div>
+  <div class="h-u h-u-sm-1-12">h-u-sm-1-12</div>
+  <div class="h-u h-u-sm-11-12">h-u-sm-11-12</div>
 
-	<div class="h-u h-u-sm-2-12">h-u-sm-2-12</div>
-	<div class="h-u h-u-sm-10-12">h-u-sm-10-12</div>
+  <div class="h-u h-u-sm-2-12">h-u-sm-2-12</div>
+  <div class="h-u h-u-sm-10-12">h-u-sm-10-12</div>
 
-	<div class="h-u h-u-sm-3-12">h-u-sm-3-12</div>
-	<div class="h-u h-u-sm-9-12">h-u-sm-9-12</div>
+  <div class="h-u h-u-sm-3-12">h-u-sm-3-12</div>
+  <div class="h-u h-u-sm-9-12">h-u-sm-9-12</div>
 
-	<div class="h-u h-u-sm-4-12">h-u-sm-4-12</div>
-	<div class="h-u h-u-sm-8-12">h-u-sm-8-12</div>
+  <div class="h-u h-u-sm-4-12">h-u-sm-4-12</div>
+  <div class="h-u h-u-sm-8-12">h-u-sm-8-12</div>
 
-	<div class="h-u h-u-sm-5-12">h-u-sm-5-12</div>
-	<div class="h-u h-u-sm-7-12">h-u-sm-7-12</div>
+  <div class="h-u h-u-sm-5-12">h-u-sm-5-12</div>
+  <div class="h-u h-u-sm-7-12">h-u-sm-7-12</div>
 
-	<div class="h-u h-u-sm-6-12">h-u-sm-6-12</div>
-	<div class="h-u h-u-sm-6-12">h-u-sm-6-12</div>
+  <div class="h-u h-u-sm-6-12">h-u-sm-6-12</div>
+  <div class="h-u h-u-sm-6-12">h-u-sm-6-12</div>
 
-	<div class="h-u h-u-sm-12-12">h-u-sm-12-12</div>
+  <div class="h-u h-u-sm-12-12">h-u-sm-12-12</div>
 </div>
 
 <!-- Screen > 48em -->
 <div class="h-g">
-	<div class="h-u h-u-md-1-12">h-u-md-1-12</div>
-	<div class="h-u h-u-md-11-12">h-u-md-11-12</div>
+  <div class="h-u h-u-md-1-12">h-u-md-1-12</div>
+  <div class="h-u h-u-md-11-12">h-u-md-11-12</div>
 
-	<div class="h-u h-u-md-2-12">h-u-md-2-12</div>
-	<div class="h-u h-u-md-10-12">h-u-md-10-12</div>
+  <div class="h-u h-u-md-2-12">h-u-md-2-12</div>
+  <div class="h-u h-u-md-10-12">h-u-md-10-12</div>
 
-	<div class="h-u h-u-md-3-12">h-u-md-3-12</div>
-	<div class="h-u h-u-md-9-12">h-u-md-9-12</div>
+  <div class="h-u h-u-md-3-12">h-u-md-3-12</div>
+  <div class="h-u h-u-md-9-12">h-u-md-9-12</div>
 
-	<div class="h-u h-u-md-4-12">h-u-md-4-12</div>
-	<div class="h-u h-u-md-8-12">h-u-md-8-12</div>
+  <div class="h-u h-u-md-4-12">h-u-md-4-12</div>
+  <div class="h-u h-u-md-8-12">h-u-md-8-12</div>
 
-	<div class="h-u h-u-md-5-12">h-u-md-5-12</div>
-	<div class="h-u h-u-md-7-12">h-u-md-7-12</div>
+  <div class="h-u h-u-md-5-12">h-u-md-5-12</div>
+  <div class="h-u h-u-md-7-12">h-u-md-7-12</div>
 
-	<div class="h-u h-u-md-6-12">h-u-md-6-12</div>
-	<div class="h-u h-u-md-6-12">h-u-md-6-12</div>
+  <div class="h-u h-u-md-6-12">h-u-md-6-12</div>
+  <div class="h-u h-u-md-6-12">h-u-md-6-12</div>
 
-	<div class="h-u h-u-md-12-12">h-u-md-12-12</div>
+  <div class="h-u h-u-md-12-12">h-u-md-12-12</div>
 </div>
 
 <!-- Screen > 64em -->
 <div class="h-g">
-	<div class="h-u h-u-lg-1-12">h-u-lg-1-12</div>
-	<div class="h-u h-u-lg-11-12">h-u-lg-11-12</div>
+  <div class="h-u h-u-lg-1-12">h-u-lg-1-12</div>
+  <div class="h-u h-u-lg-11-12">h-u-lg-11-12</div>
 
-	<div class="h-u h-u-lg-2-12">h-u-lg-2-12</div>
-	<div class="h-u h-u-lg-10-12">h-u-lg-10-12</div>
+  <div class="h-u h-u-lg-2-12">h-u-lg-2-12</div>
+  <div class="h-u h-u-lg-10-12">h-u-lg-10-12</div>
 
-	<div class="h-u h-u-lg-3-12">h-u-lg-3-12</div>
-	<div class="h-u h-u-lg-9-12">h-u-lg-9-12</div>
+  <div class="h-u h-u-lg-3-12">h-u-lg-3-12</div>
+  <div class="h-u h-u-lg-9-12">h-u-lg-9-12</div>
 
-	<div class="h-u h-u-lg-4-12">h-u-lg-4-12</div>
-	<div class="h-u h-u-lg-8-12">h-u-lg-8-12</div>
+  <div class="h-u h-u-lg-4-12">h-u-lg-4-12</div>
+  <div class="h-u h-u-lg-8-12">h-u-lg-8-12</div>
 
-	<div class="h-u h-u-lg-5-12">h-u-lg-5-12</div>
-	<div class="h-u h-u-lg-7-12">h-u-lg-7-12</div>
+  <div class="h-u h-u-lg-5-12">h-u-lg-5-12</div>
+  <div class="h-u h-u-lg-7-12">h-u-lg-7-12</div>
 
-	<div class="h-u h-u-lg-6-12">h-u-lg-6-12</div>
-	<div class="h-u h-u-lg-6-12">h-u-lg-6-12</div>
+  <div class="h-u h-u-lg-6-12">h-u-lg-6-12</div>
+  <div class="h-u h-u-lg-6-12">h-u-lg-6-12</div>
 
-	<div class="h-u h-u-lg-12-12">h-u-lg-12-12</div>
+  <div class="h-u h-u-lg-12-12">h-u-lg-12-12</div>
 </div>
 
 <!-- Screen > 80em -->
 <div class="h-g">
-	<div class="h-u h-u-xl-1-12">h-u-xl-1-12</div>
-	<div class="h-u h-u-xl-11-12">h-u-xl-11-12</div>
+  <div class="h-u h-u-xl-1-12">h-u-xl-1-12</div>
+  <div class="h-u h-u-xl-11-12">h-u-xl-11-12</div>
 
-	<div class="h-u h-u-xl-2-12">h-u-xl-2-12</div>
-	<div class="h-u h-u-xl-10-12">h-u-xl-10-12</div>
+  <div class="h-u h-u-xl-2-12">h-u-xl-2-12</div>
+  <div class="h-u h-u-xl-10-12">h-u-xl-10-12</div>
 
-	<div class="h-u h-u-xl-3-12">h-u-xl-3-12</div>
-	<div class="h-u h-u-xl-9-12">h-u-xl-9-12</div>
+  <div class="h-u h-u-xl-3-12">h-u-xl-3-12</div>
+  <div class="h-u h-u-xl-9-12">h-u-xl-9-12</div>
 
-	<div class="h-u h-u-xl-4-12">h-u-xl-4-12</div>
-	<div class="h-u h-u-xl-8-12">h-u-xl-8-12</div>
+  <div class="h-u h-u-xl-4-12">h-u-xl-4-12</div>
+  <div class="h-u h-u-xl-8-12">h-u-xl-8-12</div>
 
-	<div class="h-u h-u-xl-5-12">h-u-xl-5-12</div>
-	<div class="h-u h-u-xl-7-12">h-u-xl-7-12</div>
+  <div class="h-u h-u-xl-5-12">h-u-xl-5-12</div>
+  <div class="h-u h-u-xl-7-12">h-u-xl-7-12</div>
 
-	<div class="h-u h-u-xl-6-12">h-u-xl-6-12</div>
-	<div class="h-u h-u-xl-6-12">h-u-xl-6-12</div>
+  <div class="h-u h-u-xl-6-12">h-u-xl-6-12</div>
+  <div class="h-u h-u-xl-6-12">h-u-xl-6-12</div>
 
-	<div class="h-u h-u-xl-12-12">h-u-xl-12-12</div>
+  <div class="h-u h-u-xl-12-12">h-u-xl-12-12</div>
 </div>
 ```
 
