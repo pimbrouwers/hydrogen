@@ -227,8 +227,8 @@ To make development faster, Hydrogen ships with grid-units, base on a **12th sca
 
 Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are applied to all screen sizes. Breakpoint definitions are outlined below.
 
-``` html
-<!-- All screens -->
+### All Screens
+```html
 <div class="h-g">     
   <div class="h-u h-u-1-12">h-u-1-12</div>
   <div class="h-u h-u-11-12">h-u-11-12</div>
@@ -250,8 +250,9 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 
   <div class="h-u h-u-12-12">h-u-12-12</div>
 </div>
-
-<!-- Screen > 30em -->
+```
+### Screens > 30tem
+```html
 <div class="h-g">
   <div class="h-u h-u-sm-1-12">h-u-sm-1-12</div>
   <div class="h-u h-u-sm-11-12">h-u-sm-11-12</div>
@@ -273,8 +274,9 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 
   <div class="h-u h-u-sm-12-12">h-u-sm-12-12</div>
 </div>
-
-<!-- Screen > 48em -->
+```
+### Screens > 48rem
+```html
 <div class="h-g">
   <div class="h-u h-u-md-1-12">h-u-md-1-12</div>
   <div class="h-u h-u-md-11-12">h-u-md-11-12</div>
@@ -296,8 +298,10 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 
   <div class="h-u h-u-md-12-12">h-u-md-12-12</div>
 </div>
+```
 
-<!-- Screen > 64em -->
+### Screens > 64rem
+```html
 <div class="h-g">
   <div class="h-u h-u-lg-1-12">h-u-lg-1-12</div>
   <div class="h-u h-u-lg-11-12">h-u-lg-11-12</div>
@@ -319,8 +323,10 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
 
   <div class="h-u h-u-lg-12-12">h-u-lg-12-12</div>
 </div>
+```
 
-<!-- Screen > 80em -->
+### Screens > 80rem
+```html
 <div class="h-g">
   <div class="h-u h-u-xl-1-12">h-u-xl-1-12</div>
   <div class="h-u h-u-xl-11-12">h-u-xl-11-12</div>
