@@ -251,7 +251,7 @@ Grid units used without a media prefix (i.e. "-sm", "-md", "-lg", "-xl") are app
   <div class="h-u h-u-12-12">h-u-12-12</div>
 </div>
 ```
-### Screens > 30tem
+### Screens > 30rem
 ```html
 <div class="h-g">
   <div class="h-u h-u-sm-1-12">h-u-sm-1-12</div>
