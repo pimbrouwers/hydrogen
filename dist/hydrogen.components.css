@@ -159,6 +159,17 @@
 .h-card .h-card-footer {
   border-top: 1px solid #cccccc;
 }
+.h-input-group {
+  display: flex;
+  margin: 0 0 1rem;
+}
+.h-input-group .h-input-group-addon {
+  background: #cccccc;
+  padding: 0.75rem;
+}
+.h-input-group .h-input-group-field {
+  margin: 0;
+}
 .h-list-group {
   line-height: 1;
 }

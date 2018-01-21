@@ -223,7 +223,7 @@ img {
   width: 100%;
 }
 .h-form label {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
 }
 .h-form input,
 .h-form textarea {
@@ -237,7 +237,7 @@ img {
 .h-form textarea {
   border: 1px solid #cccccc;
   font: inherit;
-  margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
 }
 .h-form input:focus,
 .h-form select:focus,
