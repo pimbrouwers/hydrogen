@@ -48,6 +48,9 @@
 .h-flex-justify-start {
   justify-content: flex-start;
 }
+.h-flex-grow {
+  flex-grow: 1;
+}
 .h-left {
   float: left;
 }

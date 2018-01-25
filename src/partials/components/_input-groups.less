@@ -4,10 +4,20 @@
 
   .h-input-group-addon {
     background: @input-group-addon-background;
+    border: 1px solid @input-group-addon-border;
+    font: inherit;
     padding: @input-group-addon-padding;
   }
 
-  .h-input-group-field {
+  .h-input-group-addon + .h-input-group-addon {
+    border-right: 0;
+  }
+
+  .h-input-group-addon + .h-input-group-addon, .h-input-group-field + .h-input-group-addon, .h-input-group-addon + .h-input-group-field {
+    border-left: 0;
+  }
+
+  .h-input-group-field {    
     margin: 0;
   }
 }
