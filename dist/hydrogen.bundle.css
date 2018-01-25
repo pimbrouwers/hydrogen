@@ -98,7 +98,7 @@
   text-align: right;
 }
 /*=============================
-  Base
+Base
 =============================*/
 html {
   font-family: sans-serif;
@@ -183,7 +183,7 @@ img {
   border: 0;
 }
 /*=============================
-  Buttons
+	Buttons
 =============================*/
 .h-btn {
   background: none;
@@ -256,7 +256,7 @@ img {
   cursor: not-allowed;
 }
 .h-form input[type=checkbox] {
-  margin: 3px 3px 3px 4px;
+  margin: 3px 3px 0.5rem 4px;
 }
 .h-form-stack input,
 .h-form-stack select,

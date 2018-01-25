@@ -16,8 +16,8 @@
     width: 100%;
   }
 
-  label, input, select, textarea {
-    margin: 0 0 @form-stack-spacing;
+  label {
+    margin: 0 0 @form-label-margin;
   }
 
   input,
@@ -34,6 +34,7 @@
   textarea {
     border: 1px solid @input-border;
     font: inherit;
+    margin: 0 0 @form-stack-margin;
 
     &:focus {
       border-color: darken(@input-border, 10%);
@@ -53,7 +54,7 @@
 
   input[type=checkbox]
   {
-    margin: 3px 3px 3px 4px;
+    margin: 3px 3px @form-label-margin 4px;
   }
 }
 
