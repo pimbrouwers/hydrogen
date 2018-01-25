@@ -2,73 +2,72 @@
   Forms
 =============================*/
 .h-form {
-	fieldset {
-		border: 0;
-		margin: 0;
-		padding: 0;
-	}
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
 
-	legend {
-		border-bottom: 1px solid @form-legend-border;
-		display:block;		
-		margin: @form-legend-spacing 0;
-		padding: @form-legend-spacing 0;		
-		width: 100%;
-	}
+  legend {
+    border-bottom: 1px solid @form-legend-border;
+    display:block;		
+    margin: @form-legend-spacing 0;
+    padding: @form-legend-spacing 0;		
+    width: 100%;
+  }
 
-	label {
-		margin: 0 0 @form-label-margin;
-	}
+  label, input, select, textarea {
+    margin: 0 0 @form-stack-spacing;
+  }
 
-	input,
-	textarea {
-		padding: @input-padding;
-	}
+  input,
+  textarea {
+    padding: @input-padding;
+  }
 
-	select {
-		padding: @input-padding * .95 @input-padding;
-	}
+  select {
+    padding: @input-padding * .95 @input-padding;
+  }
 
-	input,
-	select, 
-	textarea {
-		border: 1px solid @input-border;
-		font: inherit;
-		margin: 0 0 @form-stack-spacing;		
+  input,
+  select, 
+  textarea {
+    border: 1px solid @input-border;
+    font: inherit;
 
-		&:focus {
-			border-color: darken(@input-border, 10%);
-		}
+    &:focus {
+      border-color: darken(@input-border, 10%);
+    }
 
-		&[required] {
-			&:focus {
-				border-color: red;
-			}
-		}
+    &[required] {
+      &:focus {
+        border-color: red;
+      }
+    }
 
-		&[disabled] {
-			background: lighten(@input-border, 7%);
-			cursor: not-allowed;
-		}
-	}
+    &[disabled] {
+      background: lighten(@input-border, 7%);
+      cursor: not-allowed;
+    }
+  }
 
-	input[type=checkbox]
-	{
-		margin: 3px 3px 3px 4px;
-	}
+  input[type=checkbox]
+  {
+    margin: 3px 3px 3px 4px;
+  }
 }
 
 .h-form-stack {
-	input,
-	select, 
-	textarea,
-	label {
-		display: block;			
-	}
+  input,
+  select, 
+  textarea,
+  label {
+    display: block;			
+  }
 
-	input[type=checkbox]
-	{
-		display: inline-block;
-	}
+  input[type=checkbox]
+  {
+    display: inline-block;
+  }
 }
 

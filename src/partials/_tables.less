@@ -2,29 +2,29 @@
   Tables
 =============================*/
 .h-tbl {
-	border-collapse: collapse;
-	width: 100%;
+  border-collapse: collapse;
+  width: 100%;
     max-width: 100%;
     
-	th, td {			
-		padding: @tbl-gutter;
-	}
+  th, td {			
+    padding: @tbl-gutter;
+  }
 
-	th {
-		background: @tbl-border-color;
-		border-bottom: 2px solid @tbl-border-color;
-		text-align: left;
-	}
+  th {
+    background: @tbl-border-color;
+    border-bottom: 2px solid @tbl-border-color;
+    text-align: left;
+  }
 
-	td {
-		border-top: 1px solid @tbl-border-color;
-	}
+  td {
+    border-top: 1px solid @tbl-border-color;
+  }
 }
 
 .h-tbl-striped {
-	tr {
-		&:nth-child(even) {
-			background: @tbl-border-color;
-		}
-	}
+  tr {
+    &:nth-child(even) {
+      background: @tbl-border-color;
+    }
+  }
 }
