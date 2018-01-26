@@ -280,6 +280,12 @@ img {
 /*=============================
   Grid
 =============================*/
+.h-c > .h-g {
+  margin: 0 -0.375rem;
+}
+.h-c > .h-g > [class^="h-u-"] {
+  padding: 0.375rem;
+}
 .h-g {
   display: flex;
   flex-direction: row;
@@ -290,6 +296,9 @@ img {
   content: "";
   clear: both;
   display: table;
+}
+[class^="h-u-"] {
+  float: left;
 }
 .h-u-1-12 {
   width: 8.333%;

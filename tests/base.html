@@ -15,25 +15,30 @@
 
     .section-title {
       border-bottom: 1px solid #a1a1a1;
-      margin: 0 0 .5em;
-      padding: 0 0 .25em;
+      margin: 0 0 .5rem;
+      padding: 0 0 .25rem;
 		}
 		
-		.grid .h-u,
-		.grid-units .h-u{
-			padding: .5em;
-			margin: 0 0 .5em;
+		.grid [class^="h-u-"],
+		.grid-units [class^="h-u-"]{
+			padding: .5rem;
+			margin: 0 0 .5rem;
 		}
-		.grid .h-u:nth-child(even),
-		.grid-units .h-u:nth-child(even){
+		.grid [class^="h-u-"]:nth-child(even),
+		.grid-units [class^="h-u-"]:nth-child(even){
 			background: #ccc;
 		}
 
-		.grid .h-u:nth-child(odd),
-		.grid-units .h-u:nth-child(odd){
+		.grid [class^="h-u-"]:nth-child(odd),
+		.grid-units [class^="h-u-"]:nth-child(odd){
 			background: #a1a1a1;
 		}
 		
+		.grid-gutters [class^="h-u-"] div {
+			background: #ccc;
+			padding: .5rem;
+		}
+
   </style>
 </head>
 <body class="stage">
@@ -203,85 +208,85 @@
 		</form>
 	</div>
 
-	  <!-- tables -->
-		<div class="section tables">
-			<h1 class="section-title">
-				Tables
-			</h1>
-			
-			<h2>Default</h2>
-			<table class="h-tbl">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Header</th>
-						<th>Header</th>
-						<th>Header</th>
-						<th>Header</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1,001</td>
-						<td>Lorem</td>
-						<td>ipsum</td>
-						<td>dolor</td>
-						<td>sit</td>
-					</tr>
-					<tr>
-						<td>1,002</td>
-						<td>amet</td>
-						<td>consectetur</td>
-						<td>adipiscing</td>
-						<td>elit</td>
-					</tr>
-					<tr>
-						<td>1,003</td>
-						<td>Integer</td>
-						<td>nec</td>
-						<td>odio</td>
-						<td>Praesent</td>
-					</tr>					
-				</tbody>
-			</table>
+	<!-- tables -->
+	<div class="section tables">
+		<h1 class="section-title">
+			Tables
+		</h1>
+		
+		<h2>Default</h2>
+		<table class="h-tbl">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1,001</td>
+					<td>Lorem</td>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+				</tr>
+				<tr>
+					<td>1,002</td>
+					<td>amet</td>
+					<td>consectetur</td>
+					<td>adipiscing</td>
+					<td>elit</td>
+				</tr>
+				<tr>
+					<td>1,003</td>
+					<td>Integer</td>
+					<td>nec</td>
+					<td>odio</td>
+					<td>Praesent</td>
+				</tr>					
+			</tbody>
+		</table>
 
-			<h2>Striped</h2>
-			<table class="h-tbl h-tbl-striped">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Header</th>
-						<th>Header</th>
-						<th>Header</th>
-						<th>Header</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1,001</td>
-						<td>Lorem</td>
-						<td>ipsum</td>
-						<td>dolor</td>
-						<td>sit</td>
-					</tr>
-					<tr>
-						<td>1,002</td>
-						<td>amet</td>
-						<td>consectetur</td>
-						<td>adipiscing</td>
-						<td>elit</td>
-					</tr>
-					<tr>
-						<td>1,003</td>
-						<td>Integer</td>
-						<td>nec</td>
-						<td>odio</td>
-						<td>Praesent</td>
-					</tr>					
-				</tbody>
-			</table>
-			
-		</div>
+		<h2>Striped</h2>
+		<table class="h-tbl h-tbl-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+					<th>Header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1,001</td>
+					<td>Lorem</td>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+				</tr>
+				<tr>
+					<td>1,002</td>
+					<td>amet</td>
+					<td>consectetur</td>
+					<td>adipiscing</td>
+					<td>elit</td>
+				</tr>
+				<tr>
+					<td>1,003</td>
+					<td>Integer</td>
+					<td>nec</td>
+					<td>odio</td>
+					<td>Praesent</td>
+				</tr>					
+			</tbody>
+		</table>
+		
+	</div>
 
 	<!-- grid -->
 	<div class="section grid">
@@ -303,25 +308,25 @@
 		</h1>
 
 		<div class="h-g">			
-			<div class="h-u h-u-1-12">h-u-1-12</div>
-			<div class="h-u h-u-11-12">h-u-11-12</div>
+			<div class="h-u-1-12">h-u-1-12</div>
+			<div class="h-u-11-12">h-u-11-12</div>
 
-			<div class="h-u h-u-2-12">h-u-2-12</div>
-			<div class="h-u h-u-10-12">h-u-10-12</div>
+			<div class="h-u-2-12">h-u-2-12</div>
+			<div class="h-u-10-12">h-u-10-12</div>
 
-			<div class="h-u h-u-3-12">h-u-3-12</div>
-			<div class="h-u h-u-9-12">h-u-9-12</div>
+			<div class="h-u-3-12">h-u-3-12</div>
+			<div class="h-u-9-12">h-u-9-12</div>
 
-			<div class="h-u h-u-4-12">h-u-4-12</div>
-			<div class="h-u h-u-8-12">h-u-8-12</div>
+			<div class="h-u-4-12">h-u-4-12</div>
+			<div class="h-u-8-12">h-u-8-12</div>
 
-			<div class="h-u h-u-5-12">h-u-5-12</div>
-			<div class="h-u h-u-7-12">h-u-7-12</div>
+			<div class="h-u-5-12">h-u-5-12</div>
+			<div class="h-u-7-12">h-u-7-12</div>
 
-			<div class="h-u h-u-6-12">h-u-6-12</div>
-			<div class="h-u h-u-6-12">h-u-6-12</div>
+			<div class="h-u-6-12">h-u-6-12</div>
+			<div class="h-u-6-12">h-u-6-12</div>
 
-			<div class="h-u h-u-12-12">h-u-12-12</div>
+			<div class="h-u-12-12">h-u-12-12</div>
 		</div>
 	</div>
 
@@ -332,25 +337,25 @@
 		</h1>
 	
 		<div class="h-g">
-			<div class="h-u h-u-sm-1-12">h-u-sm-1-12</div>
-			<div class="h-u h-u-sm-11-12">h-u-sm-11-12</div>
+			<div class="h-u-1 h-u-sm-1-12">h-u-sm-1-12</div>
+			<div class="h-u-1 h-u-sm-11-12">h-u-sm-11-12</div>
 	
-			<div class="h-u h-u-sm-2-12">h-u-sm-2-12</div>
-			<div class="h-u h-u-sm-10-12">h-u-sm-10-12</div>
+			<div class="h-u-1 h-u-sm-2-12">h-u-sm-2-12</div>
+			<div class="h-u-1 h-u-sm-10-12">h-u-sm-10-12</div>
 	
-			<div class="h-u h-u-sm-3-12">h-u-sm-3-12</div>
-			<div class="h-u h-u-sm-9-12">h-u-sm-9-12</div>
+			<div class="h-u-1 h-u-sm-3-12">h-u-sm-3-12</div>
+			<div class="h-u-1 h-u-sm-9-12">h-u-sm-9-12</div>
 	
-			<div class="h-u h-u-sm-4-12">h-u-sm-4-12</div>
-			<div class="h-u h-u-sm-8-12">h-u-sm-8-12</div>
+			<div class="h-u-1 h-u-sm-4-12">h-u-sm-4-12</div>
+			<div class="h-u-1 h-u-sm-8-12">h-u-sm-8-12</div>
 	
-			<div class="h-u h-u-sm-5-12">h-u-sm-5-12</div>
-			<div class="h-u h-u-sm-7-12">h-u-sm-7-12</div>
+			<div class="h-u-1 h-u-sm-5-12">h-u-sm-5-12</div>
+			<div class="h-u-1 h-u-sm-7-12">h-u-sm-7-12</div>
 	
-			<div class="h-u h-u-sm-6-12">h-u-sm-6-12</div>
-			<div class="h-u h-u-sm-6-12">h-u-sm-6-12</div>
+			<div class="h-u-1 h-u-sm-6-12">h-u-sm-6-12</div>
+			<div class="h-u-1 h-u-sm-6-12">h-u-sm-6-12</div>
 	
-			<div class="h-u h-u-sm-12-12">h-u-sm-12-12</div>
+			<div class="h-u-1 h-u-sm-12-12">h-u-sm-12-12</div>
 		</div>
 	</div>
 
@@ -361,25 +366,25 @@
 		</h1>
 	
 		<div class="h-g">
-			<div class="h-u h-u-md-1-12">h-u-md-1-12</div>
-			<div class="h-u h-u-md-11-12">h-u-md-11-12</div>
+			<div class="h-u-1 h-u-md-1-12">h-u-md-1-12</div>
+			<div class="h-u-1 h-u-md-11-12">h-u-md-11-12</div>
 	
-			<div class="h-u h-u-md-2-12">h-u-md-2-12</div>
-			<div class="h-u h-u-md-10-12">h-u-md-10-12</div>
+			<div class="h-u-1 h-u-md-2-12">h-u-md-2-12</div>
+			<div class="h-u-1 h-u-md-10-12">h-u-md-10-12</div>
 	
-			<div class="h-u h-u-md-3-12">h-u-md-3-12</div>
-			<div class="h-u h-u-md-9-12">h-u-md-9-12</div>
+			<div class="h-u-1 h-u-md-3-12">h-u-md-3-12</div>
+			<div class="h-u-1 h-u-md-9-12">h-u-md-9-12</div>
 	
-			<div class="h-u h-u-md-4-12">h-u-md-4-12</div>
-			<div class="h-u h-u-md-8-12">h-u-md-8-12</div>
+			<div class="h-u-1 h-u-md-4-12">h-u-md-4-12</div>
+			<div class="h-u-1 h-u-md-8-12">h-u-md-8-12</div>
 	
-			<div class="h-u h-u-md-5-12">h-u-md-5-12</div>
-			<div class="h-u h-u-md-7-12">h-u-md-7-12</div>
+			<div class="h-u-1 h-u-md-5-12">h-u-md-5-12</div>
+			<div class="h-u-1 h-u-md-7-12">h-u-md-7-12</div>
 	
-			<div class="h-u h-u-md-6-12">h-u-md-6-12</div>
-			<div class="h-u h-u-md-6-12">h-u-md-6-12</div>
+			<div class="h-u-1 h-u-md-6-12">h-u-md-6-12</div>
+			<div class="h-u-1 h-u-md-6-12">h-u-md-6-12</div>
 	
-			<div class="h-u h-u-md-12-12">h-u-md-12-12</div>
+			<div class="h-u-1 h-u-md-12-12">h-u-md-12-12</div>
 		</div>
 	</div>
 
@@ -390,25 +395,25 @@
 		</h1>
 	
 		<div class="h-g">
-			<div class="h-u h-u-lg-1-12">h-u-lg-1-12</div>
-			<div class="h-u h-u-lg-11-12">h-u-lg-11-12</div>
+			<div class="h-u-1 h-u-lg-1-12">h-u-lg-1-12</div>
+			<div class="h-u-1 h-u-lg-11-12">h-u-lg-11-12</div>
 	
-			<div class="h-u h-u-lg-2-12">h-u-lg-2-12</div>
-			<div class="h-u h-u-lg-10-12">h-u-lg-10-12</div>
+			<div class="h-u-1 h-u-lg-2-12">h-u-lg-2-12</div>
+			<div class="h-u-1 h-u-lg-10-12">h-u-lg-10-12</div>
 	
-			<div class="h-u h-u-lg-3-12">h-u-lg-3-12</div>
-			<div class="h-u h-u-lg-9-12">h-u-lg-9-12</div>
+			<div class="h-u-1 h-u-lg-3-12">h-u-lg-3-12</div>
+			<div class="h-u-1 h-u-lg-9-12">h-u-lg-9-12</div>
 	
-			<div class="h-u h-u-lg-4-12">h-u-lg-4-12</div>
-			<div class="h-u h-u-lg-8-12">h-u-lg-8-12</div>
+			<div class="h-u-1 h-u-lg-4-12">h-u-lg-4-12</div>
+			<div class="h-u-1 h-u-lg-8-12">h-u-lg-8-12</div>
 	
-			<div class="h-u h-u-lg-5-12">h-u-lg-5-12</div>
-			<div class="h-u h-u-lg-7-12">h-u-lg-7-12</div>
+			<div class="h-u-1 h-u-lg-5-12">h-u-lg-5-12</div>
+			<div class="h-u-1 h-u-lg-7-12">h-u-lg-7-12</div>
 	
-			<div class="h-u h-u-lg-6-12">h-u-lg-6-12</div>
-			<div class="h-u h-u-lg-6-12">h-u-lg-6-12</div>
+			<div class="h-u-1 h-u-lg-6-12">h-u-lg-6-12</div>
+			<div class="h-u-1 h-u-lg-6-12">h-u-lg-6-12</div>
 	
-			<div class="h-u h-u-lg-12-12">h-u-lg-12-12</div>
+			<div class="h-u-1 h-u-lg-12-12">h-u-lg-12-12</div>
 		</div>
 	</div>
 
@@ -419,25 +424,56 @@
 		</h1>
 	
 		<div class="h-g">
-			<div class="h-u h-u-xl-1-12">h-u-xl-1-12</div>
-			<div class="h-u h-u-xl-11-12">h-u-xl-11-12</div>
+			<div class="h-u-1 h-u-xl-1-12">h-u-xl-1-12</div>
+			<div class="h-u-1 h-u-xl-11-12">h-u-xl-11-12</div>
 	
-			<div class="h-u h-u-xl-2-12">h-u-xl-2-12</div>
-			<div class="h-u h-u-xl-10-12">h-u-xl-10-12</div>
+			<div class="h-u-1 h-u-xl-2-12">h-u-xl-2-12</div>
+			<div class="h-u-1 h-u-xl-10-12">h-u-xl-10-12</div>
 	
-			<div class="h-u h-u-xl-3-12">h-u-xl-3-12</div>
-			<div class="h-u h-u-xl-9-12">h-u-xl-9-12</div>
+			<div class="h-u-1 h-u-xl-3-12">h-u-xl-3-12</div>
+			<div class="h-u-1 h-u-xl-9-12">h-u-xl-9-12</div>
 	
-			<div class="h-u h-u-xl-4-12">h-u-xl-4-12</div>
-			<div class="h-u h-u-xl-8-12">h-u-xl-8-12</div>
+			<div class="h-u-1 h-u-xl-4-12">h-u-xl-4-12</div>
+			<div class="h-u-1 h-u-xl-8-12">h-u-xl-8-12</div>
 	
-			<div class="h-u h-u-xl-5-12">h-u-xl-5-12</div>
-			<div class="h-u h-u-xl-7-12">h-u-xl-7-12</div>
+			<div class="h-u-1 h-u-xl-5-12">h-u-xl-5-12</div>
+			<div class="h-u-1 h-u-xl-7-12">h-u-xl-7-12</div>
 	
-			<div class="h-u h-u-xl-6-12">h-u-xl-6-12</div>
-			<div class="h-u h-u-xl-6-12">h-u-xl-6-12</div>
+			<div class="h-u-1 h-u-xl-6-12">h-u-xl-6-12</div>
+			<div class="h-u-1 h-u-xl-6-12">h-u-xl-6-12</div>
 	
-			<div class="h-u h-u-xl-12-12">h-u-xl-12-12</div>
+			<div class="h-u-1 h-u-xl-12-12">h-u-xl-12-12</div>
+		</div>
+	</div>
+
+	<!-- grid gutters -->
+	<div class="section grid-gutters">
+		<h1 class="section-title">
+			Grid Units w/ Gutter
+		</h1>
+		
+		<div class="h-c">
+			<div class="h-g">
+				<div class="h-u-1-12"><div>h-u-1-12</div></div>
+				<div class="h-u-11-12"><div>h-u-11-12</div></div>
+		
+				<div class="h-u-2-12"><div>h-u-2-12</div></div>
+				<div class="h-u-10-12"><div>h-u-10-12</div></div>
+		
+				<div class="h-u-3-12"><div>h-u-3-12</div></div>
+				<div class="h-u-9-12"><div>h-u-9-12</div></div>
+		
+				<div class="h-u-4-12"><div>h-u-4-12</div></div>
+				<div class="h-u-8-12"><div>h-u-8-12</div></div>
+		
+				<div class="h-u-5-12"><div>h-u-5-12</div></div>
+				<div class="h-u-7-12"><div>h-u-7-12</div></div>
+		
+				<div class="h-u-6-12"><div>h-u-6-12</div></div>
+				<div class="h-u-6-12"><div>h-u-6-12</div></div>
+		
+				<div class="h-u-12-12"><div>h-u-12-12</div></div>
+			</div>
 		</div>
 	</div>
 
