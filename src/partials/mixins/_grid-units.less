@@ -5,7 +5,7 @@
 }
 
 .grid-unit(@prefix, @n, @i) when (@n / @i = 1) {	
-  .h-u-1 {
+  .h-u@{prefix}-1 {
     width: round(@i * 100% / @n, 3);
   }
 }
