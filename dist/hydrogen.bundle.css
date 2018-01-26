@@ -1,3 +1,8 @@
+/*!*
+ * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
+ * Copyright 2018 Pim Brouwers
+ * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
+ */
 /*!
  * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
  * Copyright 2018 Pim Brouwers
@@ -1027,7 +1032,6 @@ div[class*="-r-"] {
   margin: 0;
   padding: 0.75rem;
   text-align: left;
-  width: 100%;
 }
 .h-list-group .h-list-group-item:first-child {
   border-top: 1px solid #cccccc;
