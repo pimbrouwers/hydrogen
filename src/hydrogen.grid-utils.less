@@ -1,37 +1,8 @@
-/*!
+/*
  * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
  * Copyright 2018 Pim Brouwers
  * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
  */
-
 @import "partials/_variables.less";
+@import "partials/mixins/_grid-utils.less";
 @import "partials/grid-utils/_grid-utils.less";
-
-/*==================================
-  Grid Utils (push "l" and pull "r")
-====================================*/
-div[class*="-l-"], div[class*="-r-"]{
-	position: relative;
-}
-
-.grid-utils(@grid-prefix, @grid-units);
-
-@media only screen and (min-width: @sm-break)
-{
-	.grid-utils(@grid-prefix-sm, @grid-units);
-}
-
-@media only screen and (min-width: @md-break)
-{
-	.grid-utils(@grid-prefix-md, @grid-units);
-}
-
-@media only screen and (min-width: @lg-break)
-{
-	.grid-utils(@grid-prefix-lg, @grid-units);
-}
-
-@media only screen and (min-width: @xl-break)
-{
-	.grid-utils(@grid-prefix-xl, @grid-units);
-}

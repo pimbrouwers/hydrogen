@@ -1,14 +1,28 @@
-.grid-util(@prefix, @n, @i) {	
-  .h-u@{prefix}-l-@{i}-@{n} {
-    left: round(@i * 100% / @n, 3);
-  }
-  
-  .h-u@{prefix}-r-@{i}-@{n} {
-    right: round(@i * 100% / @n, 3);
-  }	
+/*==================================
+  Grid Utils (push "l" and pull "r")
+====================================*/
+div[class*="-l-"], div[class*="-r-"]{
+	position: relative;
 }
 
-.grid-utils(@prefix, @n, @i: 1) when (@i =< @n) {  
-	.grid-util(@prefix, @n, @i);
-  .grid-utils(@prefix, @n, (@i + 1));
+.grid-utils(@grid-prefix, @grid-units);
+
+@media only screen and (min-width: @sm-break)
+{
+	.grid-utils(@grid-prefix-sm, @grid-units);
+}
+
+@media only screen and (min-width: @md-break)
+{
+	.grid-utils(@grid-prefix-md, @grid-units);
+}
+
+@media only screen and (min-width: @lg-break)
+{
+	.grid-utils(@grid-prefix-lg, @grid-units);
+}
+
+@media only screen and (min-width: @xl-break)
+{
+	.grid-utils(@grid-prefix-xl, @grid-units);
 }

@@ -1,12 +1,8 @@
-/*!*
+/*
  * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
  * Copyright 2018 Pim Brouwers
  * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
- */
-/*!
- * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
- * Copyright 2018 Pim Brouwers
- * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
+ *
  */
 /*=============================
   Utils
@@ -557,11 +553,6 @@ img {
 .h-tbl-striped tr:nth-child(even) {
   background: #dedede;
 }
-/*!
- * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
- * Copyright 2018 Pim Brouwers
- * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
- */
 /*==================================
   Grid Utils (push "l" and pull "r")
 ====================================*/
@@ -937,11 +928,6 @@ div[class*="-r-"] {
     right: 100%;
   }
 }
-/*!*
- * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
- * Copyright 2018 Pim Brouwers
- * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
- */
 /*=============================
   Alerts
 =============================*/
