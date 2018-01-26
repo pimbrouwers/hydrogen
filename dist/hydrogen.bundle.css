@@ -295,12 +295,6 @@ img {
   clear: both;
   display: table;
 }
-@media only screen {
-  div[class^="h-u-"] {
-    float: left;
-    width: 100%;
-  }
-}
 .h-u-1-12 {
   width: 8.333%;
 }
