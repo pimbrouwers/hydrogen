@@ -15,6 +15,9 @@
 .h-flex-row {
   flex-direction: row;
 }
+.h-flex-reverse {
+  flex-direction: reverse;
+}
 .h-flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -44,6 +47,9 @@
 }
 .h-flex-justify-end {
   justify-content: flex-end;
+}
+.h-flex-justify-space-between {
+  justify-content: space-between;
 }
 .h-flex-justify-start {
   justify-content: flex-start;
