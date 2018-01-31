@@ -264,6 +264,9 @@ img {
 .h-form input[type=checkbox] {
   margin: 3px 3px 0.5rem 4px;
 }
+.h-form textarea {
+  line-height: 1.5;
+}
 .h-form-stack input,
 .h-form-stack select,
 .h-form-stack textarea,
