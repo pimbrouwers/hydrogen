@@ -1094,10 +1094,11 @@ div[class*="-r-"] {
   width: 1.5rem;
 }
 .h-title {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #cccccc;
   color: #333333;
   display: block;
   font-size: 3rem;
+  font-weight: 700;
   line-height: 1;
   margin: 0 0 1rem;
   padding: 0 0 1rem;
