@@ -156,14 +156,16 @@ blockquote,
 figure,
 ol,
 ul,
-table {
+table,
+dl {
   margin: 0 0 1rem 0;
 }
 p,
 blockquote,
 figure,
 ol,
-ul {
+ul,
+dl {
   line-height: 1.5;
 }
 blockquote,
@@ -175,6 +177,13 @@ ul {
 ol li,
 ul li {
   margin-left: 1.125rem;
+}
+dl dt {
+  font-weight: 700;
+  margin: 0;
+}
+dl dd {
+  margin: 0 0 0.375rem;
 }
 main {
   display: block;

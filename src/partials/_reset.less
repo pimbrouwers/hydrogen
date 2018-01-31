@@ -51,7 +51,8 @@ blockquote,
 figure,
 ol,
 ul,
-table {
+table,
+dl {
   margin: 0 0 @base / @base 0;
 }
 
@@ -59,8 +60,9 @@ p,
 blockquote,
 figure,
 ol,
-ul {
-  line-height: 1.5;
+ul,
+dl {
+  line-height: @line-height;
 }
 
 blockquote,
@@ -73,6 +75,17 @@ ul {
 ol, ul {
   li {
       margin-left: @list-margin-left;
+  }
+}
+
+dl {
+  dt {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  dd {
+    margin: 0 0 @base / 2;
   }
 }
 
