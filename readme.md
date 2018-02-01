@@ -6,7 +6,8 @@ Hydrogen is a modern CSS foundation designed for minimalists with deadlines and 
 
 Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.
 
-[![npm](https://img.shields.io/npm/v/hydrogen-css.svg)]()
+[![npm](https://img.shields.io/npm/v/hydrogen-css.svg)](https://www.npmjs.com/package/hydrogen-css)
+[![NPM](https://nodei.co/npm/hydrogen-css.png?mini=true)](https://npmjs.org/package/hydrogen-css)
 
 ## Getting Started
 
