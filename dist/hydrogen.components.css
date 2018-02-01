@@ -78,6 +78,8 @@
   border-top: 1px solid #cccccc;
 }
 .h-input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 0 1rem;
 }
@@ -87,16 +89,31 @@
   font: inherit;
   padding: 0.75rem;
 }
-.h-input-group .h-input-group-addon + .h-input-group-addon {
-  border-right: 0;
-}
-.h-input-group .h-input-group-addon + .h-input-group-addon,
-.h-input-group .h-input-group-field + .h-input-group-addon,
-.h-input-group .h-input-group-addon + .h-input-group-field {
+.h-input-group .h-input-group-addon,
+.h-input-group .h-input-group-field {
   border-left: 0;
+}
+.h-input-group .h-input-group-addon:first-child,
+.h-input-group .h-input-group-field:first-child {
+  border-left: 1px solid #cccccc;
 }
 .h-input-group .h-input-group-field {
   margin: 0;
+}
+.h-input-group-stack {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.h-input-group-stack .h-input-group-addon,
+.h-input-group-stack .h-input-group-field {
+  border: 1px solid #cccccc;
+  border-top: 0;
+}
+.h-input-group-stack .h-input-group-addon:first-child,
+.h-input-group-stack .h-input-group-field:first-child {
+  border-top: 1px solid #cccccc;
 }
 .h-list-group {
   line-height: 1;

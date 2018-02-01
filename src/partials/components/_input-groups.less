@@ -1,5 +1,5 @@
 .h-input-group {
-  display: flex;
+  .h-flex;
   margin: 0 0 @input-group-margin;
 
   .h-input-group-addon {
@@ -9,15 +9,28 @@
     padding: @input-group-addon-padding;
   }
 
-  .h-input-group-addon + .h-input-group-addon {
-    border-right: 0;
+  .h-input-group-addon, .h-input-group-field {
+    border-left: 0;
   }
 
-  .h-input-group-addon + .h-input-group-addon, .h-input-group-field + .h-input-group-addon, .h-input-group-addon + .h-input-group-field {
-    border-left: 0;
+  .h-input-group-addon:first-child, .h-input-group-field:first-child {
+    border-left: 1px solid @input-group-addon-border;
   }
 
   .h-input-group-field {    
     margin: 0;
+  }
+}
+
+.h-input-group-stack {
+  .h-flex-column;
+
+  .h-input-group-addon, .h-input-group-field {
+    border: 1px solid @input-group-addon-border;
+    border-top: 0;
+  }
+
+  .h-input-group-addon:first-child, .h-input-group-field:first-child {
+    border-top: 1px solid @input-group-addon-border;
   }
 }
