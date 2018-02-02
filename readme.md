@@ -2,7 +2,7 @@
 
 # Hydrogen CSS
 
-Hydrogen is a modern CSS foundation designed for minimalists with deadlines and inspired by my ♥ for [PureCSS](https://purecss.io/). 
+Hydrogen is a modular CSS foundation designed for minimalists with deadlines and inspired by my ♥ for [PureCSS](https://purecss.io/). 
 
 Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden. It is small enough to be justifiable on small projects, and customizable enough to use on large applications.
 
