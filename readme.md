@@ -421,6 +421,7 @@ Below are the options available:
 ```less
 //base
 @base: .75rem;
+@base-color: rgb(102, 102, 102);
 
 //  Breakpoints
 @sm-break: 30rem;
@@ -429,18 +430,19 @@ Below are the options available:
 @xl-break: 80rem;
 
 //  Tints
-@raw: rgb(255, 255, 255);
-@rare: rgb(204, 204, 204);
-@medium-rare: rgb(153, 153, 153);
-@medium: rgb(102, 102, 102);
-@medium-well: rgb(51, 51, 51);
-@well-done: rgb(0,0,0);
+@raw: lighten(@base-color, 100%);
+@rare: lighten(@base-color, 100%, 'relative');
+@medium-rare: lighten(@base-color, 50%, 'relative');
+@medium: @base-color;
+@medium-well: darken(@base-color, 50%, 'relative');
+@well-done: darken(@base-color, 100%);
 
-// reset
+// Reset
 @body-color: @medium-well;
 @font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@line-height: 1.5;
 
-//  Buttons
+// Buttons
 @btn-border: @rare;
 @btn-color: @body-color;
 @btn-padding: @base;
@@ -450,27 +452,28 @@ Below are the options available:
 @form-legend-border: @rare;
 @form-legend-spacing: @base;
 @form-label-margin: round(@base * .6125, 1);
-@form-stack-spacing: round(@base * 1.3125, 1);
+@form-stack-margin: round(@base * 1.3125, 1);
 @input-padding: @base * .85;
 @input-border: @rare;
 
-//  Grid
+// Grid
 @grid-prefix: ~"";
 @grid-prefix-sm: ~"-sm";
 @grid-prefix-md: ~"-md";
 @grid-prefix-lg: ~"-lg";
 @grid-prefix-xl: ~"-xl";
+@grid-gutter: round(@base * .6125, 1);
 @grid-units: 12;
 
-//  Lists
+// Lists
 @list-margin-left: @base * 1.5;
 
-//  Menus
+// Menus
 @menu-color: @medium-well;
 @menu-item-padding: @btn-padding;
 @menu-link-hover: @rare;
 
-//  Tables
+// Tables
 @tbl-border-color: lighten(@rare, 7%);
 @tbl-gutter: @base;
 ```
