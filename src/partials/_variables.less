@@ -1,6 +1,6 @@
 //base
 @base: .75rem;
-
+@base-color: rgb(102, 102, 102);
 //  Breakpoints
 @sm-break: 30rem;
 @md-break: 48rem;
@@ -8,12 +8,12 @@
 @xl-break: 80rem;
 
 //  Tints
-@raw: rgb(255, 255, 255);
-@rare: rgb(204, 204, 204);
-@medium-rare: rgb(153, 153, 153);
-@medium: rgb(102, 102, 102);
-@medium-well: rgb(51, 51, 51);
-@well-done: rgb(0,0,0);
+@raw: lighten(@base-color, 100%);
+@rare: lighten(@base-color, 100%, 'relative');
+@medium-rare: lighten(@base-color, 50%, 'relative');
+@medium: @base-color;
+@medium-well: darken(@base-color, 50%, 'relative');
+@well-done: darken(@base-color, 100%);
 
 // reset
 @body-color: @medium-well;
