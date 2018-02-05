@@ -2,9 +2,7 @@
 
 # Hydrogen CSS
 
-Hydrogen is a modular CSS foundation designed for minimalists with a powerful collection of components and utility classes. 
-
-Hydrogen is entriely _unbiased_ and offering up only a starting point with the **intention** of being overriden.
+Hydrogen is a modular CSS foundation designed for minimalists with a powerful collection of components and utility classes. The aim of this project to allow for beautiful front-end's to be developed quickly.
 
 [![npm](https://img.shields.io/npm/v/hydrogen-css.svg)](https://www.npmjs.com/package/hydrogen-css)
 
