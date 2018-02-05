@@ -4,6 +4,12 @@
 
 Hydrogen is a modular CSS foundation designed for minimalists with a powerful collection of components and utility classes. The aim of this project to allow for beautiful front-end's to be developed quickly.
 
+Hydrogen is insanely tiny, the entire bundle weighing in at 2.85KB minified and gzipped, designed with an ethos rooted in "performance as a feature". 
+
+ Core    | Grid-Utils | Components | Bundle  |
+|---------|------------|------------|---------|
+| 1.76KB | 604 bytes  | 756 bytes  | 2.85KB |
+
 [![npm](https://img.shields.io/npm/v/hydrogen-css.svg)](https://www.npmjs.com/package/hydrogen-css)
 
 ## Getting Started
