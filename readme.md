@@ -24,7 +24,7 @@ Add to your page via the free unpkg CDN. Just add the following `<link>` element
 
 Add to your project via npm using `npm install --save hydrogen-css` or adding `hydrogen-css` to the dependencies in your `package.json`.
 
-## Direct download
+### Direct download
 
 You can also [download](https://github.com/pimbrouwers/hydrogen/archive/master.zip) the repository directly and use the compiled files as you would any other CSS assets.
 
