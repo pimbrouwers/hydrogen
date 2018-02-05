@@ -12,10 +12,22 @@ Hydrogen is insanely tiny, the entire bundle weighing in at 2.85KB minified and 
 
 ## Getting Started
 
-- `npm install --save hydrogen-css`
-- Or, using unpkg `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.min.css"/>` 
-  - For the grid-utils dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.grid-utils.min.css"/>`
-  - For the components dependency: `<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.components.min.css"/>`
+### Using unpkg
+
+Add to your page via the free unpkg CDN. Just add the following `<link>` element into your page's `<head>`, __before__ your project's stylesheets.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/hydrogen-css/dist/hydrogen.bundle.min.css"/>
+```
+
+### Using npm
+
+Add to your project via npm using `npm install --save hydrogen-css` or adding `hydrogen-css` to the dependencies in your `package.json`.
+
+## Direct download
+
+You can also [download](https://github.com/pimbrouwers/hydrogen/archive/master.zip) the repository directly and use the compiled files as you would any other CSS assets.
+
 
 ## Reset
 
