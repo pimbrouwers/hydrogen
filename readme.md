@@ -1,4 +1,4 @@
-# Hydrogen CSS
+# Hydrogen
 
 [![npm](https://img.shields.io/npm/v/hydrogen-css.svg)](https://www.npmjs.com/package/hydrogen-css)
 
