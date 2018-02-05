@@ -346,7 +346,7 @@ img {
   clear: both;
   display: table;
 }
-.h-g [class^="h-u-"] {
+.h-g > [class^="h-u-"] {
   float: left;
 }
 .h-u-1-12 {
