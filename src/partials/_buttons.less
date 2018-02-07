@@ -11,7 +11,7 @@
 	text-decoration: none;
 
 	&:hover {
-		background: lighten(@btn-border, 7%);
+		background: @btn-border;
 	}
 
 	&[disabled] {
@@ -24,6 +24,7 @@
 	background: @btn-fill-background;
 
 	&:hover {
-		background: darken(@btn-border, 7%);
+		background: darken(@btn-fill-background, 7%);
+		border-color: darken(@btn-fill-background, 7%);
 	}
 }

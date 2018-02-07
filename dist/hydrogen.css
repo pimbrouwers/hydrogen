@@ -252,7 +252,7 @@ img {
   text-decoration: none;
 }
 .h-btn:hover {
-  background: #dedede;
+  background: #cccccc;
 }
 .h-btn[disabled] {
   opacity: .4;
@@ -263,6 +263,7 @@ img {
 }
 .h-btn-fill:hover {
   background: #bababa;
+  border-color: #bababa;
 }
 /*=============================
   Forms
