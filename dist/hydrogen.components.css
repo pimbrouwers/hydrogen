@@ -126,6 +126,7 @@
   margin: 0;
   padding: 0.75rem;
   text-align: left;
+  width: 100%;
 }
 .h-list-group .h-list-group-item:first-child {
   border-top: 1px solid #cccccc;
