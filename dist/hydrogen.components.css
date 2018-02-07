@@ -99,6 +99,7 @@
 }
 .h-input-group .h-input-group-field {
   margin: 0;
+  min-width: 0;
 }
 .h-input-group-stack {
   -webkit-box-orient: vertical;
