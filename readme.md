@@ -387,6 +387,9 @@ General set of useful utility classes for common css tasks.
 - `.h-flex-justify-start` (sets `justify-content: flex-start;`)
 
 ### Float
+- `.h-clear` (sets `clear: both`)
+- `.h-clear-left` (sets `clear: left;`)
+- `.h-clear-right` (sets `clear: right;`)
 - `.h-left` (sets `float: left;`)
 - `.h-right` (sets `float: right;`)
 

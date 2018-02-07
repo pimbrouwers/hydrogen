@@ -182,6 +182,15 @@ img {
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
+.h-clear {
+  clear: both;
+}
+.h-clear-left {
+  clear: left;
+}
+.h-clear-right {
+  clear: right;
+}
 .h-left {
   float: left;
 }
