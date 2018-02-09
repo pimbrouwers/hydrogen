@@ -1,6 +1,6 @@
 {
   "name": "hydrogen-css",
-  "version": "2.0.0-beta",
+  "version": "2.0.1",
   "description": "Hydrogen is a modern, ultra-lightweight & responsive CSS foundation. ",
   "author": "Pim Brouwers",
   "license": "MIT",
@@ -17,9 +17,9 @@
     "rimraf": "latest",
     "watch": "latest"
   },
+  "main": "./dist/hydrogen.min.css",
   "files": [
-    "dist/hydrogen.min.css",
-    "dist/hydrogen.css"
+    "dist/"
   ],
   "scripts": {
     "clean": "rimraf ./dist/*",
