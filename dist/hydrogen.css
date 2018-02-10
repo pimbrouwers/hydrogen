@@ -335,7 +335,7 @@ img {
 .h-c > .h-g {
   margin: 0 -0.5rem;
 }
-.h-c > .h-g > [class^="h-u-"] {
+.h-c > .h-g > [class^="h-u"] {
   padding: 0.5rem;
 }
 .h-g {
