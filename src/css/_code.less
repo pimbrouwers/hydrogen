@@ -1,0 +1,24 @@
+pre {
+  margin: 1rem 0 2rem;
+
+  code {
+    border: 1px solid darken(@gray, 7%, 'relative');  
+    display: block;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+}
+
+code {
+  background: @gray;  
+  font-size: 90%;
+  padding: .125rem;
+}
+
+@media screen and (min-width: 64rem) {
+  pre {
+    code {
+      font-size: .975rem;
+    }
+  }
+}

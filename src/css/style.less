@@ -1,0 +1,30 @@
+@import (less) "../node_modules/hydrogen-css/dist/hydrogen.min.css";
+
+@base: 1rem;
+
+@blue: rgb(0, 128, 255);
+@gray: rgb(245, 245,245);
+@purple: rgb(64, 0, 255);
+@mint: rgb(0, 255, 128);
+
+.layout, .content, .splash {
+  -webkit-transition: all 0.3125s ease-out;
+  -moz-transition: all 0.3125s ease-out;
+  -ms-transition: all 0.3125s ease-out;
+  -o-transition: all 0.3125s ease-out;
+  transition: all 0.3125s ease-out;
+}
+
+a {
+  color: @blue;
+
+  &:visited{
+    color: darken(@blue, 7%);
+  }
+}
+
+@import "_code.less";
+@import "_content.less";
+@import "_examples.less";
+@import "_mixins.less";
+@import "_splash.less";

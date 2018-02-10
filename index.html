@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Hydrogen - Light as air.</title>
+
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<div class="layout">
+  
+  <main class="main">
+    <section class="splash h-flex h-flex-column h-flex-justify-center h-flex-align-center h-text-center">
+      <div class="hydrogen">
+        <span class="atomic">1</span>
+        <span class="weight">1.0079</span>
+        <span class="symbol">H</span>
+        <span class="name">Hydrogen</span>
+      </div>
+    
+      <h2 class="subtitle">A modular CSS foundation<br />designed for minimalists.</h2>
+      <a class="h-btn" href="https://github.com/pimbrouwers/hydrogen" target="_blank">GitHub</a>
+      
+    </section>
+    <div class="content">
+      <h1 id="-a-name-getting-started-a-getting-started"><a name="getting-started"></a>Getting Started</h1>
+<h2 id="practical-for-projects-of-any-size-">Practical for projects of any size.</h2>
+<p><a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> is a lightweight modular CSS foundation designed for minimalists, with a powerful collection of components and utility classes. The aim of this project to allow for beautiful front-end&#39;s to be developed quickly.</p>
+<p>You can starting working with <a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> in multiple ways. The option with least resistance is a <code>&lt;link&gt;</code> refencing the free unpkg CDN. </p>
+<h3 id="cdn">CDN</h3>
+<pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/hydrogen-css&quot;/&gt;
+</code></pre>
+<h3 id="npm">NPM</h3>
+<pre><code class="lang-javascript">npm install hydrogen-css
+</code></pre>
+<h1 id="-a-name-base-a-base"><a name="base"></a>Base</h1>
+<h2 id="a-minimal-reset-to-create-cross-browser-consistency-">A minimal reset to create cross-browser consistency.</h2>
+<p><a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> includes a minimal css reset to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings etc. </p>
+<p>Explicit font sizes for headings to ensure consistent rendering. For example, without explicit font sizes, the user agent stylesheet will apply differing sizes to headings within a <code>&lt;section&gt;</code>.</p>
+<p>All sizing within <a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> is done using <code>rem</code>. All <code>rem</code> units are converted to base 16, so <code>1rem</code> is equal to <code>16px</code>.</p>
+<h1 id="-a-name-typography-a-typography"><a name="typography"></a>Typography</h1>
+<h2 id="-rem-based-progressive-sizing-"><code>rem</code> based progressive sizing.</h2>
+<p>By default, all headings, paragraphs, and code use system fonts, using the most modern one available on a user&#39;s operating system. All font-sizes are based on <code>rem</code> units.  </p>
+<h3 id="headings">Headings</h3>
+<div class="reset">
+  <h1>H1 Heading</h1>
+  <h2>H2 Heading</h2>
+  <h3>H3 Heading</h3>
+  <h4>H4 Heading</h4>
+  <h5>H5 Heading</h5>
+  <h6>H6 Heading</h6>
+</div>
+
+<h3 id="paragraph">Paragraph</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<h3 id="lists">Lists</h3>
+<ul>
+  <li>Lorem ipsum</li>
+  <li>Lorem ipsum</li>
+  <li>Lorem ipsum</li>
+</ul>
+
+<ol>
+  <li>Lorem ipsum</li>
+  <li>Lorem ipsum</li>
+  <li>Lorem ipsum</li>
+</ol>
+
+<h3 id="description-list">Description List</h3>
+<dl>
+  <dt>Lorem</dt>
+  <dd>Ipsum</dd>
+
+  <dt>Lorem</dt>
+  <dd>Ipsum</dd>
+</dl>
+
+<h1 id="-a-name-buttons-a-buttons"><a name="buttons"></a>Buttons</h1>
+<h2 id="a-perfect-base-for-beautiful-buttons-">A perfect base for beautiful buttons.</h2>
+<p><a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> offers two styles of button, bordered and filled. The default <code>.h-btn</code> class is combined with <code>.h-btn-fill</code> to create a filled button. The styles are intended to serve as a base and can easily be overriden.</p>
+<button class="h-btn">Button</button>
+<button class="h-btn" disabled>Disabled Button</button>
+<br /><br />
+<button class="h-btn h-btn-fill">Fill Button</button>
+<button class="h-btn h-btn-fill" disabled>Disabled Fill Button</button>
+
+<pre><code class="lang-html">&lt;button class=&quot;h-btn&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;h-btn&quot; disabled&gt;Disabled Button&lt;/button&gt;
+
+&lt;button class=&quot;h-btn h-btn-fill&quot;&gt;Fill Button&lt;/button&gt;
+&lt;button class=&quot;h-btn h-btn-fill&quot; disabled&gt;Disabled Fill Button&lt;/button&gt;
+</code></pre>
+<h1 id="-a-name-tables-a-tables"><a name="tables"></a>Tables</h1>
+<h2 id="elegant-override-for-default-table-styles-">Elegant override for default table styles.</h2>
+<p>To override the default user agent table styles, simply append the <code>.h-tbl</code> class to the <code>&lt;table&gt;</code> element.</p>
+<table class="h-tbl">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Header</th>
+      <th>Header</th>
+      <th>Header</th>
+      <th>Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1,001</td>
+      <td>Lorem</td>
+      <td>ipsum</td>
+      <td>dolor</td>
+      <td>sit</td>
+    </tr>
+    <tr>
+      <td>1,002</td>
+      <td>amet</td>
+      <td>consectetur</td>
+      <td>adipiscing</td>
+      <td>elit</td>
+    </tr>
+    <tr>
+      <td>1,003</td>
+      <td>Integer</td>
+      <td>nec</td>
+      <td>odio</td>
+      <td>Praesent</td>
+    </tr><br>  </tbody>
+</table>
+
+<pre><code class="lang-html">&lt;table class=&quot;h-tbl&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1,001&lt;/td&gt;
+      &lt;td&gt;Lorem&lt;/td&gt;
+      &lt;td&gt;ipsum&lt;/td&gt;
+      &lt;td&gt;dolor&lt;/td&gt;
+      &lt;td&gt;sit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1,002&lt;/td&gt;
+      &lt;td&gt;amet&lt;/td&gt;
+      &lt;td&gt;consectetur&lt;/td&gt;
+      &lt;td&gt;adipiscing&lt;/td&gt;
+      &lt;td&gt;elit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1,003&lt;/td&gt;
+      &lt;td&gt;Integer&lt;/td&gt;
+      &lt;td&gt;nec&lt;/td&gt;
+      &lt;td&gt;odio&lt;/td&gt;
+      &lt;td&gt;Praesent&lt;/td&gt;
+    &lt;/tr&gt;         
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h1 id="-a-name-menus-a-menus"><a name="menus"></a>Menus</h1>
+<h2 id="easily-create-user-navigation-components-">Easily create user navigation components.</h2>
+<p>Foundational styles of both vertical and inline navigation components. By default the <code>.h-menu</code> class renders a vertical navigation component, to make inline simply append the <code>.h-menu-inline</code> modifier. </p>
+<p>Include the optional <code>.h-menu-heading</code> element to include a descriptive title. </p>
+<h3 id="vertical-menu">Vertical Menu</h3>
+<div class="h-menu">
+  <span class="h-menu-heading">DEFAULT MENU</span>
+
+  <ul class="h-menu-list">
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+  </ul>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-menu&quot;&gt;
+  &lt;span class=&quot;h-menu-heading&quot;&gt;DEFAULT MENU&lt;/span&gt;
+
+  &lt;ul class=&quot;h-menu-list&quot;&gt;
+    &lt;li class=&quot;h-menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;h-menu-link&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;h-menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;h-menu-link&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;h-menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;h-menu-link&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="inline-menu">Inline Menu</h3>
+<div class="h-menu h-menu-inline">
+  <span class="h-menu-heading">INLINE MENU</span>
+
+  <ul class="h-menu-list">
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+    <li class="h-menu-item">
+      <a href="#" class="h-menu-link">Link</a>
+    </li>
+  </ul>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-menu h-menu-inline&quot;&gt;
+  &lt;span class=&quot;h-menu-heading&quot;&gt;INLINE MENU&lt;/span&gt;
+
+  &lt;ul class=&quot;h-menu-list&quot;&gt;
+    &lt;li class=&quot;h-menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;h-menu-link&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;h-menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;h-menu-link&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;h-menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;h-menu-link&quot;&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h1 id="-a-name-forms-a-forms"><a name="forms"></a>Forms</h1>
+<h2 id="simple-html-forms-">Simple HTML forms.</h2>
+<p>By default the <code>.h-form</code> class renders an inline form, to create a stacked form simply append the <code>.h-form-stack</code> modifier. </p>
+<p>Form elements can be combined with <a href="#grid-unit-sizes">grid unit sizes</a> to render fields of specific widths.</p>
+<h3 id="inline-default-">Inline (default)</h3>
+<form class="h-form">
+  <fieldset>
+    <legend>A compact inline form</legend> 
+
+    <input type="email" placeholder="Email"> 
+
+    <input type="password" placeholder="Password" required=""> 
+
+    <input type="text" placeholder="Disabled" disabled> 
+
+    <label for="state">State</label>
+    <select name="state">
+      <option>
+        AL
+      </option>
+      <option>
+        CA
+      </option>
+      <option>
+        IL
+      </option>
+    </select> 
+
+    <label for="remember">
+      <input id="remember" type="checkbox"> Remember me
+    </label> 
+
+    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+  </fieldset>
+</form>
+
+<pre><code class="lang-html">&lt;form class=&quot;h-form&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;A compact inline form&lt;/legend&gt; 
+
+    &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt; 
+
+    &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;&quot;&gt; 
+
+    &lt;input type=&quot;text&quot; placeholder=&quot;Disabled&quot; disabled&gt; 
+
+    &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+    &lt;select name=&quot;state&quot;&gt;
+      &lt;option&gt;
+        AL
+      &lt;/option&gt;
+      &lt;option&gt;
+        CA
+      &lt;/option&gt;
+      &lt;option&gt;
+        IL
+      &lt;/option&gt;
+    &lt;/select&gt; 
+
+    &lt;label for=&quot;remember&quot;&gt;
+      &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
+    &lt;/label&gt; 
+
+    &lt;button class=&quot;h-btn h-btn-primary&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+<h3 id="stacked">Stacked</h3>
+<form class="h-form h-form-stack">
+  <fieldset>
+    <legend>A stacked form</legend>
+
+    <input type="email" placeholder="Email">
+
+    <input type="password" placeholder="Password" required="">
+
+    <input type="text" placeholder="Disabled" disabled>
+
+    <label for="state">State</label>
+    <select name="state">
+      <option>
+        AL
+      </option>
+      <option>
+        CA
+      </option>
+      <option>
+        IL
+      </option>
+    </select>
+
+    <label for="remember">
+      <input id="remember" type="checkbox"> Remember me
+    </label>
+
+    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+  </fieldset>
+</form>
+
+<pre><code class="lang-html">&lt;form class=&quot;h-form h-form-stack&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;A stacked form&lt;/legend&gt;
+
+    &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+
+    &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;&quot;&gt;
+
+    &lt;input type=&quot;text&quot; placeholder=&quot;Disabled&quot; disabled&gt;
+
+    &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+    &lt;select name=&quot;state&quot;&gt;
+      &lt;option&gt;
+        AL
+      &lt;/option&gt;
+      &lt;option&gt;
+        CA
+      &lt;/option&gt;
+      &lt;option&gt;
+        IL
+      &lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label for=&quot;remember&quot;&gt;
+      &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
+    &lt;/label&gt;
+
+    &lt;button class=&quot;h-btn h-btn-primary&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+<h1 id="-a-name-grid-a-grid"><a name="grid"></a>Grid</h1>
+<h2 id="foundation-to-build-fully-custom-responsive-grids-">Foundation to build fully custom, responsive grids.</h2>
+<p>The built-in grid system provides the foundation for fully custom, responsive grids. Choose a width, and the rest is done for you. </p>
+<p>Grids blocks are designated using the <code>.h-g</code> class and grid units <code>.h-u</code>. To enable gutters (<code>1rem</code>) simply wrap the grid block in a grid container element using th <code>.h-c</code> class.</p>
+<div class="h-c">
+  <div class="h-g">
+    <div class="h-u example-main">
+      <div class="pad background-blue color-gray">Main</div>
+    </div> 
+    <div class="h-u example-sidebar">
+      <div class="pad background-blue color-gray">Sidebar</div>
+    </div> 
+  </div>
+</div>
+
+<pre><code class="lang-html">&lt;style&gt; 
+  @media screen and (min-width: 48em){ 
+    .main { width: 75%; } 
+    .sidebar { width: 25%; } 
+  } 
+&lt;/style&gt; 
+
+&lt;div class=&quot;h-c&quot;&gt;
+  &lt;div class=&quot;h-g&quot;&gt; 
+    &lt;div class=&quot;h-u main&quot;&gt; ... &lt;/div&gt; 
+    &lt;div class=&quot;h-u sidebar&quot;&gt; ... &lt;/div&gt; 
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h1 id="-a-name-grid-unit-sizes-a-grid-unit-sizes"><a name="grid-unit-sizes"></a>Grid Unit Sizes</h1>
+<h2 id="a-12-sup-th-sup-scale-responsive-grid-system-">A 12<sup>th</sup> scale responsive grid system.</h2>
+<p><a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> ships with a mobile-first responsive grid system that can be used declaratively through CSS class names (i.e. <code>.h-u-6-12</code> represents a unit with 50% width). It&#39;s a robust and flexible grid that builds on top of the base grid system.</p>
+<p>Grid units used without a media prefix (i.e. &quot;-sm&quot;, &quot;-md&quot;, &quot;-lg&quot;, &quot;-xl&quot;) are applied to all screen sizes. Grid units with a media prefixes, are applied to the specified width and above. Breakpoint definitions are outlined below.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Applies</th>
+<th>Class Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>All screen sizes</td>
+<td><code>h-u-*</code></td>
+</tr>
+<tr>
+<td><code>sm</code></td>
+<td>≥ <code>30rem</code></td>
+<td><code>h-u-sm-*</code></td>
+</tr>
+<tr>
+<td><code>md</code></td>
+<td>≥ <code>48rem</code></td>
+<td><code>h-u-md-*</code></td>
+</tr>
+<tr>
+<td><code>lg</code></td>
+<td>≥ <code>64rem</code></td>
+<td><code>h-u-lg-*</code></td>
+</tr>
+<tr>
+<td><code>xl</code></td>
+<td>≥ <code>80rem</code></td>
+<td><code>h-u-xl-*</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="responsive-grid-example">Responsive Grid Example</h3>
+<p>The example below leverages <a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a>&#39;s grid unit sizes to create a row with four columns. The columns stack on all screens, take up <code>width: 50%</code> on small screens, <code>width: 33.333%</code> on medium-sized screens, and <code>width: 25%</code> on large screens.</p>
+<p>This is done by adding the <code>.h-u-12-12</code> class for all screens, <code>.h-u-sm-6-12</code> for small screens, <code>.h-u-md-4-12</code> for medium-sized screens and <code>.h-u-lg-3-12</code> for extra large screens. Resize the page to see the grid respond to the screen size.</p>
+<div class="h-c">
+  <div class="h-g">
+    <div class="h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12">
+      <div class="pad background-blue color-gray">
+        <h4>Lorem Ipsum</h4>
+        <p>Nunc interdum dui urna. Donec at lectus sed nisi tristique imperdiet.</p>
+      </div>
+    </div>
+    <div class="h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12">
+      <div class="pad background-blue color-gray">
+        <h4>Lorem Ipsum</h4>
+        <p>Nunc interdum dui urna. Donec at lectus sed nisi tristique imperdiet.</p>
+      </div>
+    </div>
+    <div class="h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12">
+      <div class="pad background-blue color-gray">
+        <h4>Lorem Ipsum</h4>
+        <p>Nunc interdum dui urna. Donec at lectus sed nisi tristique imperdiet.</p>
+      </div>
+    </div>
+    <div class="h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12">
+      <div class="pad background-blue color-gray">
+        <h4>Lorem Ipsum</h4>
+        <p>Nunc interdum dui urna. Donec at lectus sed nisi tristique imperdiet.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-g&quot;&gt;            
+  &lt;div class=&quot;h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;h-u-12-12 h-u-sm-6-12 h-u-md-4-12 h-u-lg-3-12&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h1 id="-a-name-utilities-a-utilities"><a name="utilities"></a>Utilities</h1>
+<h2 id="utility-classes-for-common-css-tasks-">Utility classes for common css tasks.</h2>
+<h3 id="flex">Flex</h3>
+<ul>
+<li><code>.h-flex</code> (sets <code>display: flex;</code>)</li>
+<li><code>.h-flex-column</code> (sets <code>flex-direction: column;</code>)</li>
+<li><code>.h-flex-row</code> (sets <code>flex-direction: row;</code>)</li>
+<li><code>.h-flex-nowrap</code> (sets <code>flex-wrap: nowrap;</code>)</li>
+<li><code>.h-flex-wrap</code> (sets <code>flex-wrap: wrap;</code>)</li>
+<li><code>.h-flex-align-center</code> (sets <code>align-items: center;</code>)</li>
+<li><code>.h-flex-align-end</code> (sets <code>align-items: flex-end;</code>)</li>
+<li><code>.h-flex-align-start</code> (sets <code>align-items: flex-start;</code>)</li>
+<li><code>.h-flex-align-self-center</code> (sets <code>align-self: center;</code>)</li>
+<li><code>.h-flex-align-self-end</code> (sets <code>align-self: flex-end;</code>)</li>
+<li><code>.h-flex-align-self-start</code> (sets <code>align-self: flex-start;</code>)</li>
+<li><code>.h-flex-justify-center</code> (sets <code>justify-content: center;</code>)</li>
+<li><code>.h-flex-justify-end</code> (sets <code>justify-content: flex-end;</code>)</li>
+<li><code>.h-flex-justify-start</code> (sets <code>justify-content: flex-start;</code>)</li>
+</ul>
+<h3 id="float">Float</h3>
+<ul>
+<li><code>.h-clear</code> (sets <code>clear: both</code>)</li>
+<li><code>.h-clear-left</code> (sets <code>clear: left;</code>)</li>
+<li><code>.h-clear-right</code> (sets <code>clear: right;</code>)</li>
+<li><code>.h-left</code> (sets <code>float: left;</code>)</li>
+<li><code>.h-right</code> (sets <code>float: right;</code>)</li>
+</ul>
+<h3 id="margin">Margin</h3>
+<ul>
+<li><code>.h-margin-top</code> (sets <code>margin-top: @base;</code>)</li>
+<li><code>.h-margin-right</code> (sets <code>margin-right: @base;</code>)</li>
+<li><code>.h-margin-bottom</code> (sets <code>margin-bottom: @base;</code>)</li>
+<li><code>.h-margin-left</code> (sets <code>margin-left: @base;</code>)</li>
+</ul>
+<h3 id="padding">Padding</h3>
+<ul>
+<li><code>.h-padding-top</code> (sets <code>padding-top: @base;</code>)</li>
+<li><code>.h-padding-right</code> (sets <code>padding-right: @base;</code>)</li>
+<li><code>.h-padding-bottom</code> (sets <code>padding-bottom: @base;</code>)</li>
+<li><code>.h-padding-left</code> (sets <code>margin-left: @base;</code>)</li>
+</ul>
+<h3 id="size">Size</h3>
+<ul>
+<li><code>.h-full-height</code> (sets <code>min-height: 100vh;</code>)</li>
+<li><code>.h-full-width</code> (sets <code>width: 100%;</code>)</li>
+<li><code>.h-full</code> (sets <code>min-height: 100vh; width: 100%;</code>)</li>
+</ul>
+<h3 id="text">Text</h3>
+<ul>
+<li><code>.h-text-center</code> (sets <code>text-align: center;</code>)</li>
+<li><code>.h-text-left</code> (sets <code>text-align: left;</code>)</li>
+<li><code>.h-text-right</code> (sets <code>text-align: right;</code>)</li>
+</ul>
+<h1 id="-a-name-customize-and-extend-a-customize-extend"><a name="customize-and-extend"></a>Customize &amp; Extend</h1>
+<h2 id="designed-to-be-both-customizable-and-extensible-">Designed to be both customizable and extensible.</h2>
+<p><a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> is broken up into a set of responsive modules, adopting <a href="http://smacss.com/">SMACSS</a> as a convention for writing our CSS. For those who are new to <a href="http://smacss.com/">SMACSS</a>, you should give it a quick read, especially the section on module rules.</p>
+<p>One of the conventions in <a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> is for every module to have a standard class name for common rules across a module, and then have additional class names for specific presentational rules for a specific sub-module. All classes start with a <code>h-</code> prefix to prevent collisions.</p>
+<h3 id="customize">Customize</h3>
+<p>To customize simply clone the source from <a href="https://github.com/pimbrouwers/hydrogen">GitHub</a>, navigate to the project route &amp; run <code>npm install</code> and modify the contents of the <code>_variables.less</code> and/or <code>components/_variables.less</code> file(s). Once finished, run the build process by navigating to the project root and running <code>npm start</code>. </p>
+<h1 id="components">Components</h1>
+<h2 id="common-elements-to-help-meet-your-deadlines-">Common elements to help meet your deadlines.</h2>
+<h3 id="-a-name-alerts-a-alerts"><a name="alerts"></a>Alerts</h3>
+<div class="h-alert">I&#39;m a test alert!</div>
+
+<div class="h-alert">
+  I&#39;m a test alert with a close!
+  <span class="h-alert-close">&times;</span>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-alert&quot;&gt;I&#39;m a test alert!&lt;/div&gt;
+
+&lt;!-- With a close button --&gt;
+&lt;div class=&quot;h-alert&quot;&gt;
+  I&#39;m a test alert with a close!
+  &lt;span class=&quot;h-alert-close&quot;&gt;&amp;times;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-a-name-badges-a-badges"><a name="badges"></a>Badges</h3>
+<p><span class="h-badge">Badge 1</span>
+<span class="h-badge h-badge-fill">Badge 2</span></p>
+<pre><code class="lang-html">&lt;span class=&quot;h-badge&quot;&gt;Badge 1&lt;/span&gt;
+&lt;span class=&quot;h-badge h-badge-fill&quot;&gt;Badge 2&lt;/span&gt;
+</code></pre>
+<h3 id="-a-name-breadcrumbs-breadcrumbs"><a name="breadcrumbs">Breadcrumbs</h3>
+<div class="h-breadcrumbs">
+  <a href="#" class="h-breadcrumbs-item">Home</a>
+  <span class="h-breadcrumbs-spacer">/</span>
+  <a href="#" class="h-breadcrumbs-item">Stories</a>
+  <span class="h-breadcrumbs-spacer">/</span>
+  <span class="h-breadcrumbs-item">A Great Tale</span>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-breadcrumbs&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;h-breadcrumbs-item&quot;&gt;Home&lt;/a&gt;
+  &lt;span class=&quot;h-breadcrumbs-spacer&quot;&gt;/&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;h-breadcrumbs-item&quot;&gt;Stories&lt;/a&gt;
+  &lt;span class=&quot;h-breadcrumbs-spacer&quot;&gt;/&lt;/span&gt;
+  &lt;span class=&quot;h-breadcrumbs-item&quot;&gt;A Great Tale&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-a-name-button-groups-a-button-groups"><a name="button-groups"></a>Button Groups</h3>
+<div class="h-btn-group">
+  <button class="h-btn">Button 1</button>
+  <button class="h-btn">Button 2</button>
+  <button class="h-btn">Button 3</button>
+  <button class="h-btn">Button 4</button>
+</div>
+
+<div class="h-btn-group h-margin-top">
+  <button class="h-btn h-btn-fill">Button 1</button>
+  <button class="h-btn h-btn-fill">Button 2</button>
+  <button class="h-btn h-btn-fill">Button 3</button>
+  <button class="h-btn h-btn-fill">Button 4</button>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-btn-group&quot;&gt;
+  &lt;button class=&quot;h-btn&quot;&gt;Button 1&lt;/button&gt;
+  &lt;button class=&quot;h-btn&quot;&gt;Button 2&lt;/button&gt;
+  &lt;button class=&quot;h-btn&quot;&gt;Button 3&lt;/button&gt;
+  &lt;button class=&quot;h-btn&quot;&gt;Button 4&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;h-btn-group&quot;&gt;
+  &lt;button class=&quot;h-btn h-btn-fill&quot;&gt;Button 1&lt;/button&gt;
+  &lt;button class=&quot;h-btn h-btn-fill&quot;&gt;Button 2&lt;/button&gt;
+  &lt;button class=&quot;h-btn h-btn-fill&quot;&gt;Button 3&lt;/button&gt;
+  &lt;button class=&quot;h-btn h-btn-fill&quot;&gt;Button 4&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-a-name-card-a-cards"><a name="card"></a>Cards</h3>
+<div class="h-card h-text-center">
+  <div class="h-card-header">
+    Header
+  </div>
+  <div class="h-card-body">
+    I&#39;m a test card!
+  </div>
+  <div class="h-card-footer">
+    Footer
+  </div>
+</div>
+
+<pre><code class="lang-html">&lt;div class=&quot;h-card h-text-center&quot;&gt;
+  &lt;div class=&quot;h-card-header&quot;&gt;
+    Header
+  &lt;/div&gt;
+  &lt;div class=&quot;h-card-body&quot;&gt;
+    I&#39;m a test card!
+  &lt;/div&gt;
+  &lt;div class=&quot;h-card-footer&quot;&gt;
+    Footer
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="input-groups">Input Groups</h3>
+<form action="" class="h-form h-form-stack">
+  <label>Website</label>
+  <div class="h-input-group">
+    <span class="h-input-group-addon">http://</span>
+    <input class="h-input-group-field" type="text" />
+  </div>
+
+  <label>Handle</label>
+  <div class="h-input-group">
+    <span class="h-input-group-addon">@</span>
+    <input class="h-input-group-field" type="text" />
+  </div>
+
+  <label>Email</label>
+  <div class="h-input-group">
+    <input class="h-input-group-field" type="text" />
+    <span class="h-input-group-addon">.com</span>
+  </div>
+
+  <label>Income</label>
+  <div class="h-input-group">
+    <span class="h-input-group-addon">USD$</span>
+    <input class="h-input-group-field" type="text" />
+    <span class="h-input-group-addon">.00</span>
+  </div>
+
+  <label>Ordered</label>
+  <div class="h-input-group">
+    <button class="h-input-group-addon">Up</button>
+    <button class="h-input-group-addon">Down</button>
+    <input class="h-input-group-field h-flex-grow" type="text" />
+    <button class="h-input-group-addon">Delete</button>
+  </div>
+
+  <label>Two Inputs</label>
+  <div class="h-input-group">
+    <input class="h-input-group-field" type="text" placeholder="Title" />
+    <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
+  </div>
+
+  <label>Three Inputs</label>
+  <div class="h-input-group">
+    <input class="h-input-group-field" type="text" placeholder="Title" />
+    <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
+    <input class="h-input-group-field" type="text" placeholder="Email" />
+  </div>
+
+  <label>Two Inputs Stack</label>
+  <div class="h-input-group h-input-group-stack">
+    <input class="h-input-group-field" type="text" placeholder="Title" />
+    <input class="h-input-group-field" type="text" placeholder="Name" />
+  </div>
+
+  <label>Editor</label>
+  <div class="h-input-group h-input-group-stack">
+    <input class="h-input-group-field" type="text" placeholder="Title" />
+    <textarea class="h-input-group-field" type="text" placeholder="Text"></textarea>
+  </div>
+</form>
+
+<pre><code class="lang-html">&lt;form action=&quot;&quot; class=&quot;h-form h-form-stack&quot;&gt;
+  &lt;label&gt;Website&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;span class=&quot;h-input-group-addon&quot;&gt;http://&lt;/span&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Handle&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;span class=&quot;h-input-group-addon&quot;&gt;@&lt;/span&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Email&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
+    &lt;span class=&quot;h-input-group-addon&quot;&gt;.com&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Income&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;span class=&quot;h-input-group-addon&quot;&gt;USD$&lt;/span&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
+    &lt;span class=&quot;h-input-group-addon&quot;&gt;.00&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Ordered&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;button class=&quot;h-input-group-addon&quot;&gt;Up&lt;/button&gt;
+    &lt;button class=&quot;h-input-group-addon&quot;&gt;Down&lt;/button&gt;
+    &lt;input class=&quot;h-input-group-field h-flex-grow&quot; type=&quot;text&quot; /&gt;
+    &lt;button class=&quot;h-input-group-addon&quot;&gt;Delete&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Two Inputs&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Title&quot; /&gt;
+    &lt;input class=&quot;h-input-group-field h-flex-grow&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Three Inputs&lt;/label&gt;
+  &lt;div class=&quot;h-input-group&quot;&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Title&quot; /&gt;
+    &lt;input class=&quot;h-input-group-field h-flex-grow&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Email&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Two Inputs Stack&lt;/label&gt;
+  &lt;div class=&quot;h-input-group h-input-group-stack&quot;&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Title&quot; /&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;label&gt;Editor&lt;/label&gt;
+  &lt;div class=&quot;h-input-group h-input-group-stack&quot;&gt;
+    &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Title&quot; /&gt;
+    &lt;textarea class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Text&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+<h3 id="-a-name-pills-a-pills"><a name="pills"></a>Pills</h3>
+<div>
+  <button class="h-btn">
+    Button w/ Pill
+    <span class="h-pill h-right h-margin-left">3</span>
+  </button>
+
+  <button class="h-btn h-btn-fill">
+    Button w/ Pill
+    <span class="h-pill h-pill-inverted h-right h-margin-left">233</span>
+  </button>
+
+  <span class="h-badge">
+    Badge w/ Pill
+    <span class="h-pill h-right h-margin-left">1</span>
+  </span>
+
+  <span class="h-badge h-badge-fill">
+    Badge w/ Pill
+    <span class="h-pill h-pill-inverted h-right h-margin-left">122</span>
+  </span>
+</div>
+
+<pre><code class="lang-html">&lt;button class=&quot;h-btn&quot;&gt;
+  Button w/ Pill
+  &lt;span class=&quot;h-pill h-right h-margin-left&quot;&gt;3&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;h-btn h-btn-fill&quot;&gt;
+  Button w/ Pill
+  &lt;span class=&quot;h-pill h-pill-inverted h-right h-margin-left&quot;&gt;233&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;span class=&quot;h-badge&quot;&gt;
+  Badge w/ Pill
+  &lt;span class=&quot;h-pill h-right h-margin-left&quot;&gt;1&lt;/span&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;h-badge h-badge-fill&quot;&gt;
+  Badge w/ Pill
+  &lt;span class=&quot;h-pill h-pill-inverted h-right h-margin-left&quot;&gt;122&lt;/span&gt;
+&lt;/span&gt;
+</code></pre>
+<h3 id="-a-name-switches-a-switches"><a name="switches"></a>Switches</h3>
+<label class="h-switch">
+  <input type="checkbox">
+  <span class="h-switch-rail">
+    <span class="h-switch-toggle"></span>
+  </span>
+</label>
+
+<pre><code class="lang-html">&lt;label class=&quot;h-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt;
+  &lt;span class=&quot;h-switch-rail&quot;&gt;
+    &lt;span class=&quot;h-switch-toggle&quot;&gt;&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/label&gt;
+</code></pre>
+<h3 id="-a-name-titles-a-titles"><a name="titles"></a>Titles</h3>
+<h1 class="h-title">
+  Title
+  <span class="h-subtitle">Subtitle</span>
+</h1>
+
+<pre><code class="lang-html">&lt;h1 class=&quot;h-title&quot;&gt;
+  Title
+  &lt;span class=&quot;h-subtitle&quot;&gt;Subtitle&lt;/span&gt;
+&lt;/h1&gt;
+</code></pre>
+
+    </div>
+
+  </main>
+
+  <footer class="content">
+    <div class="h-g footer-links">
+      <div class="h-u-md-6-12">
+        <h6>Core</h6>
+        <a title="Getting Started" href="#getting-started">Getting Started</a>
+        <a title="Base" href="#base">Base</a>
+        <a title="Typography" href="#typography">Typography</a>
+        <a title="Buttons" href="#buttons">Buttons</a>
+        <a title="Tables" href="#tables">Tables</a>
+        <a title="Menus" href="#menus">Menus</a>
+        <a title="Forms" href="#forms">Forms</a>
+        <a title="Grid" href="#grid">Grid</a>
+        <a title="Grid Unit Sizes" href="#grid-unit-sizes">Grid Unit Sizes</a>
+        <a title="Utilities" href="#utilities">Utilities</a>
+        <a title="Customize" href="#customize-and-extend">Customize</a>
+      </div>
+  
+      <div class="h-u-md-6-12">
+        <h6>Components</h6>
+        <a title="Alerts" href="#alerts">Alerts</a>
+        <a title="Badges" href="#badges">Badges</a>
+        <a title="Breadcrumbs" href="#breadcrumbs">Breadcrumbs</a>
+        <a title="Button Groups" href="#button-groups">Button Groups</a>
+        <a title="Cards" href="#cards">Cards</a>
+        <a title="Input Groups" href="#input-groups">Input Groups</a>
+        <a title="Pills" href="#pills">Pills</a>
+        <a title="Switches" href="#switches">Switches</a>
+        <a title="Titles" href="#titles">Titles</a>
+      </div>
+    </div>
+  
+    <div class="h-margin-top h-margin-bottom h-text-center">
+      <small>Built with ♥ by <a title="Pim Brouwers' GitHub" href="https://github.com/pimbrouwers)" target="_blank">Pim Brouwers</a> in Toronto, ON. Licensed under <a title="Hydrogen License" href="https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE" target="_blank">MIT</a>.</small>
+    </div>
+  </footer></div>
+</body>
+</html>

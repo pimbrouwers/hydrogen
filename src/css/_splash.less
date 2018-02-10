@@ -1,0 +1,58 @@
+.splash {  
+  background: @gray;
+  padding: 2rem 0;
+
+  .hydrogen {
+    border: 2px solid #262626;
+    padding: 3em;
+    position: relative;
+  
+    span {
+      display: block;
+    }
+    
+    .atomic, .weight {
+      position: absolute;
+      top: .5em;
+    }
+  
+    .atomic {
+      left: .5em;
+    }
+  
+    .weight {
+      right: .5em;
+    }
+  
+    .symbol {
+      font-size: 5em;
+      font-weight: 700;
+    }
+  }
+
+  .subtitle, .h-btn {
+    font-weight: 100;
+  }
+
+  .subtitle {
+    margin: 1.5rem 0 2rem;
+  }
+  
+  .h-btn {
+    background: @blue;
+    border: 0;
+    color: #fff;
+    padding: .75rem 1.5rem;
+
+    &:hover {
+      background: darken(@blue, 7%);
+    }
+  }
+}
+
+
+@media screen and (min-width: 64rem) {
+  .splash {
+    padding: 4rem 0;
+  }
+}
