@@ -6,7 +6,7 @@
 
 The aim of this project to allow for beautiful front-end's to be developed quickly.
 
-Hydrogen is insanely tiny, the entire bundle weighing in at 2.85KB minified and gzipped, designed with an ethos rooted in ~~performance as a feature~~. 
+Hydrogen is insanely tiny, the entire bundle weighing in at 2.85KB minified and gzipped, designed with an ethos rooted in __performance as a feature__. 
 
  Core    | Grid-Utils | Components | Bundle  |
 |---------|------------|------------|---------|
