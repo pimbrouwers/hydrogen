@@ -6,7 +6,7 @@ title: Hydrogen - Light as air.
 
 [Hydrogen](https://github.com/pimbrouwers/hydrogen) is a lightweight modular CSS foundation designed for minimalists, with a powerful collection of components and utility classes. The aim of this project to allow for beautiful front-end's to be developed quickly.
 
-You can starting working with [Hydrogen](https://github.com/pimbrouwers/hydrogen) in multiple ways. The option with least resistance is a `<link>` refencing the free unpkg CDN. 
+You can starting working with [Hydrogen](https://github.com/pimbrouwers/hydrogen) in multiple ways. The option with least resistance is a `<link>` referencing the free unpkg CDN. 
 
 ### CDN
 
