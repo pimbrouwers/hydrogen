@@ -613,11 +613,13 @@ img {
 }
 .h-tbl th {
   background: #dedede;
-  border-bottom: 2px solid #dedede;
   text-align: left;
 }
 .h-tbl td {
   border-top: 1px solid #dedede;
+}
+.h-tbl tr:first-child td {
+  border: none;
 }
 .h-tbl-striped tr:nth-child(even) {
   background: #dedede;
