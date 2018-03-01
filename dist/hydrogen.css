@@ -1038,6 +1038,11 @@ div[class*="-r-"] {
 .h-badge-fill {
   background: #cccccc;
 }
+.h-blockquote {
+  background: #f0f0f0;
+  border-left: 4px solid #cccccc;
+  padding: 0.375rem 0 0.375rem 0.75rem;
+}
 .h-breadcrumbs {
   font-size: 0.825rem;
   margin: 0 0 0.75rem;
