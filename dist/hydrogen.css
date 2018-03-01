@@ -209,6 +209,21 @@ img {
 .h-right {
   float: right;
 }
+.h-margin-0 {
+  margin: 0;
+}
+.h-margin-top-0 {
+  margin-top: 0;
+}
+.h-margin-right-0 {
+  margin-right: 0;
+}
+.h-margin-bottom-0 {
+  margin-bottom: 0;
+}
+.h-margin-left-0 {
+  margin-left: 0;
+}
 .h-margin-top {
   margin-top: 0.75rem;
 }
@@ -220,6 +235,21 @@ img {
 }
 .h-margin-left {
   margin-left: 0.75rem;
+}
+.h-padding-0 {
+  padding: 0;
+}
+.h-padding-top-0 {
+  padding-top: 0;
+}
+.h-padding-right-0 {
+  padding-right: 0;
+}
+.h-padding-bottom-0 {
+  padding-bottom: 0;
+}
+.h-padding-left-0 {
+  padding-left: 0;
 }
 .h-padding-top {
   padding-top: 0.75rem;
