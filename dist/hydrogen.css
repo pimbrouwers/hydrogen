@@ -98,6 +98,18 @@ img {
 /*=============================
   Utils
 =============================*/
+.h-display-block {
+  display: block;
+}
+.h-display-inline {
+  display: inline;
+}
+.h-display-inline-block {
+  display: inline-block;
+}
+.h-display-none {
+  display: none;
+}
 .h-flex {
   display: -webkit-box;
   display: -ms-flexbox;
