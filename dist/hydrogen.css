@@ -356,7 +356,8 @@ img {
   background: #dedede;
   cursor: not-allowed;
 }
-.h-form input[type=checkbox] {
+.h-form input[type=checkbox],
+.h-form input[type=radio] {
   margin: 3px 3px 0.5rem 4px;
 }
 .h-form textarea {
@@ -368,7 +369,8 @@ img {
 .h-form-stack label {
   display: block;
 }
-.h-form-stack input[type=checkbox] {
+.h-form-stack input[type=checkbox],
+.h-form-stack input[type=radio] {
   display: inline-block;
 }
 /*=============================
