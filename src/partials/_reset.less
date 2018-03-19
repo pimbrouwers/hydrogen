@@ -1,45 +1,22 @@
 /*=============================
 Base
 =============================*/
+html {
+  box-sizing: border-box;
+  font: 16px/@magic-number @font-family;
+}
+
 body {
   background: @raw;
-  color: @body-color;
-  margin: 0;
-  font: 16px/1 @font-family;
+  color: @body-color;  
 }
 
-* {
-  box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: inherit;
+  vertical-align: baseline;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
+body,
 h1, 
 h2, 
 h3, 
@@ -53,49 +30,20 @@ ol,
 ul,
 table,
 dl {
-  margin: 0 0 @base / @base 0;
-}
-
-p,
-blockquote,
-figure,
-ol,
-ul,
-dl {
-  line-height: @line-height;
-}
-
-blockquote,
-figure,
-ol,
-ul {
-  padding: 0;    
-}
-
-ol, ul {
-  li {
-      margin-left: @list-margin-left;
-  }
-}
-
-dl {
-  dt {
-    font-weight: 700;
-    margin: 0;
-  }
-
-  dd {
-    margin: 0 0 @base / 2;
-  }
-}
-
-main {
-  display: block;
-}
-
-::-moz-focus-inner {
+  margin: 0;
   padding: 0;
-  border: 0;
+  font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr {
+  margin-bottom: unit(@magic-number, rem);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
 :focus {
@@ -103,5 +51,6 @@ main {
 }
 
 img {
-  border: 0;
+  max-width: 100%;
+  display: inline-block;
 }

@@ -7,22 +7,22 @@
   max-width: 100%;
     
   th, td {			
-    padding: @tbl-gutter;
+    padding: @base;
   }
 
   th {
-    background: @tbl-border-color;
+    background: @rare;
     text-align: left;
   }
 
   td {
-    border-top: 1px solid @tbl-border-color;
+    border-top: 1px solid @rare;
   }
 
   tr {
     &:first-child {
       td {
-        border: none;
+        border: 0;
       }
     }
   }
@@ -31,7 +31,11 @@
 .h-tbl-striped {
   tr {
     &:nth-child(even) {
-      background: @tbl-border-color;
+      background: lighten(@rare, 14%, 'relative');
+    }
+
+    td {
+      border: 0;
     }
   }
 }

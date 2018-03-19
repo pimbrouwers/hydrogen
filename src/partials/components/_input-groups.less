@@ -1,12 +1,11 @@
 .h-input-group {
   .h-flex;
-  margin: 0 0 @input-group-margin;
 
   .h-input-group-addon {
-    background: @input-group-addon-background;
-    border: 1px solid @input-group-addon-border;
+    background: lighten(@rare, 14%, 'relative');
+    border: 1px solid @rare;
     font: inherit;
-    padding: @input-group-addon-padding;
+    padding: @base * .75;
   }
 
   .h-input-group-addon, .h-input-group-field {
@@ -14,7 +13,7 @@
   }
 
   .h-input-group-addon:first-child, .h-input-group-field:first-child {
-    border-left: 1px solid @input-group-addon-border;
+    border-left: 1px solid @rare;
   }
 
   .h-input-group-field {    
@@ -27,11 +26,11 @@
   .h-flex-column;
 
   .h-input-group-addon, .h-input-group-field {
-    border: 1px solid @input-group-addon-border;
+    border: 1px solid @rare;
     border-top: 0;
   }
 
   .h-input-group-addon:first-child, .h-input-group-field:first-child {
-    border-top: 1px solid @input-group-addon-border;
+    border-top: 1px solid @rare;
   }
 }

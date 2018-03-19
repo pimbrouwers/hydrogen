@@ -2,17 +2,16 @@
   Alerts
 =============================*/
 .h-alert {
-  background: @alert-background;
-  border: 1px solid @alert-border;
-  color: @alert-color;
-  margin: 0 0 @base / @base 0;
-  padding: @alert-padding;
+  background: lighten(@rare, 14%, 'relative');
+  border: 1px solid @rare;
+  color: inherit;
+  padding: @base * .75;
   position: relative;
 
   .h-alert-close {
     font-weight: 600;
     position: absolute;
-    top: @alert-padding;
-    right: @alert-padding;
+    top: @base * .75;
+    right: @base * .75;
   }
 }

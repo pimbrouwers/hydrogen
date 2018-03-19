@@ -77,7 +77,6 @@
 			<dd>A description list is perfect for defining terms.</dd>
 			<dt>Euismod</dt>
 			<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-			<dd>Donec id elit non mi porta gravida at eget metus.</dd>
 			<dt>Malesuada porta</dt>
 			<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
 		</dl>
@@ -150,51 +149,19 @@
 		<!-- inline form -->
 		<form class="h-form">
 			<fieldset>
-				<legend>A compact inline form</legend> 
-
-				<input type="email" placeholder="Email"> 
-
-				<input type="password" placeholder="Password" required=""> 
-
-				<input type="text" placeholder="Disabled" disabled> 
-
-				<label for="state">State</label>
-				<select name="state">
-					<option>
-						AL
-					</option>
-					<option>
-						CA
-					</option>
-					<option>
-						IL
-					</option>
-				</select> 
-
-				<label for="remember">
-					<input id="remember" type="checkbox"> Remember me
-				</label> 
-
-				<button class="h-btn h-btn-primary" type="submit">Sign in</button>
-			</fieldset>
-		</form>
-
-		<!-- stacked form -->
-		<form class="h-form h-form-stack">
-			<fieldset>
-				<legend>A stacked form</legend>
+				<legend class="h-margin-bottom">A default form</legend>
 		
 				<label for="text">Text</label>
-				<input type="email" placeholder="Email">
+				<input class="h-margin-bottom" type="email" placeholder="Email">
 		
 				<label for="text">Text</label>
-				<input type="password" placeholder="Password" required="">
+				<input class="h-margin-bottom" type="password" placeholder="Password" required="">
 		
 				<label for="text">Text</label>
-				<input type="text" placeholder="Disabled" disabled>
+				<input class="h-margin-bottom" type="text" placeholder="Disabled" disabled>
 		
 				<label for="state">State</label>
-				<select name="state">
+				<select class="h-margin-bottom" name="state">
 					<option>
 						AL
 					</option>
@@ -207,15 +174,15 @@
 				</select>
 		
 				<label for="text">Text</label>
-				<textarea name="text"></textarea>
+				<textarea class="h-margin-bottom" name="text"></textarea>
 
-				<label for="remember">
+				<label class="h-margin-bottom" for="remember">
 					<input id="remember" type="checkbox"> Remember me
 				</label>
 		
 				<button class="h-btn h-btn-primary" type="submit">Sign in</button>
 			</fieldset>
-		</form>
+		</form>	
 	</div>
 
 	<!-- tables -->

@@ -2,23 +2,22 @@
   Cards
 =============================*/
 .h-card {
-  border: 1px solid @card-border;
-  margin: 0 0 @base / @base 0;
+  border: 1px solid @rare;
 
   .h-card-body {
-    padding: @card-padding;
+    padding: @base * .75;
   }
 
   .h-card-header, .h-card-footer {
-    background: @card-background;    
-    padding: round(@card-padding * .667, 1) @card-padding;
+    background: lighten(@rare, 14%, 'relative');    
+    padding: @base * .5 @base * .75;
   }  
 
   .h-card-header {
-    border-bottom: 1px solid @card-border;
+    border-bottom: 1px solid @rare;
   }
 
   .h-card-footer {
-    border-top: 1px solid @card-border;
+    border-top: 1px solid @rare;
   }
 }
