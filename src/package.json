@@ -17,6 +17,7 @@
     "server": "http-server ../",
     "watch:less": "watch \"npm run less\" ./css --ignoreDotFiles --ignoreUnreadable",
     "watch:pages": "watch \"npm run pages\" ./pages --ignoreDotFiles --ignoreUnreadable",
+    "watch:templates": "watch \"npm run pages\" ./templates --ignoreDotFiles --ignoreUnreadable",
     "watch": "run-p watch:*",
     "develop": "run-p watch server",
     "compile": "npm-run-all pages less"

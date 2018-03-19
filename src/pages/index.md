@@ -91,7 +91,7 @@ By default, all headings, paragraphs, and code use system fonts, using the most 
 # <a name="tables"></a>Tables
 ## Elegant override for default table styles.
 
-To override the default user agent table styles, simply append the `.h-tbl` class to the `<table>` element.
+To override the default user agent table styles, simply append the `.h-tbl` class to the `<table>` element. To add striped rows, also append the `.h-tbl-striped` class.
 
 <table class="h-tbl">
   <thead>
@@ -245,24 +245,25 @@ Include the optional `.h-menu-heading` element to include a descriptive title.
 # <a name="forms"></a>Forms
 ## Simple HTML forms.
 
-By default the `.h-form` class renders an inline form, to create a stacked form simply append the `.h-form-stack` modifier. 
+By default the `.h-form` class renders a stacked form. 
 
 Form elements can be combined with [grid unit sizes](#grid-unit-sizes) to render fields of specific widths.
 
-### Inline (default)
-
 <form class="h-form">
   <fieldset>
-    <legend>A compact inline form</legend> 
+    <legend class="h-margin-bottom">A compact inline form</legend> 
 
-    <input type="email" placeholder="Email"> 
+    <label>Email</label>
+    <input class="h-margin-bottom" type="email" placeholder="Email"> 
 
-    <input type="password" placeholder="Password" required=""> 
+    <label>Password</label>
+    <input class="h-margin-bottom" type="password" placeholder="Password" required=""> 
 
-    <input type="text" placeholder="Disabled" disabled> 
+    <label>Disabled</label>
+    <input class="h-margin-bottom" type="text" placeholder="Disabled" disabled> 
 
     <label for="state">State</label>
-    <select name="state">
+    <select class="h-margin-bottom" name="state">
       <option>
         AL
       </option>
@@ -274,27 +275,30 @@ Form elements can be combined with [grid unit sizes](#grid-unit-sizes) to render
       </option>
     </select> 
 
-    <label for="remember">
+    <label class="h-margin-bottom" for="remember">
       <input id="remember" type="checkbox"> Remember me
     </label> 
 
-    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+    <button class="h-btn h-btn-fill" type="submit">Sign in</button>
   </fieldset>
 </form>
 
 ```html
 <form class="h-form">
   <fieldset>
-    <legend>A compact inline form</legend> 
+    <legend class="h-margin-bottom">A compact inline form</legend> 
 
-    <input type="email" placeholder="Email"> 
+    <label>Email</label>
+    <input class="h-margin-bottom" type="email" placeholder="Email"> 
 
-    <input type="password" placeholder="Password" required=""> 
+    <label>Password</label>
+    <input class="h-margin-bottom" type="password" placeholder="Password" required=""> 
 
-    <input type="text" placeholder="Disabled" disabled> 
+    <label>Disabled</label>
+    <input class="h-margin-bottom" type="text" placeholder="Disabled" disabled> 
 
     <label for="state">State</label>
-    <select name="state">
+    <select class="h-margin-bottom" name="state">
       <option>
         AL
       </option>
@@ -306,77 +310,11 @@ Form elements can be combined with [grid unit sizes](#grid-unit-sizes) to render
       </option>
     </select> 
 
-    <label for="remember">
+    <label class="h-margin-bottom" for="remember">
       <input id="remember" type="checkbox"> Remember me
     </label> 
 
-    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
-  </fieldset>
-</form>
-```
-
-### Stacked
-
-<form class="h-form h-form-stack">
-  <fieldset>
-    <legend>A stacked form</legend>
-
-    <input type="email" placeholder="Email">
-
-    <input type="password" placeholder="Password" required="">
-
-    <input type="text" placeholder="Disabled" disabled>
-
-    <label for="state">State</label>
-    <select name="state">
-      <option>
-        AL
-      </option>
-      <option>
-        CA
-      </option>
-      <option>
-        IL
-      </option>
-    </select>
-
-    <label for="remember">
-      <input id="remember" type="checkbox"> Remember me
-    </label>
-
-    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
-  </fieldset>
-</form>
-
-```html
-<form class="h-form h-form-stack">
-  <fieldset>
-    <legend>A stacked form</legend>
-
-    <input type="email" placeholder="Email">
-
-    <input type="password" placeholder="Password" required="">
-
-    <input type="text" placeholder="Disabled" disabled>
-
-    <label for="state">State</label>
-    <select name="state">
-      <option>
-        AL
-      </option>
-      <option>
-        CA
-      </option>
-      <option>
-        IL
-      </option>
-    </select>
-
-    <label for="remember">
-      <input id="remember" type="checkbox"> Remember me
-    </label>
-
-    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+    <button class="h-btn h-btn-fill" type="submit">Sign in</button>
   </fieldset>
 </form>
 ```
@@ -477,10 +415,17 @@ This is done by adding the `.h-u-12-12` class for all screens, `.h-u-sm-6-12` fo
 # <a name="utilities"></a>Utilities
 ## Utility classes for common css tasks.
 
-### Flex
-- `.h-flex` (sets `  display: flex;`)
+### Display
+- `.h-display-block` (sets `display: block;`)
+- `.h-display-inline` (sets `display: inline;`)
+- `.h-display-inline-block` (sets `display: inline-block;`)
+- `.h-display-none` (sets `display: none;`)
+
+### Flexbox
+- `.h-flex` (sets `display: flex;`)
 - `.h-flex-column` (sets `flex-direction: column;`)
 - `.h-flex-row` (sets `flex-direction: row;`)
+- `.h-flex-reverse` (sets `flex-direction: reverse;`)
 - `.h-flex-nowrap` (sets `flex-wrap: nowrap;`)
 - `.h-flex-wrap` (sets `flex-wrap: wrap;`)
 - `.h-flex-align-center` (sets `align-items: center;`)
@@ -491,33 +436,45 @@ This is done by adding the `.h-u-12-12` class for all screens, `.h-u-sm-6-12` fo
 - `.h-flex-align-self-start` (sets `align-self: flex-start;`)
 - `.h-flex-justify-center` (sets `justify-content: center;`)
 - `.h-flex-justify-end` (sets `justify-content: flex-end;`)
+- `.h-flex-justify-space-between` (sets `justify-content: space-between;`)
 - `.h-flex-justify-start` (sets `justify-content: flex-start;`)
+- `.h-flex-grow` (sets `flex-grow: 1;`)
 
-### Float
-- `.h-clear` (sets `clear: both`)
+### Position
+- `.h-clear` (sets `clear: both;`)
 - `.h-clear-left` (sets `clear: left;`)
 - `.h-clear-right` (sets `clear: right;`)
 - `.h-left` (sets `float: left;`)
 - `.h-right` (sets `float: right;`)
 
 ### Margin
-- `.h-margin-top` (sets `margin-top: @base;`)
-- `.h-margin-right` (sets `margin-right: @base;`)
-- `.h-margin-bottom` (sets `margin-bottom: @base;`)
-- `.h-margin-left` (sets `margin-left: @base;`)
+- `.h-margin-0` (sets `margin: 0;`)
+- `.h-margin-top-0` (sets `margin-top: 0;`)
+- `.h-margin-right-0` (sets `margin-right: 0;`)
+- `.h-margin-bottom-0` (sets `margin-bottom: 0;`)
+- `.h-margin-left-0` (sets `margin-left: 0;`)
+- `.h-margin-top` (sets `margin-top: 1rem;`)
+- `.h-margin-right` (sets `margin-right: 1rem;`)
+- `.h-margin-bottom` (sets `margin-bottom: 1rem;`)
+- `.h-margin-left` (sets `margin-left: 1rem;`)
 
 ### Padding
-- `.h-padding-top` (sets `padding-top: @base;`)
-- `.h-padding-right` (sets `padding-right: @base;`)
-- `.h-padding-bottom` (sets `padding-bottom: @base;`)
-- `.h-padding-left` (sets `margin-left: @base;`)
+- `.h-padding-0` (sets `padding: 0;`)
+- `.h-padding-top-0` (sets `padding-top: 0;`)
+- `.h-padding-right-0` (sets `padding-right: 0;`)
+- `.h-padding-bottom-0` (sets `padding-bottom: 0;`)
+- `.h-padding-left-0` (sets `padding-left: 0;`)
+- `.h-padding-top` (sets `padding-top: 1rem;`)
+- `.h-padding-right` (sets `padding-right: 1rem;`)
+- `.h-padding-bottom` (sets `padding-bottom: 1rem;`)
+- `.h-padding-left` (sets `margin-left: 1rem;`)
 
 ### Size
 - `.h-full-height` (sets `min-height: 100vh;`)
 - `.h-full-width` (sets `width: 100%;`)
-- `.h-full` (sets `min-height: 100vh; width: 100%;`)
+- `.h-full` (sets `min-height: 100vh;`)
 
-### Text
+### Text Alignment
 - `.h-text-center` (sets `text-align: center;`)
 - `.h-text-left` (sets `text-align: left;`)
 - `.h-text-right` (sets `text-align: right;`)
@@ -537,7 +494,7 @@ To customize simply clone the source from [GitHub](https://github.com/pimbrouwer
 ## Common elements to help meet your deadlines.
 
 ### <a name="alerts"></a>Alerts
-<div class="h-alert">I'm a test alert!</div>
+<div class="h-alert h-margin-bottom">I'm a test alert!</div>
 
 <div class="h-alert">
   I'm a test alert with a close!
@@ -648,32 +605,32 @@ To customize simply clone the source from [GitHub](https://github.com/pimbrouwer
 
 <form action="" class="h-form h-form-stack">
   <label>Website</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">http://</span>
     <input class="h-input-group-field" type="text" />
   </div>
 
   <label>Handle</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">@</span>
     <input class="h-input-group-field" type="text" />
   </div>
 
   <label>Email</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" />
     <span class="h-input-group-addon">.com</span>
   </div>
 
   <label>Income</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">USD$</span>
     <input class="h-input-group-field" type="text" />
     <span class="h-input-group-addon">.00</span>
   </div>
 
   <label>Ordered</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <button class="h-input-group-addon">Up</button>
     <button class="h-input-group-addon">Down</button>
     <input class="h-input-group-field h-flex-grow" type="text" />
@@ -681,26 +638,26 @@ To customize simply clone the source from [GitHub](https://github.com/pimbrouwer
   </div>
 
   <label>Two Inputs</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
   </div>
 
   <label>Three Inputs</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
     <input class="h-input-group-field" type="text" placeholder="Email" />
   </div>
 
   <label>Two Inputs Stack</label>
-  <div class="h-input-group h-input-group-stack">
+  <div class="h-input-group h-input-group-stack h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field" type="text" placeholder="Name" />
   </div>
 
   <label>Editor</label>
-  <div class="h-input-group h-input-group-stack">
+  <div class="h-input-group h-input-group-stack h-margin-bttom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <textarea class="h-input-group-field" type="text" placeholder="Text"></textarea>
   </div>
@@ -709,32 +666,32 @@ To customize simply clone the source from [GitHub](https://github.com/pimbrouwer
 ```html
 <form action="" class="h-form h-form-stack">
   <label>Website</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">http://</span>
     <input class="h-input-group-field" type="text" />
   </div>
 
   <label>Handle</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">@</span>
     <input class="h-input-group-field" type="text" />
   </div>
 
   <label>Email</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" />
     <span class="h-input-group-addon">.com</span>
   </div>
 
   <label>Income</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">USD$</span>
     <input class="h-input-group-field" type="text" />
     <span class="h-input-group-addon">.00</span>
   </div>
 
   <label>Ordered</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <button class="h-input-group-addon">Up</button>
     <button class="h-input-group-addon">Down</button>
     <input class="h-input-group-field h-flex-grow" type="text" />
@@ -742,13 +699,13 @@ To customize simply clone the source from [GitHub](https://github.com/pimbrouwer
   </div>
 
   <label>Two Inputs</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
   </div>
 
   <label>Three Inputs</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
     <input class="h-input-group-field" type="text" placeholder="Email" />
@@ -812,24 +769,6 @@ To customize simply clone the source from [GitHub](https://github.com/pimbrouwer
   Badge w/ Pill
   <span class="h-pill h-pill-inverted h-right h-margin-left">122</span>
 </span>
-```
-
-### <a name="switches"></a>Switches
-
-<label class="h-switch">
-  <input type="checkbox">
-  <span class="h-switch-rail">
-    <span class="h-switch-toggle"></span>
-  </span>
-</label>
-
-```html
-<label class="h-switch">
-  <input type="checkbox">
-  <span class="h-switch-rail">
-    <span class="h-switch-toggle"></span>
-  </span>
-</label>
 ```
 
 ### <a name="titles"></a>Titles
