@@ -47,7 +47,7 @@
 <p>Explicit font sizes for headings to ensure consistent rendering. For example, without explicit font sizes, the user agent stylesheet will apply differing sizes to headings within a <code>&lt;section&gt;</code>.</p>
 <p>All sizing within <a href="https://github.com/pimbrouwers/hydrogen">Hydrogen</a> is done using <code>rem</code>. All <code>rem</code> units are converted to base 16, so <code>1rem</code> is equal to <code>16px</code>.</p>
 <h1 id="-a-name-typography-a-typography"><a name="typography"></a>Typography</h1>
-<h2 id="-rem-based-progressive-sizing-"><code>rem</code> based progressive sizing.</h2>
+<h2 id="rem-based-progressive-sizing-"><code>rem</code> based progressive sizing.</h2>
 <p>By default, all headings, paragraphs, and code use system fonts, using the most modern one available on a user&#39;s operating system. All font-sizes are based on <code>rem</code> units.  </p>
 <h3 id="headings">Headings</h3>
 <div class="reset">
@@ -101,7 +101,7 @@
 </code></pre>
 <h1 id="-a-name-tables-a-tables"><a name="tables"></a>Tables</h1>
 <h2 id="elegant-override-for-default-table-styles-">Elegant override for default table styles.</h2>
-<p>To override the default user agent table styles, simply append the <code>.h-tbl</code> class to the <code>&lt;table&gt;</code> element.</p>
+<p>To override the default user agent table styles, simply append the <code>.h-tbl</code> class to the <code>&lt;table&gt;</code> element. To add striped rows, also append the <code>.h-tbl-striped</code> class.</p>
 <table class="h-tbl">
   <thead>
     <tr>
@@ -243,21 +243,23 @@
 </code></pre>
 <h1 id="-a-name-forms-a-forms"><a name="forms"></a>Forms</h1>
 <h2 id="simple-html-forms-">Simple HTML forms.</h2>
-<p>By default the <code>.h-form</code> class renders an inline form, to create a stacked form simply append the <code>.h-form-stack</code> modifier. </p>
+<p>By default the <code>.h-form</code> class renders a stacked form. </p>
 <p>Form elements can be combined with <a href="#grid-unit-sizes">grid unit sizes</a> to render fields of specific widths.</p>
-<h3 id="inline-default-">Inline (default)</h3>
 <form class="h-form">
   <fieldset>
-    <legend>A compact inline form</legend> 
+    <legend class="h-margin-bottom">A compact inline form</legend> 
 
-    <input type="email" placeholder="Email"> 
+    <label>Email</label>
+    <input class="h-margin-bottom" type="email" placeholder="Email"> 
 
-    <input type="password" placeholder="Password" required=""> 
+    <label>Password</label>
+    <input class="h-margin-bottom" type="password" placeholder="Password" required=""> 
 
-    <input type="text" placeholder="Disabled" disabled> 
+    <label>Disabled</label>
+    <input class="h-margin-bottom" type="text" placeholder="Disabled" disabled> 
 
     <label for="state">State</label>
-    <select name="state">
+    <select class="h-margin-bottom" name="state">
       <option>
         AL
       </option>
@@ -269,26 +271,29 @@
       </option>
     </select> 
 
-    <label for="remember">
+    <label class="h-margin-bottom" for="remember">
       <input id="remember" type="checkbox"> Remember me
     </label> 
 
-    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
+    <button class="h-btn h-btn-fill" type="submit">Sign in</button>
   </fieldset>
 </form>
 
 <pre><code class="lang-html">&lt;form class=&quot;h-form&quot;&gt;
   &lt;fieldset&gt;
-    &lt;legend&gt;A compact inline form&lt;/legend&gt; 
+    &lt;legend class=&quot;h-margin-bottom&quot;&gt;A compact inline form&lt;/legend&gt; 
 
-    &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt; 
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input class=&quot;h-margin-bottom&quot; type=&quot;email&quot; placeholder=&quot;Email&quot;&gt; 
 
-    &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;&quot;&gt; 
+    &lt;label&gt;Password&lt;/label&gt;
+    &lt;input class=&quot;h-margin-bottom&quot; type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;&quot;&gt; 
 
-    &lt;input type=&quot;text&quot; placeholder=&quot;Disabled&quot; disabled&gt; 
+    &lt;label&gt;Disabled&lt;/label&gt;
+    &lt;input class=&quot;h-margin-bottom&quot; type=&quot;text&quot; placeholder=&quot;Disabled&quot; disabled&gt; 
 
     &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
-    &lt;select name=&quot;state&quot;&gt;
+    &lt;select class=&quot;h-margin-bottom&quot; name=&quot;state&quot;&gt;
       &lt;option&gt;
         AL
       &lt;/option&gt;
@@ -300,74 +305,11 @@
       &lt;/option&gt;
     &lt;/select&gt; 
 
-    &lt;label for=&quot;remember&quot;&gt;
+    &lt;label class=&quot;h-margin-bottom&quot; for=&quot;remember&quot;&gt;
       &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
     &lt;/label&gt; 
 
-    &lt;button class=&quot;h-btn h-btn-primary&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
-  &lt;/fieldset&gt;
-&lt;/form&gt;
-</code></pre>
-<h3 id="stacked">Stacked</h3>
-<form class="h-form h-form-stack">
-  <fieldset>
-    <legend>A stacked form</legend>
-
-    <input type="email" placeholder="Email">
-
-    <input type="password" placeholder="Password" required="">
-
-    <input type="text" placeholder="Disabled" disabled>
-
-    <label for="state">State</label>
-    <select name="state">
-      <option>
-        AL
-      </option>
-      <option>
-        CA
-      </option>
-      <option>
-        IL
-      </option>
-    </select>
-
-    <label for="remember">
-      <input id="remember" type="checkbox"> Remember me
-    </label>
-
-    <button class="h-btn h-btn-primary" type="submit">Sign in</button>
-  </fieldset>
-</form>
-
-<pre><code class="lang-html">&lt;form class=&quot;h-form h-form-stack&quot;&gt;
-  &lt;fieldset&gt;
-    &lt;legend&gt;A stacked form&lt;/legend&gt;
-
-    &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
-
-    &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; required=&quot;&quot;&gt;
-
-    &lt;input type=&quot;text&quot; placeholder=&quot;Disabled&quot; disabled&gt;
-
-    &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
-    &lt;select name=&quot;state&quot;&gt;
-      &lt;option&gt;
-        AL
-      &lt;/option&gt;
-      &lt;option&gt;
-        CA
-      &lt;/option&gt;
-      &lt;option&gt;
-        IL
-      &lt;/option&gt;
-    &lt;/select&gt;
-
-    &lt;label for=&quot;remember&quot;&gt;
-      &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
-    &lt;/label&gt;
-
-    &lt;button class=&quot;h-btn h-btn-primary&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+    &lt;button class=&quot;h-btn h-btn-fill&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;
 </code></pre>
@@ -481,11 +423,19 @@
 </code></pre>
 <h1 id="-a-name-utilities-a-utilities"><a name="utilities"></a>Utilities</h1>
 <h2 id="utility-classes-for-common-css-tasks-">Utility classes for common css tasks.</h2>
-<h3 id="flex">Flex</h3>
+<h3 id="display">Display</h3>
+<ul>
+<li><code>.h-display-block</code> (sets <code>display: block;</code>)</li>
+<li><code>.h-display-inline</code> (sets <code>display: inline;</code>)</li>
+<li><code>.h-display-inline-block</code> (sets <code>display: inline-block;</code>)</li>
+<li><code>.h-display-none</code> (sets <code>display: none;</code>)</li>
+</ul>
+<h3 id="flexbox">Flexbox</h3>
 <ul>
 <li><code>.h-flex</code> (sets <code>display: flex;</code>)</li>
 <li><code>.h-flex-column</code> (sets <code>flex-direction: column;</code>)</li>
 <li><code>.h-flex-row</code> (sets <code>flex-direction: row;</code>)</li>
+<li><code>.h-flex-reverse</code> (sets <code>flex-direction: reverse;</code>)</li>
 <li><code>.h-flex-nowrap</code> (sets <code>flex-wrap: nowrap;</code>)</li>
 <li><code>.h-flex-wrap</code> (sets <code>flex-wrap: wrap;</code>)</li>
 <li><code>.h-flex-align-center</code> (sets <code>align-items: center;</code>)</li>
@@ -496,11 +446,13 @@
 <li><code>.h-flex-align-self-start</code> (sets <code>align-self: flex-start;</code>)</li>
 <li><code>.h-flex-justify-center</code> (sets <code>justify-content: center;</code>)</li>
 <li><code>.h-flex-justify-end</code> (sets <code>justify-content: flex-end;</code>)</li>
+<li><code>.h-flex-justify-space-between</code> (sets <code>justify-content: space-between;</code>)</li>
 <li><code>.h-flex-justify-start</code> (sets <code>justify-content: flex-start;</code>)</li>
+<li><code>.h-flex-grow</code> (sets <code>flex-grow: 1;</code>)</li>
 </ul>
-<h3 id="float">Float</h3>
+<h3 id="position">Position</h3>
 <ul>
-<li><code>.h-clear</code> (sets <code>clear: both</code>)</li>
+<li><code>.h-clear</code> (sets <code>clear: both;</code>)</li>
 <li><code>.h-clear-left</code> (sets <code>clear: left;</code>)</li>
 <li><code>.h-clear-right</code> (sets <code>clear: right;</code>)</li>
 <li><code>.h-left</code> (sets <code>float: left;</code>)</li>
@@ -508,25 +460,35 @@
 </ul>
 <h3 id="margin">Margin</h3>
 <ul>
-<li><code>.h-margin-top</code> (sets <code>margin-top: @base;</code>)</li>
-<li><code>.h-margin-right</code> (sets <code>margin-right: @base;</code>)</li>
-<li><code>.h-margin-bottom</code> (sets <code>margin-bottom: @base;</code>)</li>
-<li><code>.h-margin-left</code> (sets <code>margin-left: @base;</code>)</li>
+<li><code>.h-margin-0</code> (sets <code>margin: 0;</code>)</li>
+<li><code>.h-margin-top-0</code> (sets <code>margin-top: 0;</code>)</li>
+<li><code>.h-margin-right-0</code> (sets <code>margin-right: 0;</code>)</li>
+<li><code>.h-margin-bottom-0</code> (sets <code>margin-bottom: 0;</code>)</li>
+<li><code>.h-margin-left-0</code> (sets <code>margin-left: 0;</code>)</li>
+<li><code>.h-margin-top</code> (sets <code>margin-top: 1rem;</code>)</li>
+<li><code>.h-margin-right</code> (sets <code>margin-right: 1rem;</code>)</li>
+<li><code>.h-margin-bottom</code> (sets <code>margin-bottom: 1rem;</code>)</li>
+<li><code>.h-margin-left</code> (sets <code>margin-left: 1rem;</code>)</li>
 </ul>
 <h3 id="padding">Padding</h3>
 <ul>
-<li><code>.h-padding-top</code> (sets <code>padding-top: @base;</code>)</li>
-<li><code>.h-padding-right</code> (sets <code>padding-right: @base;</code>)</li>
-<li><code>.h-padding-bottom</code> (sets <code>padding-bottom: @base;</code>)</li>
-<li><code>.h-padding-left</code> (sets <code>margin-left: @base;</code>)</li>
+<li><code>.h-padding-0</code> (sets <code>padding: 0;</code>)</li>
+<li><code>.h-padding-top-0</code> (sets <code>padding-top: 0;</code>)</li>
+<li><code>.h-padding-right-0</code> (sets <code>padding-right: 0;</code>)</li>
+<li><code>.h-padding-bottom-0</code> (sets <code>padding-bottom: 0;</code>)</li>
+<li><code>.h-padding-left-0</code> (sets <code>padding-left: 0;</code>)</li>
+<li><code>.h-padding-top</code> (sets <code>padding-top: 1rem;</code>)</li>
+<li><code>.h-padding-right</code> (sets <code>padding-right: 1rem;</code>)</li>
+<li><code>.h-padding-bottom</code> (sets <code>padding-bottom: 1rem;</code>)</li>
+<li><code>.h-padding-left</code> (sets <code>margin-left: 1rem;</code>)</li>
 </ul>
 <h3 id="size">Size</h3>
 <ul>
 <li><code>.h-full-height</code> (sets <code>min-height: 100vh;</code>)</li>
 <li><code>.h-full-width</code> (sets <code>width: 100%;</code>)</li>
-<li><code>.h-full</code> (sets <code>min-height: 100vh; width: 100%;</code>)</li>
+<li><code>.h-full</code> (sets <code>min-height: 100vh;</code>)</li>
 </ul>
-<h3 id="text">Text</h3>
+<h3 id="text-alignment">Text Alignment</h3>
 <ul>
 <li><code>.h-text-center</code> (sets <code>text-align: center;</code>)</li>
 <li><code>.h-text-left</code> (sets <code>text-align: left;</code>)</li>
@@ -541,7 +503,7 @@
 <h1 id="components">Components</h1>
 <h2 id="common-elements-to-help-meet-your-deadlines-">Common elements to help meet your deadlines.</h2>
 <h3 id="-a-name-alerts-a-alerts"><a name="alerts"></a>Alerts</h3>
-<div class="h-alert">I&#39;m a test alert!</div>
+<div class="h-alert h-margin-bottom">I&#39;m a test alert!</div>
 
 <div class="h-alert">
   I&#39;m a test alert with a close!
@@ -636,32 +598,32 @@
 <h3 id="input-groups">Input Groups</h3>
 <form action="" class="h-form h-form-stack">
   <label>Website</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">http://</span>
     <input class="h-input-group-field" type="text" />
   </div>
 
   <label>Handle</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">@</span>
     <input class="h-input-group-field" type="text" />
   </div>
 
   <label>Email</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" />
     <span class="h-input-group-addon">.com</span>
   </div>
 
   <label>Income</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <span class="h-input-group-addon">USD$</span>
     <input class="h-input-group-field" type="text" />
     <span class="h-input-group-addon">.00</span>
   </div>
 
   <label>Ordered</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <button class="h-input-group-addon">Up</button>
     <button class="h-input-group-addon">Down</button>
     <input class="h-input-group-field h-flex-grow" type="text" />
@@ -669,26 +631,26 @@
   </div>
 
   <label>Two Inputs</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
   </div>
 
   <label>Three Inputs</label>
-  <div class="h-input-group">
+  <div class="h-input-group h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field h-flex-grow" type="text" placeholder="Name" />
     <input class="h-input-group-field" type="text" placeholder="Email" />
   </div>
 
   <label>Two Inputs Stack</label>
-  <div class="h-input-group h-input-group-stack">
+  <div class="h-input-group h-input-group-stack h-margin-bottom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <input class="h-input-group-field" type="text" placeholder="Name" />
   </div>
 
   <label>Editor</label>
-  <div class="h-input-group h-input-group-stack">
+  <div class="h-input-group h-input-group-stack h-margin-bttom">
     <input class="h-input-group-field" type="text" placeholder="Title" />
     <textarea class="h-input-group-field" type="text" placeholder="Text"></textarea>
   </div>
@@ -696,32 +658,32 @@
 
 <pre><code class="lang-html">&lt;form action=&quot;&quot; class=&quot;h-form h-form-stack&quot;&gt;
   &lt;label&gt;Website&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;span class=&quot;h-input-group-addon&quot;&gt;http://&lt;/span&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
   &lt;/div&gt;
 
   &lt;label&gt;Handle&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;span class=&quot;h-input-group-addon&quot;&gt;@&lt;/span&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
   &lt;/div&gt;
 
   &lt;label&gt;Email&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
     &lt;span class=&quot;h-input-group-addon&quot;&gt;.com&lt;/span&gt;
   &lt;/div&gt;
 
   &lt;label&gt;Income&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;span class=&quot;h-input-group-addon&quot;&gt;USD$&lt;/span&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; /&gt;
     &lt;span class=&quot;h-input-group-addon&quot;&gt;.00&lt;/span&gt;
   &lt;/div&gt;
 
   &lt;label&gt;Ordered&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;button class=&quot;h-input-group-addon&quot;&gt;Up&lt;/button&gt;
     &lt;button class=&quot;h-input-group-addon&quot;&gt;Down&lt;/button&gt;
     &lt;input class=&quot;h-input-group-field h-flex-grow&quot; type=&quot;text&quot; /&gt;
@@ -729,13 +691,13 @@
   &lt;/div&gt;
 
   &lt;label&gt;Two Inputs&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Title&quot; /&gt;
     &lt;input class=&quot;h-input-group-field h-flex-grow&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
   &lt;/div&gt;
 
   &lt;label&gt;Three Inputs&lt;/label&gt;
-  &lt;div class=&quot;h-input-group&quot;&gt;
+  &lt;div class=&quot;h-input-group h-margin-bottom&quot;&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Title&quot; /&gt;
     &lt;input class=&quot;h-input-group-field h-flex-grow&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
     &lt;input class=&quot;h-input-group-field&quot; type=&quot;text&quot; placeholder=&quot;Email&quot; /&gt;
@@ -797,21 +759,6 @@
   &lt;span class=&quot;h-pill h-pill-inverted h-right h-margin-left&quot;&gt;122&lt;/span&gt;
 &lt;/span&gt;
 </code></pre>
-<h3 id="-a-name-switches-a-switches"><a name="switches"></a>Switches</h3>
-<label class="h-switch">
-  <input type="checkbox">
-  <span class="h-switch-rail">
-    <span class="h-switch-toggle"></span>
-  </span>
-</label>
-
-<pre><code class="lang-html">&lt;label class=&quot;h-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot;&gt;
-  &lt;span class=&quot;h-switch-rail&quot;&gt;
-    &lt;span class=&quot;h-switch-toggle&quot;&gt;&lt;/span&gt;
-  &lt;/span&gt;
-&lt;/label&gt;
-</code></pre>
 <h3 id="-a-name-titles-a-titles"><a name="titles"></a>Titles</h3>
 <h1 class="h-title">
   Title
@@ -829,38 +776,42 @@
   </main>
 
   <footer class="content">
-    <div class="h-g footer-links">
-      <div class="h-u-md-6-12">
-        <h6>Core</h6>
-        <a title="Getting Started" href="#getting-started">Getting Started</a>
-        <a title="Base" href="#base">Base</a>
-        <a title="Typography" href="#typography">Typography</a>
-        <a title="Buttons" href="#buttons">Buttons</a>
-        <a title="Tables" href="#tables">Tables</a>
-        <a title="Menus" href="#menus">Menus</a>
-        <a title="Forms" href="#forms">Forms</a>
-        <a title="Grid" href="#grid">Grid</a>
-        <a title="Grid Unit Sizes" href="#grid-unit-sizes">Grid Unit Sizes</a>
-        <a title="Utilities" href="#utilities">Utilities</a>
-        <a title="Customize" href="#customize-and-extend">Customize</a>
-      </div>
+    <div class="h-c">
+      <div class="h-g footer-links">
+        <div class="h-u-1 h-u-md-6-12">
+          <h6>Core</h6>
+          <a title="Getting Started" href="#getting-started">Getting Started</a>
+          <a title="Base" href="#base">Base</a>
+          <a title="Typography" href="#typography">Typography</a>
+          <a title="Buttons" href="#buttons">Buttons</a>
+          <a title="Tables" href="#tables">Tables</a>
+          <a title="Menus" href="#menus">Menus</a>
+          <a title="Forms" href="#forms">Forms</a>
+          <a title="Grid" href="#grid">Grid</a>
+          <a title="Grid Unit Sizes" href="#grid-unit-sizes">Grid Unit Sizes</a>
+          <a title="Utilities" href="#utilities">Utilities</a>
+          <a title="Customize" href="#customize-and-extend">Customize</a>
+        </div>
   
-      <div class="h-u-md-6-12">
-        <h6>Components</h6>
-        <a title="Alerts" href="#alerts">Alerts</a>
-        <a title="Badges" href="#badges">Badges</a>
-        <a title="Breadcrumbs" href="#breadcrumbs">Breadcrumbs</a>
-        <a title="Button Groups" href="#button-groups">Button Groups</a>
-        <a title="Cards" href="#cards">Cards</a>
-        <a title="Input Groups" href="#input-groups">Input Groups</a>
-        <a title="Pills" href="#pills">Pills</a>
-        <a title="Switches" href="#switches">Switches</a>
-        <a title="Titles" href="#titles">Titles</a>
+        <div class="h-u-1 h-u-md-6-12">
+          <h6>Components</h6>
+          <a title="Alerts" href="#alerts">Alerts</a>
+          <a title="Badges" href="#badges">Badges</a>
+          <a title="Breadcrumbs" href="#breadcrumbs">Breadcrumbs</a>
+          <a title="Button Groups" href="#button-groups">Button Groups</a>
+          <a title="Cards" href="#cards">Cards</a>
+          <a title="Input Groups" href="#input-groups">Input Groups</a>
+          <a title="Pills" href="#pills">Pills</a>
+          <a title="Titles" href="#titles">Titles</a>
+        </div>
       </div>
     </div>
   
     <div class="h-margin-top h-margin-bottom h-text-center">
-      <small>Built with ♥ by <a title="Pim Brouwers' GitHub" href="https://github.com/pimbrouwers)" target="_blank">Pim Brouwers</a> in Toronto, ON. Licensed under <a title="Hydrogen License" href="https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE" target="_blank">MIT</a>.</small>
+      <small>Built with ♥ by
+        <a title="Pim Brouwers' GitHub" href="https://github.com/pimbrouwers)" target="_blank">Pim Brouwers</a> in Toronto, ON. Licensed under
+        <a title="Hydrogen License" href="https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE"
+          target="_blank">MIT</a>.</small>
     </div>
   </footer></div>
 </body>
