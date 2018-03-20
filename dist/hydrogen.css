@@ -19,6 +19,7 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
+  font: inherit;
   vertical-align: baseline;
 }
 body,
