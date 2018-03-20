@@ -19,7 +19,6 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
-  font: inherit;
   vertical-align: baseline;
 }
 body,
@@ -38,6 +37,7 @@ table,
 dl {
   margin: 0;
   padding: 0;
+  font: inherit;
   font-weight: normal;
 }
 h1,
