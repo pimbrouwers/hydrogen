@@ -695,6 +695,7 @@ img {
 }
 .h-tbl th {
   background: #cccccc;
+  font-weight: 700;
   text-align: left;
 }
 .h-tbl td {
