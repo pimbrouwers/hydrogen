@@ -742,6 +742,12 @@ dl dd {
 li {
   margin-left: 1.25rem;
 }
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
 /*==================================
   Grid Utils (push "l" and pull "r")
 ====================================*/
