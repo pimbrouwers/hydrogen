@@ -745,6 +745,9 @@ li {
 em {
   font-style: italic;
 }
+small {
+  font-size: 85%;
+}
 strong {
   font-weight: bold;
 }
@@ -1260,12 +1263,11 @@ div[class*="-r-"] {
 .h-title {
   border-bottom: 1px solid #cccccc;
   display: block;
-  font-size: 3rem;
   font-weight: 700;
   padding: 0 0 1.25rem;
 }
 .h-subtitle {
   color: #999999;
-  font-size: 2rem;
+  font-size: 85%;
 }
 /*# sourceMappingURL=hydrogen.css.map */
