@@ -527,6 +527,9 @@ img {
   .h-u-sm-1 {
     width: 100%;
   }
+  .h-u-sm-visible {
+    display: block;
+  }
 }
 @media only screen and (min-width: 48rem) {
   .h-u-md-1-12 {
@@ -567,6 +570,9 @@ img {
   }
   .h-u-md-1 {
     width: 100%;
+  }
+  .h-u-md-visible {
+    display: block;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -609,6 +615,9 @@ img {
   .h-u-lg-1 {
     width: 100%;
   }
+  .h-u-lg-visible {
+    display: block;
+  }
 }
 @media only screen and (min-width: 80rem) {
   .h-u-xl-1-12 {
@@ -649,6 +658,9 @@ img {
   }
   .h-u-xl-1 {
     width: 100%;
+  }
+  .h-u-xl-visible {
+    display: block;
   }
 }
 /*=============================

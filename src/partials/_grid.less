@@ -32,21 +32,37 @@
 .grid-units(@grid-prefix, @grid-units);
 
 @media only screen and (min-width: @sm-break)
-{
+{  
   .grid-units(@grid-prefix-sm, @grid-units);
+
+  .h-u@{grid-prefix-sm}-visible {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: @md-break)
 {
   .grid-units(@grid-prefix-md, @grid-units);
+
+  .h-u@{grid-prefix-md}-visible {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: @lg-break)
 {
   .grid-units(@grid-prefix-lg, @grid-units);
+
+  .h-u@{grid-prefix-lg}-visible {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: @xl-break)
 {
   .grid-units(@grid-prefix-xl, @grid-units);
+
+  .h-u@{grid-prefix-xl}-visible {
+    display: block;
+  }
 }
