@@ -66,3 +66,12 @@
     display: block;
   }
 }
+
+@media only screen and (min-width: @xxl-break)
+{
+  .grid-units(@grid-prefix-xxl, @grid-units);
+
+  .h-u@{grid-prefix-xxl}-visible {
+    display: block;
+  }
+}

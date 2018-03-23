@@ -3,10 +3,11 @@
 @base-color: rgb(102, 102, 102);
 
 //  Breakpoints
-@sm-break: 30rem;
-@md-break: 48rem;
-@lg-break: 64rem;
-@xl-break: 80rem;
+@sm-break: 30rem; //640px
+@md-break: 48rem; //768px
+@lg-break: 64rem; //1024px
+@xl-break: 80rem; //1280px
+@xxl-break: 90rem; //1440px
 
 //  Tints
 @raw: lighten(@base-color, 100%);
@@ -27,5 +28,6 @@
 @grid-prefix-md: ~"-md";
 @grid-prefix-lg: ~"-lg";
 @grid-prefix-xl: ~"-xl";
+@grid-prefix-xxl: ~"-xxl";
 @grid-gutter: round(@base * .5, 1);
 @grid-units: 12;
