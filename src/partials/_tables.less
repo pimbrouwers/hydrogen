@@ -2,30 +2,34 @@
   Tables
 =============================*/
 .h-tbl {
-  border-bottom: 1px solid lighten(@rare, 14%, 'relative');
+  border-bottom: 1px solid @rare;
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
-    
+
+  thead, tbody, tfoot { 
+    vertical-align: middle 
+  }
+
   th, td {			
+    border-top: 1px solid @rare;
     padding:@base * .75;
+    text-align: inherit;
   }
 
   th {
-    background: @rare;
     font-weight: 700;
-    text-align: left;
-  }
-
-  td {
-    border-top: 1px solid lighten(@rare, 14%, 'relative');
   }
 }
 
 .h-tbl-striped {
+  th {
+    background: @rare;
+  }
+
   tr {
     &:nth-child(even) {
-      background: lighten(@rare, 14%, 'relative');
+      background: @rare;
     }
   }
 }

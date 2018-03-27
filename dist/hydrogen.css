@@ -44,37 +44,11 @@ section {
   font-size: 100%;
   font: inherit;
 }
-html {
-  box-sizing: border-box;
-  font: 16px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-body {
-  background: #ffffff;
-  color: #333333;
-}
 *,
 *:before,
 *:after {
   box-sizing: inherit;
   vertical-align: baseline;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hgroup,
-ul,
-ol,
-dd,
-p,
-figure,
-pre,
-table,
-fieldset,
-hr {
-  margin-bottom: 1.25rem;
 }
 article,
 aside,
@@ -95,6 +69,32 @@ section {
 img {
   height: auto;
   max-width: 100%;
+}
+html {
+  box-sizing: border-box;
+  font: 16px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body {
+  background: #ffffff;
+  color: #333333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr {
+  margin-bottom: 1.25rem;
 }
 /*=============================
   Utils
@@ -717,25 +717,30 @@ img {
   Tables
 =============================*/
 .h-tbl {
-  border-bottom: 1px solid #e9e9e9;
+  border-bottom: 1px solid #cccccc;
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
 }
+.h-tbl thead,
+.h-tbl tbody,
+.h-tbl tfoot {
+  vertical-align: middle;
+}
 .h-tbl th,
 .h-tbl td {
+  border-top: 1px solid #cccccc;
   padding: 0.75rem;
+  text-align: inherit;
 }
 .h-tbl th {
-  background: #cccccc;
   font-weight: 700;
-  text-align: left;
 }
-.h-tbl td {
-  border-top: 1px solid #e9e9e9;
+.h-tbl-striped th {
+  background: #cccccc;
 }
 .h-tbl-striped tr:nth-child(even) {
-  background: #e9e9e9;
+  background: #cccccc;
 }
 /*=============================
   Type
