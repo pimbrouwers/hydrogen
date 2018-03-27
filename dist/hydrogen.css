@@ -731,10 +731,10 @@ hr {
 .h-tbl td {
   border-top: 1px solid #cccccc;
   padding: 0.75rem;
-  text-align: inherit;
 }
 .h-tbl th {
   font-weight: 700;
+  text-align: inherit;
 }
 .h-tbl-striped th {
   background: #cccccc;
