@@ -17,19 +17,20 @@
   }
 
   th {
+    background: @rare;
     font-weight: 700;
     text-align: inherit;
   }
 }
 
 .h-tbl-striped {
-  th {
-    background: @rare;
+  &, th, td {
+    border-color: lighten(@rare, 15%, 'relative');
   }
 
   tr {
     &:nth-child(even) {
-      background: @rare;
+      background: lighten(@rare, 15%, 'relative');
     }
   }
 }

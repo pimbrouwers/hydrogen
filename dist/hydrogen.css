@@ -765,14 +765,17 @@ body {
   padding: 0.75rem;
 }
 .h-tbl th {
+  background: #cccccc;
   font-weight: 700;
   text-align: inherit;
 }
-.h-tbl-striped th {
-  background: #cccccc;
+.h-tbl-striped,
+.h-tbl-striped th,
+.h-tbl-striped td {
+  border-color: #ebebeb;
 }
 .h-tbl-striped tr:nth-child(even) {
-  background: #cccccc;
+  background: #ebebeb;
 }
 /*=============================
   Type
