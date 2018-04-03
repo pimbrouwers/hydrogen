@@ -396,7 +396,10 @@ body {
 }
 .h-form input[disabled],
 .h-form select[disabled],
-.h-form textarea[disabled] {
+.h-form textarea[disabled],
+.h-form input[readonly],
+.h-form select[readonly],
+.h-form textarea[readonly] {
   background: #e9e9e9;
   cursor: not-allowed;
 }
