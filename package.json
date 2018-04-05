@@ -19,7 +19,8 @@
   },
   "main": "./dist/hydrogen.min.css",
   "files": [
-    "dist/"
+    "dist/",
+    "src/"
   ],
   "scripts": {
     "clean": "rimraf ./dist/*",
