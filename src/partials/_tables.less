@@ -1,8 +1,7 @@
 /*=============================
   Tables
 =============================*/
-.h-tbl {
-  border-bottom: 1px solid @rare;
+.h-tbl {  
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
@@ -12,25 +11,27 @@
   }
 
   th, td {			
-    border-top: 1px solid @rare;
+    border-bottom: 1px solid @gray;
     padding:@base * .75;    
   }
 
   th {
-    background: @rare;
+    background: @gray;
     font-weight: 700;
     text-align: inherit;
   }
-}
-
-.h-tbl-striped {
-  &, th, td {
-    border-color: lighten(@rare, 15%, 'relative');
-  }
 
   tr {
+    &:first-child {
+      border-top: 1px solid @gray;
+    }
+  }
+}
+
+.h-tbl-striped { 
+  tr {
     &:nth-child(even) {
-      background: lighten(@rare, 15%, 'relative');
+      background: lighten(@gray, 5%, 'relative');
     }
   }
 }
