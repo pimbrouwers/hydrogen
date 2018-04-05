@@ -1364,6 +1364,12 @@ div[class*="-r-"] {
 }
 .h-subtitle {
   color: #999999;
+  display: block;
   font-size: 85%;
+}
+@media only screen and (min-width: 48rem) {
+  .h-subtitle {
+    display: inline;
+  }
 }
 /*# sourceMappingURL=hydrogen.css.map */

@@ -7,5 +7,14 @@
 
 .h-subtitle {
   color: @medium-rare;
+  display: block;
   font-size: 85%;  
+}
+
+
+@media only screen and (min-width: @md-break)
+{
+  .h-subtitle {
+    display: inline;
+  }
 }
