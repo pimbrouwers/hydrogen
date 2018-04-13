@@ -15,6 +15,8 @@
   textarea {
     border: 1px solid @rare;
     font: inherit;
+    max-height: @base * 2.875rem;
+    padding: @base * .75;
     
     &:focus {
       border-color: darken(@rare, 14%, 'relative');
@@ -38,22 +40,6 @@
     padding: 0;
   }
 
-  legend {
-    border-bottom: 1px solid @rare;
-    display:block;		
-    padding: @base / 2 0;		
-    width: 100%;
-  }
-
-  input,
-  textarea {
-    padding:@base * .75;
-  }
-
-  select {
-    padding:@base * .75;
-  }
-
   input[type=checkbox], input[type=radio]
   {
     display: inline-block;
@@ -61,5 +47,17 @@
     position: relative;
     top: @base / 5;
     width: @base;
+  }
+
+  legend {
+    border-bottom: 1px solid @rare;
+    display:block;		
+    padding: @base / 2 0;		
+    width: 100%;
+  }
+
+  select {
+    padding-top: @base * .7;
+    padding-bottom: @base * .8;
   }
 }

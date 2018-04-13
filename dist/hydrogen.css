@@ -382,6 +382,8 @@ body {
 .h-form textarea {
   border: 1px solid #cccccc;
   font: inherit;
+  max-height: 2.875rem;
+  padding: 0.75rem;
 }
 .h-form input:focus,
 .h-form select:focus,
@@ -407,19 +409,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.h-form legend {
-  border-bottom: 1px solid #cccccc;
-  display: block;
-  padding: 0.5rem 0;
-  width: 100%;
-}
-.h-form input,
-.h-form textarea {
-  padding: 0.75rem;
-}
-.h-form select {
-  padding: 0.75rem;
-}
 .h-form input[type=checkbox],
 .h-form input[type=radio] {
   display: inline-block;
@@ -427,6 +416,16 @@ body {
   position: relative;
   top: 0.2rem;
   width: 1rem;
+}
+.h-form legend {
+  border-bottom: 1px solid #cccccc;
+  display: block;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+.h-form select {
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
 }
 /*=============================
   Grid
