@@ -355,7 +355,7 @@ body {
   text-decoration: none;
 }
 .h-btn:hover {
-  background: #e9e9e9;
+  background: #cccccc;
 }
 .h-btn[disabled] {
   opacity: .4;
