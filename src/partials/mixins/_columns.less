@@ -1,0 +1,12 @@
+.column(@min, @n){	
+  .h-columns-@{n} {
+    -webkit-columns: @n @min;
+    -moz-columns: @n @min;
+    columns: @n @min;
+  }
+}
+
+.columns(@min, @n, @i: 2) when (@i =< @n){	
+  .column(@min, @i);
+  .columns(@min, @n, (@i + 1 ));
+}

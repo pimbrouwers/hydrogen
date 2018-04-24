@@ -14,8 +14,7 @@
   select, 
   textarea {
     border: 1px solid @rare;
-    font: inherit;
-    max-height: @base * 2.875rem;
+    font: inherit;    
     padding: @base * .75;
     
     &:focus {
@@ -32,6 +31,11 @@
       background: @gray;
       cursor: not-allowed;
     }
+  }
+
+  input,
+  select {
+    max-height: @base * 2.875rem;
   }
 
   fieldset {
