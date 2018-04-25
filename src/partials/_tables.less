@@ -11,19 +11,19 @@
   }
 
   th, td {			
-    border-bottom: 1px solid @gray;
+    border-bottom: 1px solid @rare;
     padding:@base * .75;    
   }
 
   th {
-    background: @gray;
+    background: @rare;
     font-weight: 700;
     text-align: inherit;
   }
 
   tr {
     &:first-child {
-      border-top: 1px solid @gray;
+      border-top: 1px solid @rare;
     }
   }
 }
@@ -31,7 +31,7 @@
 .h-tbl-striped { 
   tr {
     &:nth-child(even) {
-      background: lighten(@gray, 5%, 'relative');
+      background: @gray;
     }
   }
 }
