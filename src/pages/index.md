@@ -251,7 +251,7 @@ Form elements can be combined with [grid unit sizes](#grid-unit-sizes) to render
 
 <form class="h-form">
   <fieldset>
-    <legend class="h-margin-bottom">A compact inline form</legend> 
+    <legend class="h-margin-bottom">A nice form</legend> 
 
     <label>Email</label>
     <input class="h-margin-bottom" type="email" placeholder="Email"> 
