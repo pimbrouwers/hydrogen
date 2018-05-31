@@ -754,6 +754,10 @@ body {
 /*=============================
   Tables
 =============================*/
+th,
+td {
+  text-align: inherit;
+}
 .h-tbl {
   border-collapse: collapse;
   width: 100%;
@@ -772,7 +776,6 @@ body {
 .h-tbl th {
   background: #cccccc;
   font-weight: 700;
-  text-align: inherit;
 }
 .h-tbl tr:first-child {
   border-top: 1px solid #cccccc;
