@@ -1302,9 +1302,13 @@ div[class*="-r-"] {
   display: flex;
 }
 .h-input-group .h-input-group-addon {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   background: #e9e9e9;
   border: 1px solid #cccccc;
   font: inherit;
+  max-height: 2.875rem;
   padding: 0.75rem;
 }
 .h-input-group .h-input-group-addon,
