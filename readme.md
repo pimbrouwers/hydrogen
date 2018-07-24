@@ -6,11 +6,7 @@
 
 The aim of this project to allow for beautiful front-end's to be developed quickly.
 
-Hydrogen is insanely tiny, the entire bundle weighing in at ~3KB minified and gzipped, designed with an ethos rooted in __performance as a feature__. 
-
- Core    | Grid-Utils | Components | Bundle  |
-|---------|------------|------------|---------|
-| 1.76KB | 604 bytes  | 756 bytes  | 2.85KB |
+Hydrogen is insanely tiny, the entire bundle weighing in at ~2.9KB minified and gzipped, designed with an ethos rooted in __performance as a feature__. 
 
 You can starting working with [Hydrogen](https://pimbrouwers.github.io/hydrogen/) in multiple ways. The option with least resistance is a `<link>` refencing the free unpkg CDN. 
 
