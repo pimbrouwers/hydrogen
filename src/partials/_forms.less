@@ -15,8 +15,7 @@
   textarea {
     border: 1px solid @rare;
     font: inherit;    
-    padding: @base * .75;
-    
+        
     &:focus {
       border-color: darken(@rare, 14%, 'relative');
     }
@@ -34,8 +33,8 @@
   }
 
   input,
-  select {
-    max-height: @base * 2.875rem;
+  textarea {
+    padding: @base * .75;
   }
 
   fieldset {
@@ -61,7 +60,8 @@
   }
 
   select {
-    padding-top: @base * .7;
-    padding-bottom: @base * .8;
+    max-height: @base * 2.875rem;
+    padding-top: @base * .625;
+    padding-bottom: @base * .625;
   }
 }
