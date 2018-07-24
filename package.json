@@ -1,7 +1,7 @@
 {
   "name": "hydrogen-css",
   "version": "2.2.1",
-  "description": "Hydrogen is a modern, ultra-lightweight & responsive CSS foundation. ",
+  "description": "Hydrogen is a featherweight, modern & responsive CSS foundation.",
   "author": "Pim Brouwers",
   "license": "MIT",
   "bugs": {
@@ -37,8 +37,13 @@
     "css",
     "lightweight css",
     "ultra-lightweight css",
+    "featherweight css",
     "pure css",
     "yui pure css",
+    "css framework",
+    "css skeleton",
+    "css foundation",
+    "css boilerplate",
     "responsive framework"
   ]
 }
