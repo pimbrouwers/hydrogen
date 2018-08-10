@@ -20,6 +20,6 @@
     "watch:templates": "watch \"npm run pages\" ./templates --ignoreDotFiles --ignoreUnreadable",
     "watch": "run-p watch:*",
     "develop": "run-p watch server",
-    "compile": "npm-run-all pages less"
+    "start": "npm-run-all pages less"
   }
 }

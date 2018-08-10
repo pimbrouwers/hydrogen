@@ -32,7 +32,7 @@ All sizing within [Hydrogen](https://github.com/pimbrouwers/hydrogen) is done us
 # <a name="typography"></a>Typography
 ## `rem` based progressive sizing.
 
-By default, all headings, paragraphs, and code use system fonts, using the most modern one available on a user's operating system. All font-sizes are based on `rem` units.  
+By default, all headings, paragraphs, and code use system fonts, using the most modern one available on a user's operating system. All font-sizes are based on `em` units.  
 
 ### Headings
 <div class="reset">
