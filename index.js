@@ -4,11 +4,11 @@ const
   DittoHbs = require('ditt0-hbs');
 
 Ditto()
-  .source('./pages')
-  .destination('../')
+  .source('./src/pages')
+  .destination('./dist')
   .use(new DittoMarkdown())
   .use(new DittoHbs({
-    partials: './templates/partials',
-    templates: './templates'
+    partials: './src/templates/partials',
+    templates: './src/templates'
   }))
   .build();
