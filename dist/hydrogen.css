@@ -1,5 +1,6 @@
 /*
- * Hydrogen v1.x (https://github.com/pimbrouwers/hydrogen)
+ * Hydrogen v2.x (https://github.com/pimbrouwers/hydrogen)
+ * Core & Components
  * Copyright 2018 Pim Brouwers
  * Licensed under MIT (https://github.com/pimbrouwers/hydrogen/blob/master/LICENSE)
  *
@@ -285,16 +286,16 @@ body {
   margin-left: 0;
 }
 .h-margin-top {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 .h-margin-right {
-  margin-right: 1rem;
+  margin-right: 1em;
 }
 .h-margin-bottom {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 .h-margin-left {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 .h-padding-0 {
   padding: 0;
@@ -312,16 +313,16 @@ body {
   padding-left: 0;
 }
 .h-padding-top {
-  padding-top: 1rem;
+  padding-top: 1em;
 }
 .h-padding-right {
-  padding-right: 1rem;
+  padding-right: 1em;
 }
 .h-padding-bottom {
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
 }
 .h-padding-left {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 .h-full-height {
   min-height: 100vh;
@@ -351,7 +352,7 @@ body {
   color: inherit;
   font: inherit;
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.75em;
   text-decoration: none;
 }
 .h-btn:hover,
@@ -359,7 +360,7 @@ body {
   background: #cccccc;
 }
 .h-btn[disabled] {
-  opacity: .4;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 .h-btn-fill {
@@ -406,7 +407,7 @@ body {
 }
 .h-form input,
 .h-form textarea {
-  padding: 0.75rem;
+  padding: 0.75em;
 }
 .h-form fieldset {
   border: 0;
@@ -416,30 +417,30 @@ body {
 .h-form input[type=checkbox],
 .h-form input[type=radio] {
   display: inline-block;
-  height: 1rem;
+  height: 1em;
   position: relative;
-  top: 0.2rem;
-  width: 1rem;
+  top: 0.2em;
+  width: 1em;
 }
 .h-form legend {
   border-bottom: 1px solid #cccccc;
   display: block;
-  padding: 0.5rem 0;
+  padding: 0.5em 0;
   width: 100%;
 }
 .h-form select {
-  max-height: 2.875rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  max-height: 2.875em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
 }
 /*=============================
   Grid
 =============================*/
 .h-c > .h-g {
-  margin: 0 -0.5rem;
+  margin: 0 -0.5em;
 }
 .h-c > .h-g > [class^="h-u"] {
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 .h-g {
   display: -webkit-box;
@@ -730,7 +731,7 @@ body {
   color: inherit;
   display: block;
   margin: 0;
-  padding: 0.75rem;
+  padding: 0.75em;
 }
 .h-menu-list {
   list-style: none;
@@ -771,7 +772,7 @@ td {
 .h-tbl th,
 .h-tbl td {
   border-bottom: 1px solid #cccccc;
-  padding: 0.75rem;
+  padding: 0.75em;
 }
 .h-tbl th {
   background: #cccccc;
@@ -808,22 +809,22 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.25em;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 h6 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 dl dt {
   font-weight: 700;
@@ -832,7 +833,7 @@ dl dd {
   margin-left: 0;
 }
 li {
-  margin-left: 1.25rem;
+  margin-left: 1.25em;
 }
 em {
   font-style: italic;
@@ -848,6 +849,78 @@ sub {
 }
 sup {
   vertical-align: super;
+}
+/*=============================
+  Alerts
+=============================*/
+.h-alert {
+  background: #e9e9e9;
+  border: 1px solid #cccccc;
+  color: inherit;
+  padding: 0.75em;
+  position: relative;
+}
+.h-alert .h-alert-close {
+  font-weight: 600;
+  position: absolute;
+  top: 0.75em;
+  right: 0.75em;
+}
+.h-badge {
+  border: 1px solid #cccccc;
+  color: inherit;
+  display: inline-block;
+  padding: 0.75em;
+}
+.h-badge-fill {
+  background: #e9e9e9;
+}
+.h-blockquote {
+  background: #e9e9e9;
+  border-left: 4px solid #cccccc;
+  padding: 0.75em;
+}
+.h-breadcrumbs .h-breadcrumbs-item {
+  display: inline-block;
+  font-size: inherit;
+  margin: 0;
+}
+.h-breadcrumbs .h-breadcrumbs-spacer {
+  margin: 0 0.25em;
+}
+/*=============================
+  Button Groups
+=============================*/
+.h-btn-group {
+  overflow: hidden;
+}
+.h-btn-group .h-btn {
+  display: block;
+  border-left: 0;
+  float: left;
+}
+.h-btn-group .h-btn:first-child {
+  border-left: 1px solid #cccccc;
+}
+/*=============================
+  Cards
+=============================*/
+.h-card {
+  border: 1px solid #cccccc;
+}
+.h-card .h-card-body {
+  padding: 0.75em;
+}
+.h-card .h-card-header,
+.h-card .h-card-footer {
+  background: #e9e9e9;
+  padding: 0.75em;
+}
+.h-card .h-card-header {
+  border-bottom: 1px solid #cccccc;
+}
+.h-card .h-card-footer {
+  border-top: 1px solid #cccccc;
 }
 /*==================================
   Grid Utils (push "l" and pull "r")
@@ -1224,78 +1297,6 @@ div[class*="-r-"] {
     right: 100%;
   }
 }
-/*=============================
-  Alerts
-=============================*/
-.h-alert {
-  background: #e9e9e9;
-  border: 1px solid #cccccc;
-  color: inherit;
-  padding: 0.75rem;
-  position: relative;
-}
-.h-alert .h-alert-close {
-  font-weight: 600;
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-}
-.h-badge {
-  border: 1px solid #cccccc;
-  color: inherit;
-  display: inline-block;
-  padding: 0.75rem;
-}
-.h-badge-fill {
-  background: #e9e9e9;
-}
-.h-blockquote {
-  background: #e9e9e9;
-  border-left: 4px solid #cccccc;
-  padding: 0.75rem;
-}
-.h-breadcrumbs .h-breadcrumbs-item {
-  display: inline-block;
-  font-size: inherit;
-  margin: 0;
-}
-.h-breadcrumbs .h-breadcrumbs-spacer {
-  margin: 0 0.25rem;
-}
-/*=============================
-  Button Groups
-=============================*/
-.h-btn-group {
-  overflow: hidden;
-}
-.h-btn-group .h-btn {
-  display: block;
-  border-left: 0;
-  float: left;
-}
-.h-btn-group .h-btn:first-child {
-  border-left: 1px solid #cccccc;
-}
-/*=============================
-  Cards
-=============================*/
-.h-card {
-  border: 1px solid #cccccc;
-}
-.h-card .h-card-body {
-  padding: 0.75rem;
-}
-.h-card .h-card-header,
-.h-card .h-card-footer {
-  background: #e9e9e9;
-  padding: 0.75rem;
-}
-.h-card .h-card-header {
-  border-bottom: 1px solid #cccccc;
-}
-.h-card .h-card-footer {
-  border-top: 1px solid #cccccc;
-}
 .h-input-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1308,8 +1309,8 @@ div[class*="-r-"] {
   background: #e9e9e9;
   border: 1px solid #cccccc;
   font: inherit;
-  max-height: 2.875rem;
-  padding: 0.75rem;
+  max-height: 2.875em;
+  padding: 0.75em;
 }
 .h-input-group .h-input-group-addon,
 .h-input-group .h-input-group-field {
@@ -1343,7 +1344,7 @@ div[class*="-r-"] {
   border-top: 0;
   display: block;
   margin: 0;
-  padding: 0.75rem;
+  padding: 0.75em;
   text-align: left;
   width: 100%;
 }
@@ -1354,8 +1355,8 @@ div[class*="-r-"] {
   background: #333333;
   color: #ffffff;
   display: inline-block;
-  font-size: 0.5rem;
-  padding: 0.25rem 0.3125rem;
+  font-size: 0.5em;
+  padding: 0.25em 0.3125em;
   vertical-align: middle;
 }
 .h-pill-inverted {
