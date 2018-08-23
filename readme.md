@@ -28,7 +28,7 @@ Full documentation of all features, components and utilities.
 
 ## Find a bug?
 
-Submit it in the [issues](https://github.com/pimbrouwers/hydrogen/issues)
+There's an [issue](https://github.com/pimbrouwers/hydrogen/issues) for that.
 
 ## License
 
