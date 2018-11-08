@@ -30,7 +30,7 @@ Explicit font sizes for headings to ensure consistent rendering. For example, wi
 All sizing within [Hydrogen](https://github.com/pimbrouwers/hydrogen) is done using `rem`. All `rem` units are converted to base 16, so `1rem` is equal to `16px`.
 
 # <a name="typography"></a>Typography
-## `rem` based progressive sizing.
+## `em` based progressive sizing.
 
 By default, all headings, paragraphs, and code use system fonts, using the most modern one available on a user's operating system. All font-sizes are based on `em` units.  
 
