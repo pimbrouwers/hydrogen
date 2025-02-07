@@ -1,0 +1,22 @@
+/* Layout */
+.container { position: relative; width: 100%; max-width: 960px; margin-right: auto; margin-left: auto; padding: 0 var(--size3) }
+.container--lg { max-width: 1140px }
+.container--xl { max-width: 1320px }
+
+.row { display: flex; flex-direction: column; flex-wrap: wrap }
+.row > .column { flex: 1 1 auto }
+
+@media (min-width: 768px)
+{
+    .row { flex-direction: row; margin-right: calc(var(--size2) * -1); margin-left: calc(var(--size2) * -1) }
+    .row.quarters > .column { flex: 0 0 25% }
+    .row.thirds > .column { flex: 0 0 33.3333% }
+    .row.halves > .column { flex: 0 0 50% }
+
+    .row > .column { width: 100%; padding-right: var(--size2); padding-left: var(--size2) }
+    .column.quarter { width: 25% }
+    .column.third { width: 33.3333% }
+    .column.half { width: 50% }
+    .column.two-thirds { width: 66.6667% }
+    .column.three-quarters { width: 75% }
+}

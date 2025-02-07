@@ -1,0 +1,8 @@
+/* Buttons */
+button, .button { padding: var(--size2);  }
+button.button-alt, .button.button-alt { background: var(--color-button-alt) }
+button,.button, input[type='submit'], input[type='reset'], input[type='button'] {
+    display: inline-block;
+    padding: var(--size2);
+    line-height: 1; text-decoration: none; color: var(--bg); background: var(--color-button);
+    border: 0; cursor: pointer }

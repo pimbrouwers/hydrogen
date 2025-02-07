@@ -1,0 +1,26 @@
+/* Border */
+.ba { border-style: solid; border-width: 1px }
+.bt { border-top-style: solid; border-top-width: 1px }
+.br { border-right-style: solid; border-right-width: 1px }
+.bb { border-bottom-style: solid; border-bottom-width: 1px }
+.bl { border-left-style: solid; border-left-width: 1px }
+.bn { border-style: none; border-width: 0 }
+
+.bw0 { border-width: 0 }
+.bw1 { border-width: var(--size0) }
+.bw2 { border-width: var(--size1) }
+.bw3 { border-width: var(--size2) }
+.bw4 { border-width: var(--size3) }
+
+.br0 { border-radius: 0 }
+.br1 { border-radius:var(--size0) }
+.br2 { border-radius:var(--size1) }
+.br3 { border-radius:var(--size2) }
+.br4 { border-radius:var(--size3) }
+.br-100 { border-radius: 100% }
+.br-pill { border-radius: 9999px }
+
+.br--bottom { border-top-left-radius: 0; border-top-right-radius: 0 }
+.br--top { border-bottom-left-radius: 0; border-bottom-right-radius: 0 }
+.br--right { border-top-left-radius: 0; border-bottom-left-radius: 0 }
+.br--left  { border-top-right-radius: 0; border-bottom-right-radius: 0 }

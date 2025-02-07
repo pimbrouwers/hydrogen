@@ -1,49 +1,35 @@
 {
   "name": "hydrogen-css",
-  "version": "2.2.1",
-  "description": "Hydrogen is a featherweight, modern & responsive CSS foundation.",
+  "version": "3.0.0",
+  "description": "An atomic CSS foundation designed for minimalists.",
   "author": "Pim Brouwers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pimbrouwers/HydrogenCSS/issues"
+    "url": "https://github.com/pimbrouwers/hydrogen/issues"
   },
-  "homepage": "https://github.com/pimbrouwers/HydrogenCSS#readme",
+  "homepage": "https://github.com/pimbrouwers/hydrogen#readme",
   "dependencies": {},
-  "devDependencies": {
-    "less": "latest",
-    "less-plugin-clean-css": "latest",
-    "ncp": "latest",
-    "npm-run-all": "latest",
-    "rimraf": "latest",
-    "watch": "latest"
-  },
-  "main": "./dist/hydrogen.min.css",
+  "devDependencies": {},
+  "main": "./hydrogen.min.css",
   "files": [
-    "dist/",
-    "src/"
+    "css/",
+    "hydrogen.css",
+    "hydrogen.min.css"
   ],
-  "scripts": {
-    "clean": "rimraf ./dist/*",
-
-    "css": "lessc ./src/hydrogen.less ./dist/hydrogen.css --source-map",
-    
-    "min": "lessc --clean-css ./src/hydrogen.less ./dist/hydrogen.min.css --source-map",
-    
-    "less": "npm-run-all --parallel css min",
-    "watch": "watch \"npm run less\" ./src/ --ignoreDotFiles --ignoreUnreadable",
-    "start": "npm-run-all clean less"
-  },
+  "scripts": {},
   "keywords": [
     "css",
+    "atomic css",
+    "minimalist css",
+    "tailwind",
+    "tailwindcss",
+    "tachyons",
     "lightweight css",
     "ultra-lightweight css",
     "featherweight css",
-    "pure css",
-    "yui pure css",
     "css framework",
     "css skeleton",
     "css foundation",
-    "css boilerplate",
-    "responsive framework"
+    "css boilerplate"
   ]
 }

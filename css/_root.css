@@ -1,0 +1,58 @@
+/*! hydrogen-css | Apache License | https://github.com/pimbrouwers/hydrogen */
+:root {
+    --size0: .125rem;
+    --size1: .25rem;
+    --size2: .5rem;
+    --size3: 1rem;
+    --size4: 2rem;
+    --size5: 4rem;
+    --size6: 8rem;
+    --size7: 16rem;
+
+    --black: black;
+    --blue: navy;
+    --yellow: gold;
+    --gray: dimgray;
+    --green: seagreen;
+    --nearwhite: ivory;
+    --orange: darkorange;
+    --purple: rebeccapurple;
+    --red: crimson;
+    --silver: silver;
+    --white: snow;
+
+    --bg: var(--white);
+    --fg: var(--black);
+    --primary: var(--fg);
+    --alternate: var(--gray);
+    --color-border: var(--primary);
+    --color-button: var(--primary);
+    --color-button-alt: var(--alternate);
+    --color-link: var(--primary);
+    --color-error: var(--red);
+
+    --lh-solid: 1;
+    --lh-title: 1.25;
+    --lh-copy: 1.5;
+
+    --fontsize1: 2.5em;
+    --fontsize2: 1.875em;
+    --fontsize3: 1.4625em;
+    --fontsize4: 1.25em;
+    --fontsize5: 1em;
+    --fontsize6: .8375em;
+    --fontsize7: .75em;
+
+    --font: sans-serif;
+    --line-height: 1.25rem;
+    --f1: 2.5em;
+    --f2: 1.875em;
+    --f3: 1.4625em;
+    --f4: 1.25em;
+    --f5: 1.125em;
+
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}

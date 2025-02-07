@@ -1,0 +1,19 @@
+/* Forms */
+[readonly], [disabled] { opacity: .6 }
+[disabled] { cursor: not-allowed }
+input, button, textarea, select, fieldset {
+    border: 1px solid var(--color-border) }
+textarea, select,
+input:not([type=button]):not([type=checkbox]):not([type=color]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]) {
+    display: block; width: 100% }
+input, textarea { padding: .3125rem var(--size2) }
+input:user-invalid, select:user-invalid, textarea:user-invalid { border: 1px dashed var(--color-error) }
+label { display: inline-block; margin-bottom: var(--size1) }
+form * + label { margin-top: var(--size2); margin-right: var(--size2) }
+label > *:first-child { margin: var(--size1) 0 0 }
+fieldset { padding: var(--size2) }
+legend { padding: var(--size1) var(--size3); font-weight: 700; background-color: var(--bg) }
+legend + * { margin-top: 0 }
+select { padding: var(--size1) var(--size2) }
+textarea { width: 100%; resize: vertical }
+fieldset { max-width: -webkit-fill-available }

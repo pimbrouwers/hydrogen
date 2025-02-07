@@ -1,0 +1,41 @@
+/* Colors */
+.black { color: var(--black) }
+.blue { color: var(--blue) }
+.yellow { color: var(--yellow) }
+.gray { color: var(--gray) }
+.green { color: var(--green) }
+.nearwhite { color: var(--nearwhite) }
+.orange { color: var(--orange) }
+.purple { color: var(--purple) }
+.red { color: var(--red) }
+.silver { color: var(--silver) }
+.white { color: var(--white) }
+
+.bg-black { background-color: var(--black) }
+.bg-blue { background-color: var(--blue) }
+.bg-yellow { background-color: var(--yellow) }
+.bg-gray { background-color: var(--gray) }
+.bg-green { background-color: var(--green) }
+.bg-nearwhite { background-color: var(--nearwhite) }
+.bg-orange { background-color: var(--orange) }
+.bg-purple { background-color: var(--purple) }
+.bg-red { background-color: var(--red) }
+.bg-silver { background-color: var(--silver) }
+.bg-white { background-color: var(--white) }
+
+.b--dotted { border-style: dotted }
+.b--dashed { border-style: dashed }
+.b--solid {  border-style: solid }
+.b--none {   border-style: none }
+
+.b--black { border-color:var(--black) }
+.b--blue { border-color:var(--blue) }
+.b--yellow { border-color:var(--yellow) }
+.b--gray { border-color:var(--gray) }
+.b--green { border-color:var(--green) }
+.b--nearwhite { border-color:var(--nearwhite) }
+.b--orange { border-color:var(--orange) }
+.b--purple { border-color:var(--purple) }
+.b--red { border-color:var(--red) }
+.b--silver { border-color:var(--silver) }
+.b--white { border-color:var(--white) }

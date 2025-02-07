@@ -1,0 +1,43 @@
+/* Text */
+.f1 { font-size: var(--fontsize1) }
+.f2 { font-size: var(--fontsize2) }
+.f3 { font-size: var(--fontsize3) }
+.f4 { font-size: var(--fontsize4) }
+.f5 { font-size: var(--fontsize5) }
+.f6 { font-size: var(--fontsize6) }
+.f7 { font-size: var(--fontsize7) }
+.f-headline { font-size: 5em }
+.f-subheadline { font-size: 3.5em }
+
+.fw1 { font-weight: 100 }
+.fw2 { font-weight: 200 }
+.fw3 { font-weight: 300 }
+.fw4 { font-weight: 400 }
+.fw5 { font-weight: 500 }
+.fw6 { font-weight: 600 }
+.fw7 { font-weight: 700 }
+.fw8 { font-weight: 800 }
+.fw9 { font-weight: 900 }
+
+.tl { text-align: left }
+.tr { text-align: right }
+.tc { text-align: center }
+.tj { text-align: justify }
+
+.ttc { text-transform: capitalize }
+.ttl { text-transform: lowercase }
+.ttu { text-transform: uppercase }
+.ttn { text-transform: none }
+
+.lh-solid { line-height: var(--lh-solid) }
+.lh-title { line-height: var(--lh-title) }
+.lh-copy  { line-height: var(--lh-copy) }
+
+.i { font-style: italic }
+
+.nowrap { white-space: nowrap }
+.pre { white-space: pre }
+
+.measure { max-width: 30em } /* ~66 characters */
+
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis }

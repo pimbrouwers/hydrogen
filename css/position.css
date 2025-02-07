@@ -1,0 +1,27 @@
+/* Position */
+.top-0 { top: 0 }
+.right-0 { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0 { left: 0 }
+
+.top-1 { top: var(--size3) }
+.right-1 { right: var(--size3) }
+.bottom-1 { bottom: var(--size3) }
+.left-1 { left: var(--size3) }
+
+.top-2 { top: var(--size4) }
+.right-2 { right: var(--size4) }
+.bottom-2 { bottom: var(--size4) }
+.left-2 { left: var(--size4) }
+
+.top--1 { top: calc(-1 * var(--size3)) }
+.right--1 { right: calc(-1 * var(--size3)) }
+.bottom--1 { bottom: calc(-1 * var(--size3)) }
+.left--1 { left: calc(-1 * var(--size3)) }
+
+.top--2 { top: calc(-2 * var(--size4)) }
+.right--2 { right: calc(-2 * var(--size4)) }
+.bottom--2 { bottom: calc(-2 * var(--size4)) }
+.left--2 { left: calc(-2 * var(--size4)) }
+
+.absolute--fill { top: 0; right: 0; bottom: 0; left: 0 }
